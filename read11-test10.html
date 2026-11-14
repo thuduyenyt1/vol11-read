@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap" rel="stylesheet">
+    <title>IELTS Full Reading Practice - V11 Test 10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; background-color: #ffffff; line-height: 1.4; font-size: 16px; }
+        .header { background: linear-gradient(120deg, #e9eefb, #dfe7ff, #e9eefb); background-size: 200% 200%; animation: bannerFlow 8s ease-in-out infinite; padding: 10px 20px; border-bottom: 1px solid #d7def5; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: nowrap; position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 60px; }
+        .header-right { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto; justify-content: flex-start; }
+        .header-ad { display: inline-flex; align-items: center; gap: 0; padding: 4px 10px; border-radius: 14px; border: 1px solid rgba(215, 222, 245, 0.9); background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(4px); text-decoration: none; color: inherit; box-shadow: 0 10px 24px rgba(33, 58, 128, 0.12); min-width: 180px; max-width: calc(100% - 70px); width: auto; flex: 1 1 auto; height: 48px; overflow: hidden; }
+        .ad-copy { display: flex; flex-direction: column; gap: 0; width: 100%; overflow: hidden; position: relative; }
+        .ad-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #6b7ac7; margin: 0; font-weight: 700; }
+        .ad-marquee { display: flex; gap: 24px; width: 100%; align-items: center; padding-left: 4px; }
+        .ad-headline { margin: 0; font-size: 16px; font-weight: 800; color: #1c2566; white-space: nowrap; }
+        .ad-loop { display: flex; gap: 40px; }
+        .ad-close { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #cdd6f5; background: rgba(255, 255, 255, 0.7); color: #46507a; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease; text-decoration: none; font-weight: 800; flex: 0 0 auto; margin-left: 6px; font-size: 16px; }
+        .ad-close:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(70, 80, 122, 0.25); background: #f6f8ff; }
+        @keyframes bannerFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .main-container { margin-top: 90px; display: flex; flex-direction: column; background: #ffffff; height: calc(100vh - 90px); }
+        .panels-container { display: flex; flex: 1; overflow: hidden; }
+        .passage-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; }
+        .text-center { text-align: center; }
+        .reading-passage h4 { font-family: 'Merriweather', 'Times New Roman', serif; font-size: 22px; font-weight: 600; color: #2c3e50; line-height: 1.4; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4a90e2; padding-bottom: 5px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+        .reading-passage p { margin-bottom: 1.2em; }
+        .questions-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; border-left: 1px solid #e0e0e0; }
+        .resizer { width: 10px; cursor: col-resize; background-color: #f0f0f0; background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 10 30"><path d="M4 11h2v2H4zM4 15h2v2H4zM4 19h2v2H4z" fill="%23888"/></svg>'); background-repeat: no-repeat; background-position: center; flex-shrink: 0; flex-grow: 0; }
+        .nav-arrows { position: fixed; bottom: 100px; right: 20px; display: flex; gap: 5px; z-index: 101; }
+        .nav-arrow { width: 50px; height: 50px; background: #333; color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; }
+        .nav-arrow:hover { background: #555; }
+        .nav-row { position: fixed; bottom: 0; left: 0; right: 0; background: #ffffff; padding: 0; display: flex; align-items: center; height: 80px; z-index: 100; }
+        .footer__questionWrapper___1tZ46 { display: flex; align-items: center; margin-right: 20px; }
+        .footer__questionNo___3WNct { background: none; border: none; padding: 10px 15px; font-size: 16px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background-color 0.2s; }
+        .footer__questionNo___3WNct:hover { background-color: #f8f9fa; }
+        .section-prefix { font-size: 16px; }
+        .sectionNr { font-size: 16px; font-weight: bold; }
+        .attemptedCount { font-size: 14px; color: #666; margin-left: 5px; font-weight: 400; }
+        @media (max-width: 768px) { .attemptedCount { display: none; } }
+        .footer__questionWrapper___1tZ46.selected .attemptedCount { display: none; }
+        .footer__subquestionWrapper___9GgoP { display: none; gap: 2px; margin-left: 10px; }
+        .footer__questionWrapper___1tZ46.selected .footer__subquestionWrapper___9GgoP { display: flex; }
+        .subQuestion { width: 32px; height: 32px; border: 1px solid #ccc; background: white; color: #333; font-size: 14px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; border-radius: 2px; }
+        .subQuestion.answered { background-color: #6b7ac7; color: #ffffff; border-color: #46507a; font-weight: bold; }
+        .subQuestion.correct { background-color: #28a745; color: white; border-color: #28a745; }
+        .subQuestion.incorrect { background-color: #dc3545; color: white; border-color: #dc3545; }
+        .subQuestion.marked { position: relative; color: #333; }
+        .subQuestion:hover { background-color: #f0f0f0; border-color: #999; }
+        .subQuestion.active { background-color: #4a90e2; color: white; border-color: #4a90e2; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+        .footer__deliverButton___3FM07 { margin-left: auto; margin-right: 20px; background-color: #f0f0f0; color: #333; border: 1px solid #ccc; padding: 12px 20px; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s, border-color 0.2s; min-width: 170px; justify-content: center; }
+        .footer__deliverButton___3FM07:hover { background-color: #e0e0e0; border-color: #bbb; }
+        .footer__deliverButton___3FM07:disabled { background: #e9ecef; color: #6c757d; cursor: not-allowed; border-color: #ddd; }
+        .fa-check::before { content: "✓"; }
+        .hidden { display: none !important; }
+        .context-menu { position: absolute; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: none; min-width: 140px; overflow: hidden; }
+        .context-menu-item { padding: 12px 16px; cursor: pointer; font-size: 16px; border-bottom: 1px solid #f0f0f0; transition: background-color 0.2s; display: flex; align-items: center; gap: 8px; }
+        .context-menu-item:hover { background-color: #f8f9fa; }
+        .context-menu-item:last-child { border-bottom: none; }
+        .color-btn { width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; padding: 0; background-color: transparent; }
+        .color-btn:hover { transform: scale(1.15); box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
+        .color-btn.yellow { background-color: #fff3a3; }
+        .color-btn.green { background-color: #b4f0c1; }
+        .color-btn.pink { background-color: #ffc7df; }
+        .annotation-highlight { background-color: var(--highlight-color, #fff3a3); border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); cursor: pointer; }
+        .annotation-highlight.highlight-yellow { --highlight-color: #fff3a3; }
+        .annotation-highlight.highlight-green { --highlight-color: #b4f0c1; }
+        .annotation-highlight.highlight-pink { --highlight-color: #ffc7df; }
+        .annotation-highlight.highlight-blue { --highlight-color: #d0ebff; border: 1px dashed #339af0; }
+        .annotation-note { background-color: #b4f0c1; border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); position: relative; cursor: pointer; }
+        .annotation-note[data-note]:hover::after { content: attr(data-note); position: absolute; left: 50%; bottom: 100%; transform: translate(-50%, -6px); background: #1f2937; color: #fff; padding: 6px 10px; border-radius: 4px; white-space: nowrap; font-size: 13px; z-index: 2000; }
+        .question { margin-bottom: 40px; }
+        .question p { margin-bottom: 10px; }
+        .question-prompt { margin-bottom: 20px; }
+        .question-title { font-size: 18px; font-weight: 700; text-align: center; margin: 6px 0 10px; color: #000; }
+        .answer-input { border: 1px solid #888; border-radius: 4px; background-color: #fff; padding: 2px 5px; font-size: 16px; text-align: center; margin-right: 4px; margin-left: 4px; transition: border-color 0.3s, box-shadow 0.3s; height: 28px; width: 150px; z-index: 10; position: relative; pointer-events: auto; }
+        .answer-input.active-input { border-color: #4a90e2; box-shadow: 0 0 3px 1px rgba(74, 144, 226, 0.5); }
+        .answer-input::placeholder { color: #999; font-weight: bold; text-align: center; }
+        .answer-input.correct { border-color: #28a745; background-color: #e9f7ef; }
+        .answer-input.incorrect { border-color: #dc3545; background-color: #f8d7da; color: #721c24; }
+        .part-header { background-color: #f1f2ec; padding: 10px 16px; border: 1px solid #e0e0e0; text-align: left; margin: 8px 20px; border-radius: 5px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .timer-container { display: flex; position: relative; cursor: default; color: #333; font-size: 16px; font-weight: 500; align-items: center; gap: 12px; flex: 0 0 auto; min-width: 220px; padding: 4px 10px; border-radius: 14px; border: 1px solid #d7def5; background: rgba(255, 255, 255, 0.24); box-shadow: 0 8px 18px rgba(33, 58, 128, 0.08); }
+        .timer-controls { display: flex; align-items: center; gap: 8px; margin-left: 15px; }
+        .timer-controls button { background: #f0f0f0; border: 1px solid #ccc; border-radius: 50%; padding: 0; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .timer-controls button:hover { background: #e0e0e0; }
+        .tf-question { margin-bottom: 25px; padding: 10px 0px; border-radius: 4px; transition: border-color 0.3s, background-color 0.3s; }
+        .tf-question-line { display: flex; align-items: flex-start; margin-bottom: 15px; padding: 5px 0px; border-radius: 4px; }
+        .tf-question-number, .question-number-box { border: 2px solid #ccc; padding: 2px 8px; margin-right: 10px; border-radius: 3px; font-weight: bold; transition: border-color 0.3s; display: inline-block; }
+        .tf-question-text { padding-top: 3px; }
+        .tf-options { padding-left: 5px; }
+        .tf-option { display: block; margin-bottom: 12px; cursor: pointer; display: flex; align-items: center; }
+        .tf-option input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .tf-question.correct .tf-question-line { background-color: #e9f7ef; }
+        .tf-question.incorrect .tf-question-line { background-color: #f8d7da; }
+        .multi-choice-question { margin-bottom: 20px; padding: 10px; border-radius: 4px; border: 3px solid transparent; transition: border-color 0.3s, background-color 0.3s; }
+        .multi-choice-option { margin-bottom: 10px; padding: 8px; border-radius: 4px; transition: background-color 0.3s; }
+        .multi-choice-option label { display: flex; align-items: center; cursor: pointer; font-size: 16px; }
+        .multi-choice-option input[type="checkbox"], .multi-choice-option input[type="radio"] { margin-right: 12px; transform: scale(1.3); accent-color: #4a90e2; }
+        .multi-choice-option.correct { background-color: #e9f7ef; }
+        .multi-choice-option.incorrect { background-color: #f8d7da; }
+        .matching-form-container { margin-top: 20px; }
+        .matching-form-row { display: flex; align-items: center; margin-bottom: 12px; gap: 12px; flex-wrap: wrap; }
+        .matching-form-label { width: auto; flex: 1 1 320px; margin-right: 8px; }
+        .matching-form-row select.answer-input { width: 220px; flex-shrink: 0; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; display: flex; justify-content: center; align-items: center; }
+        .modal-overlay.hidden { display: none; }
+        .modal-content { background: white; padding: 25px; border-radius: 8px; width: 90%; max-width: 600px; max-height: 80vh; display: flex; flex-direction: column; position: relative; }
+        .modal-close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 28px; cursor: pointer; color: #888; }
+        .modal-content h2 { text-align: center; margin-bottom: 15px; color: #333; }
+        .results-summary { display: flex; justify-content: space-around; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-align: center; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .results-details-container { overflow-y: auto; padding-right: 10px; }
+        .result-row { display: grid; grid-template-columns: 40px 1fr 1fr; gap: 15px; padding: 8px 5px; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+        .result-row.incorrect { background-color: #f8d7da; }
+        .result-row .q-num { font-weight: bold; }
+        .result-row .user-ans { color: #555; }
+        .result-row .correct-ans { color: #155724; font-weight: 500; }
+        .correct-answer-display { font-weight: bold; color: #28a745; margin-left: 10px; font-size: 14px; }
+        .correct-answer-highlight { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; padding: 4px; }
+        html, body { width: 100%; height: 100%; overflow: hidden; }
+        #launchScreen, #app { width: 100vw; height: 100vh; }
+        #app { display: none; }
+        #launchScreen { display: flex; align-items: center; justify-content: center; padding: 24px; background: radial-gradient(circle at 0% 0%, rgba(206, 219, 255, 0.48), transparent 34%), radial-gradient(circle at 100% 100%, rgba(221, 229, 255, 0.44), transparent 38%), #f4f6fc; color: #1f2b59; }
+        .launch-card { width: min(980px, 100%); border: 1px solid #d7def5; border-radius: 18px; background: linear-gradient(180deg, #ffffff, #f7f9ff); box-shadow: 0 16px 38px rgba(33, 58, 128, 0.14); padding: 28px 30px 22px; display: grid; gap: 12px; }
+        .launch-eyebrow { margin: 0; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #6f7cb2; font-weight: 700; }
+        .launch-title { margin: 4px 0 0; font-size: clamp(26px, 3.5vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: #1c2566; }
+        .launch-meta { margin: 8px 0 0; color: #3c4a81; font-size: 15px; font-weight: 600; }
+        .launch-guide { border: 1px solid #d7def5; border-radius: 12px; background: #f2f5ff; padding: 14px; display: grid; gap: 6px; }
+        .launch-main { margin: 0; font-size: clamp(18px, 2.2vw, 23px); line-height: 1.32; font-weight: 700; color: #1d2a60; }
+        .launch-sub { margin: 0; color: #4c598f; font-size: 14px; line-height: 1.45; }
+        .student-info-form { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .student-info-form input { width: 100%; padding: 12px 15px; border: 1px solid #c5d0f2; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.2s; }
+        .student-info-form input:focus { border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); }
+        .launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+        .launch-btn { border: 1px solid #c5d0f2; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 700; padding: 11px 16px; color: #24336e; background: #ffffff; transition: transform 0.12s ease; box-shadow: 0 8px 20px rgba(35, 54, 110, 0.14); width: 100%; text-align: center; font-size: 16px; }
+        .launch-btn:hover { transform: translateY(-1px); background: #f6f8ff; }
+        .explanation-box { display: none; margin-top: 10px; margin-bottom: 15px; padding: 12px 15px; background-color: #f0f7ff; border-left: 4px solid #4a90e2; border-radius: 4px; font-size: 15px; color: #2c3e50; line-height: 1.5; width: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: background-color 0.2s ease; }
+        .explanation-box:hover { background-color: #e2efff; }
+        .explanation-box.show { display: block; animation: fadeIn 0.4s ease-in-out; }
+        .explanation-title { font-weight: 700; margin-bottom: 6px; color: #1c2566; display: flex; align-items: center; gap: 6px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        .options-list { list-style-type: none; padding-left: 0; margin-bottom: 15px; }
+        .options-list li { margin-bottom: 5px; }
+        .options-list-label { font-weight: bold; margin-right: 8px; }
+        .example-box { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <section id="launchScreen" aria-label="Launch screen">
+        <div class="launch-card">
+            <div>
+                <p class="launch-eyebrow">IELTS Test Launcher</p>
+                <h1 class="launch-title" id="launchTestTitle">V11 Test 10 - Reading</h1>
+                <p class="launch-meta">Dạng bài: Reading</p>
+            </div>
+            <div class="launch-guide">
+                <p class="launch-main">Nhấn F11 để bắt đầu làm bài ở chế độ toàn màn hình.</p>
+                <p class="launch-sub">Nhấn F11 lần nữa để thoát toàn màn hình nếu cần.</p>
+                <div class="student-info-form">
+                    <input type="text" id="studentName" placeholder="Nhập Họ và tên của bạn..." required>
+                    <input type="text" id="studentClass" placeholder="Nhập Lớp của bạn..." required>
+                    <p id="launchError" style="color: #dc3545; font-size: 14px; display: none; margin: 0; font-weight: 600;">⚠️ Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+                </div>
+            </div>
+            <div class="launch-row">
+                <button id="startNormalBtn" class="launch-btn" type="button">Bắt đầu làm bài</button>
+            </div>
+        </div>
+    </section>
+    <div id="app">
+    <div class="header">
+        <div class="timer-container">
+            <span class="timer-display">60 minutes remaining</span>
+            <div class="timer-controls">
+                <button id="timer-toggle-btn" title="Pause/Resume Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>
+                </button>
+                <button id="timer-reset-btn" title="Reset Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" target="_blank" rel="noopener" class="header-ad">
+                <div class="ad-copy">
+                    <p class="ad-eyebrow">Study boost</p>
+                    <div class="ad-marquee">
+                        <div class="ad-loop">
+                            <span class="ad-headline">Chinh phục IELTS dễ dàng - Tài liệu đầy đủ, chiến lược rõ ràng!</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="ad-close" type="button" aria-label="Close ad" title="Close">×</button>
+        </div>
+    </div>
+
+        <div class="main-container" id="main-container">
+            <div id="passage-header-container">
+                <div id="part-header-1" class="part-header">
+                    <p><strong>Part 1</strong></p>
+                    <p>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</p>
+                </div>
+                <div id="part-header-2" class="part-header hidden">
+                    <p><strong>Part 2</strong></p>
+                    <p>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</p>
+                </div>
+                <div id="part-header-3" class="part-header hidden">
+                    <p><strong>Part 3</strong></p>
+                    <p>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</p>
+                </div>
+            </div>
+            <div class="panels-container">
+            <div class="passage-panel" id="passage-panel">
+                <div id="passage-text-1" class="reading-passage">
+                    <h4 class="text-center">The Origins Of Cinema</h4>
+                    <p>The 19th-century inventions which led to the birth of the movies</p>
+                    <p><strong>A</strong>    Many consider that the history of motion pictures began in 1824, when the British doctor Peter Mark Roget described an optical effect he called persistence of vision — the illusion of movement created when a series of still pictures are set into motion. Over the next decades, this idea inspired a number of simple optical toys and mechanical inventions related to motion and vision. One of the most significant was created in 1834 by the British inventor William George Horner. Originally called a Daedalum, but better known by its later name of Zoetrope, Horner's device consisted of a hollow drum, rotated by means of a crank. Around the drum's inner surface was a strip of paper with a sequence of paintings, drawings, or illustrations on it. As the device turned, the viewer could observe the illusion of moving images through regularly spaced narrow slits.</p>
+                    <p><strong>B</strong>    The development of still photography in the mid-19th century led to the creation of a number of variations on the Zoetrope. In 1861, the US inventor Coleman Sellers patented the Kinematoscope, a device containing a sequence of stereoscopic (3D) photos on glass plates, in a rotating box. 1870 saw the first public demonstrations of US inventor Henry Renno Heyl's Phasmatrope, one of the earliest devices to show apparently ‘moving’ photographs. On February 5th of that year, Heyl delighted audiences at the Academy of Music in Philadelphia with his photographs of dancers, shown in rapid succession so as to create the impression of motion.</p>
+                    <p><strong>C</strong>    The next step in the history of motion pictures was the invention of the Praxinoscope. Devised in 1877 by Frenchman Charles Emile Reynaud, this refined version of the Zoetrope had mirrors at the centre of the drum. This was followed in 1879 by the British photographer Eadweard Muybridge's invention of the Zoopraxiscope. Also known as ‘the wheel of life’, this machine recreated the illusion of movement. Images appeared on a screen, having been projected from a series of photos printed on a disc that turned when the machine was operating.</p>
+                    <p><strong>D</strong>    However, true motion pictures, rather than eye-fooling ‘animations’, could only occur after the development of a flexible film capable of recording split-second pictures. In 1882, French innovator and physiologist Etienne-Jules Marey, often regarded as the ‘inventor of cinema’, constructed a camera (or ‘photographic gun’) that could take 12 photographs per second. Marey's chronophotographs, as he called them, were revolutionary, and he was soon able to achieve a rate of 30 images per second. Further experimentation was conducted by French-born Louis Aimé Augustin Le Prince, who used long rolls of paper covered with photographic emulsion for a camera that he devised and patented. A few seconds of his 1888 motion picture film entitled Traffic Crossing Leeds Bridge still survive.</p>
+                    <p><strong>E</strong>    In November 1890, William Dickson, the young British assistant of the famed US inventor Thomas Edison, devised a simple but ingenious motor-powered motion-picture camera known as the Kinetograph. This used 35mm-wide film made out of celluloid, a newly developed synthetic gelatin-coated material which was transparent, strong, and flexible. Officially launched in 1892, Dickson's camera featured an innovative system of sprockets (teeth on a moving wheel) that connected with sprocket holes in the celluloid, and advanced the film. The sprocket system would momentarily pause the film before the camera's shutter to create a photographic frame (a still or photographic image). Although its bulky motor was soon to be replaced with a lightweight hand-crank mechanism, the Kinetograph set the standard for the motion picture cameras that would be used for the next century.</p>
+                    <p><strong>F</strong>    Dickson also designed an early version of a movie-picture projector called the Kinetoscope. Around that same time, he filmed his first experimental Kinetoscope trial film, Monkeyshines No. 1, the only surviving film from the cylinder Kinetoscope, and apparently the first motion picture ever produced on photographic film in the United States. It features the movement of laboratory assistant Sacco Albanese, filmed with a system using tiny images that rotate around the cylinder.</p>
+                    <p><strong>G</strong>    Meanwhile in Lyons, France, brothers Louis and Auguste Lumière, often called ‘the founding fathers of modern film’, were inspired by Edison and Dickson's work. They created their own portable, hand-held device, known as the Cinematographe, patented in February 1895. This multi-purpose device, which combined camera, printer, and projecting capabilities, was more profitable than Edison and Dickson's model, because a number of spectators could watch the film on a large screen at the same time. On December 28, 1895, the Lumières presented the first commercial exhibition of a projected motion picture to a paying public in the world's first movie theatre in the Salon Indien, at the Grand Café on the Boulevard des Capucines in Paris. Cinema, a word derived from Cinematographe, had finally arrived.</p>
+                </div>
+                <div id="passage-text-2" class="reading-passage hidden">
+                    <h4 class="text-center">Children's comprehension of television advertising</h4>
+                    <p><strong>A.</strong>    In 1874, long before the advent of television, the English Parliament passed a law to protect children 'from their own lack of experience and from the wiles of pushing tradesmen and moneylenders' (James, 1965). The act is one of the earliest governmental policies to address children's vulnerability to commercial exploitation and was produced before major corporations earned huge profits by marketing products directly to children. Yet the issues underlying this 19th-century policy remain much the same in the 21st century.</p>
+                    <p><strong>B.</strong>    Television has long been the predominant medium that advertisers have chosen for marketing products to children. It is estimated that the average child sees more than 40,000 commercials a year, most of which are 15 to 30 seconds in length (Kunkel, 2001). According to another estimate, children aged 14 years and under make $24 billion in direct purchases and influence $190 billion in family purchases, underscoring the high stakes involved (McNeal, 1998). In addition, companies now recognize that brand loyalty built at an early age may reap economic rewards over a child's lifetime (McNeal, 1987).</p>
+                    <p><strong>C.</strong>    A number of factors have contributed to an unprecedented growth in both the amount and type of advertising directed at children. First and foremost among these are changes in the media environment. In decades past, television programming targeted at children was limited and relegated to time slots unpopular with their parents, such as Saturday mornings (Turow, 1981). Today, the number of channels received in the average US home has escalated with the diffusion of cable television and satellite technologies. In this new multi-channel era, there are numerous national program services devoted exclusively to children. Naturally, these channels deliver significant amounts of child-oriented marketing messages. Although parents may be pleased that their youngsters can now watch children's programming at any hour of the day, they may not recognize that such viewing opportunities entail much greater exposure to advertising than any previous generation of youth has experienced.</p>
+                    <p><strong>D.</strong>    Approximately 80% of all advertising targeted at children falls within four product categories: toys, cereals, candies, and fast-food restaurants (Kunkel, 2001). Commercials are highly effective at employing specific features designed to attract children's attention. For example, they use the strategy of introducing unique sound effects and rapidly moving images (Greer et al, 1982). The other most common persuasive strategy employed in advertising to children is to associate the product with playfulness and happiness, rather than to provide any actual product-related information (Kunkel et al, 1992). For example, a commercial featuring Ronald McDonald dancing, singing and smiling in McDonald's restaurants without any mention of the actual food products available reflects a playful or happy theme. This strategy is also found frequently with cereal ads, which often include cartoon characters to help children identify the product. In contrast, most commercials fail to mention even the major grain used in each cereal.</p>
+                    <p><strong>E.</strong>    Another common feature of advertising to children is the use of product disclosures such as 'batteries not included' or 'each part sold separately'. Studies make clear that young children do not comprehend the intended meaning of these disclaimers. For example, fewer than one in four kindergarten through second grade children could grasp the meaning of 'some assembly required' in a commercial. In contrast, the use of child-friendly language such as ‘you have to put it together' more than doubled the proportion of children who understood the qualifying message (Liebert et al, 1977). The phrase 'part of a balanced breakfast' is also a frequent disclosure included in most cereal ads to combat the concern that sugared cereal holds little nutritional value for children. Research shows that most children below age 7 years have no idea what the term ‘balanced breakfast’ means (Palmer & McDowell, 1981). Rather than informing young viewers about the importance of a nutritious breakfast, this common disclaimer actually leaves many children with the misimpression that cereal alone is sufficient for a meal. This pattern of employing creative terminology in advertising content so as to obscure certain information that might be unhelpful to the sponsor is a long- standing practice that often misleads the consumer (Geis, 1982).</p>
+                    <p><strong>F.</strong>    Very young children do not recognize that there are two fundamentally different categories of television content: programs and commercials. Most children below the age of 4 or 5 exhibit low awareness of the concept of commercials, frequently explaining them as if they were a scene in the program itself. Once this confusion diminishes, children first recognize the difference between programs and commercials based on either affective ('commercials are funnier than TV programs') or perceptual ('commercials are short and programs are long') cues (Blatt et al, 1972).</p>
+                    <p><strong>G.</strong>    Although most children's programs indicate that a commercial break is  coming (e.g. by saying We'll be right back after these messages'), research reveals that these 'separators' generally do not help children to recognize advertising content (Palmer & McDowell, 1979). This likely occurs because they are not perceptually distinct from the adjacent programming that surrounds them; in fact, many separators feature characters that appear in the same show that the commercial has just interrupted. When an ad includes one of the characters featured in a program, this is known as host-selling. This type of advertising makes the task of discriminating between program and commercial content particularly difficult for young children (Kunkel, 1988) and is thus restricted in the US by the Federal Communications Commission during children's programs.</p>
+                    <p><strong>H.</strong>    In sum, because young children lack the cognitive skills and abilities of older children and adults, they do not comprehend commercial messages in the same way as more mature audiences, and are therefore uniquely susceptible to advertising influence.</p>
+                </div>
+                <div id="passage-text-3" class="reading-passage hidden">
+                    <h4 class="text-center">Let’s teach them how to teach</h4>
+                    <p>What matters in schools is teaching. Fortunately, teaching can be taught</p>
+                    <p>Forget smart uniforms and small classes. The secret to stellar grades and thriving students is teachers. One US study found that in a single year’s teaching the top 10% of teachers impart three times as much learning to their pupils as the worst 10% do. Another US study suggests that if black pupils were taught by the best quarter of teachers, the gap between their achievement and that of white pupils would disappear. But efforts to ensure that every teacher can teach are hindered by the persistent myth that good teachers are born, not made. Government policies, which often start from the same assumption, seek to raise teaching standards by attracting high flying graduates to join the profession and prodding bad teachers to leave. Teachers’ unions, meanwhile, insist that if only their members were free from centralised policies, excellence would follow.</p>
+                    <p>The premise that teaching ability is something you either have or don’t is mistaken. A new breed of teacher trainers is founding a rigorous science of pedagogy. The aim is to make ordinary teachers great, just as sports coaches help athletes of all abilities to improve their personal best. Done right, this will revolutionise schools and change lives.</p>
+                    <p>Education has a history of lurching from one ‘miracle’ solution to the next. The best of them even achieve some good. The US initiative Teach for America has brought energetic new graduates into the profession, and dismissing teachers for bad performance has boosted results in Washington, DC. But each approach has its limits. Teaching is a mass profession: it cannot grab all the top graduates, year after year. When poor teachers are fired, new ones are needed – and they will have come through the same educational system that failed to make fine teachers of their predecessors.</p>
+                    <p>By contrast, the idea of improving the average teacher could revolutionise the entire profession. Around the world, few newly qualified teachers are well enough prepared for the classroom. A recent report found 31 countries in which more than a quarter of primary-school teachers had not reached minimal national standards. In rich countries, the problem is subtler. Teachers qualify after completing a long, specialised course, which almost always involves superficial and seemingly useless discussions of theory. Some of these courses, including master’s degrees in education, have no effect on how well their graduates’ pupils end up being taught.</p>
+                    <p>What teachers fail to learn in universities and teacher-training colleges they rarely pick up on the job. They become better teachers in their first few years as they get to grips with real pupils in real classrooms, but after that improvements tail off. This is largely because schools neglect their most important learners: teachers themselves. Across the Organisation for Economic Cooperation and Development (OECD) club of mostly rich countries, two-fifths of teachers say they have never had a chance to learn by sitting in on another teacher’s lessons; nor have they been asked to give feedback on their peers.</p>
+                    <p>If this is to change, teachers need to learn how to impart knowledge and prepare young minds to receive and retain it. Good teachers set clear goals, enforce high standards of behaviour and manage their lesson time wisely. They use tried-and-tested instructional techniques to ensure that all brains are working all the time – for example, asking questions in the classroom with “cold calling*” rather than relying on the same eager pupils putting up their hands.</p>
+                    <p>Like other complex skills, teaching requires a route to mastery that is not based on abstruse theory but on intense, guided practice grounded in subject-matter knowledge and pedagogical methods. Trainees should spend more time in the classroom. The places where pupils do best – for example, Finland, Singapore and Shanghai – put novice teachers through a demanding apprenticeship. In the US, high performing schools teach trainees in the classroom and bring them on with coaching and feedback.</p>
+                    <p>Teacher-training institutions need to be more rigorous. A century ago, medical schools raised the calibre of doctors by introducing systematic curriculums and providing clinical experience. It is essential that teacher-training colleges start to collect and publish data on how their graduates perform in the classroom. Courses that produce teachers who go on to do little to improve their pupils’ learning should not receive subsidies or see their graduates become teachers. They would then have to improve to survive.</p>
+                    <p>Big changes are needed in schools, too, to ensure that teachers improve throughout their careers. Teachers in the best ones hone their craft through observation and coaching. They accept critical feedback, which their unions should not resist but welcome, as it is only proper for people doing such an important job. The best head teachers hold novices’ hands by helping them prepare high quality lessons and arranging for more-experienced teachers to cover for them when they need time for further study and practice.</p>
+                    <p>Money is less important than one might think. Teachers in top-of-the-class Finland, for example, earn about the OECD average. But ensuring the best teachers stay in the classroom will, in most places, mean paying more. People who thrive in front of pupils should not have to become managers to earn a pay rise. And more flexibility on salaries would make it much easier to attract the best teachers to the worst schools.</p>
+                    <p>Improving the quality of the average teacher would raise the profession’s prestige, setting up a virtuous cycle in which more talented graduates clamoured to join. But the biggest gains will come from preparing new teachers better, and upgrading the ones already in classrooms.</p>
+                    <p><em>*cold calling: a simple technique in which the teacher calls on specific pupils to answer a question, regardless of whether they have raised their hand.</em></p>
+                </div>
+            </div>
+            <div class="resizer" id="resizer"></div>
+            <div class="questions-panel" id="questions-panel">
+                <div id="questions-1" class="question-set">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="1" data-q-end="4">
+                            <div class="question-prompt">
+                                <p><strong>Questions 1-4</strong></p>
+                                <p>Label the diagram below. Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                                <div class="question-title">Zoetrope</div>
+                            </div>
+                            <p>1 a <input type="text" class="answer-input" id="q1" placeholder="1"> which is turned by a crank</p>
+                            <p>2 a drum which is turned by a <input type="text" class="answer-input" id="q2" placeholder="2"></p>
+                            <p>3 series of pictures on a <input type="text" class="answer-input" id="q3" placeholder="3"> strip</p>
+                            <p>4 <input type="text" class="answer-input" id="q4" placeholder="4"> through which ‘moving’ images were viewed</p>
+                        </div>
+                        
+                        <div class="question" data-q-start="5" data-q-end="8">
+                            <div class="question-prompt">
+                                <p><strong>Questions 5-8</strong></p>
+                                <p>Complete the table below.</p>
+                                <p>Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                            </div>
+                            <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Year</th>
+                                        <th>Invention</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1861</td>
+                                        <td>Kinematoscope</td>
+                                        <td>displayed 3D images on 5 <input type="text" class="answer-input" id="q5" placeholder="5"> surfaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1870</td>
+                                        <td>Phasmatrope</td>
+                                        <td>showed an audience images that seemed to be 6 <input type="text" class="answer-input" id="q6" placeholder="6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1877</td>
+                                        <td>Praxinoscope</td>
+                                        <td>an improved version of the 7 <input type="text" class="answer-input" id="q7" placeholder="7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1879</td>
+                                        <td>Zoopraxiscope</td>
+                                        <td>projected pictures from a 8 <input type="text" class="answer-input" id="q8" placeholder="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1890</td>
+                                        <td>Kinetograph</td>
+                                        <td>a motion-picture camera moving a film through its sprocket system</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="question" data-q-start="9" data-q-end="13">
+                            <div class="question-prompt">
+                                <p><strong>Questions 9-13</strong></p>
+                                <p>Choose <strong>TRUE</strong> if the statement agrees with the information given in the text, choose <strong>FALSE</strong> if the statement contradicts the information, or choose <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="9" data-q-end="9"><div class="tf-question-line"><span class="tf-question-number">9</span><span class="tf-question-text">The advantage of Etienne-Jules Marey's invention was the speed with which it could record images.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q9" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q9" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q9" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="10" data-q-end="10"><div class="tf-question-line"><span class="tf-question-number">10</span><span class="tf-question-text">William Dickson's system of powering a movie camera with a motor was used for a great many years.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q10" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q10" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q10" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="11" data-q-end="11"><div class="tf-question-line"><span class="tf-question-number">11</span><span class="tf-question-text">Several movies from the cylinder Kinetoscope are still in existence today.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q11" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q11" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q11" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="12" data-q-end="12"><div class="tf-question-line"><span class="tf-question-number">12</span><span class="tf-question-text">The Lumière brothers' invention was used to make and show movies.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q12" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q12" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q12" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="13" data-q-end="13"><div class="tf-question-line"><span class="tf-question-number">13</span><span class="tf-question-text">None of the audience at the Salon Indien in December 1895 had ever seen a motion picture before.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q13" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q13" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q13" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="questions-2" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="14" data-q-end="18">
+                            <div class="question-prompt">
+                                <p><strong>Questions 14-18</strong></p>
+                                <p>Reading Passage 2 has eight paragraphs, A-H. Which paragraph contains the following information?</p>
+                                <p><em>NB You may use any letter more than once.</em></p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q14" class="matching-form-label"><strong>14</strong> a description of recent innovations in TV broadcasting</label>
+                                    <select class="answer-input" id="q14"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q15" class="matching-form-label"><strong>15</strong> a mention of the main goods and services advertised to children</label>
+                                    <select class="answer-input" id="q15"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q16" class="matching-form-label"><strong>16</strong> a reference to a current limitation on television advertising aimed at children</label>
+                                    <select class="answer-input" id="q16"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q17" class="matching-form-label"><strong>17</strong> two techniques used to encourage children to watch TV commercials</label>
+                                    <select class="answer-input" id="q17"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q18" class="matching-form-label"><strong>18</strong> a type of advertisement that may make children believe the opposite of what is true</label>
+                                    <select class="answer-input" id="q18"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="19" data-q-end="22">
+                            <div class="question-prompt">
+                                <p><strong>Questions 19-22</strong></p>
+                                <p>Look at the following statements and the list of researchers below.</p>
+                                <p>Match each statement with the correct researchers, <strong>A-H</strong>.</p>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <p><strong>List of Researchers</strong></p>
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> Kunkel</li>
+                                    <li><span class="options-list-label">B</span> Kunkel et al</li>
+                                    <li><span class="options-list-label">C</span> McNeal</li>
+                                    <li><span class="options-list-label">D</span> Turow</li>
+                                    <li><span class="options-list-label">E</span> Greer et al</li>
+                                    <li><span class="options-list-label">F</span> Liebert et al</li>
+                                    <li><span class="options-list-label">G</span> Palmer & McDowell</li>
+                                    <li><span class="options-list-label">H</span> Geis</li>
+                                </ul>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q19" class="matching-form-label"><strong>19</strong> Ads often aim to teach children that a brand is fun rather than telling them about what is being sold.</label>
+                                    <select class="answer-input" id="q19"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q20" class="matching-form-label"><strong>20</strong> Originally, children's programmes were only broadcast when adults rarely watched TV.</label>
+                                    <select class="answer-input" id="q20"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q21" class="matching-form-label"><strong>21</strong> Children have a significant impact on what adults buy.</label>
+                                    <select class="answer-input" id="q21"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q22" class="matching-form-label"><strong>22</strong> Tests showed that children can follow information if simple words are used.</label>
+                                    <select class="answer-input" id="q22"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="23" data-q-end="26">
+                            <div class="question-prompt">
+                                <p><strong>Questions 23-26</strong></p>
+                                <p>Complete the summary below.</p>
+                                <p>Write <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                                <div class="question-title">How very young children perceive commercials</div>
+                            </div>
+                            <p>Children below the age of 4 or 5 do not understand the difference between television programmes and commercials. In fact, these children often mistake an advertisement for a 23 <input type="text" class="answer-input" id="q23" placeholder="23"> from the programme they are watching. This is despite the fact that children's TV programmes usually include announcements called 24 <input type="text" class="answer-input" id="q24" placeholder="24"> to show that there is going to be a commercial break. The problem is made more difficult because of a technique called 25 <input type="text" class="answer-input" id="q25" placeholder="25"> whereby a person or cartoon figure from the programme is used to sell a product during the commercial break. From the age of 4 or 5, children begin to realise that commercials are different from TV programmes; for example, they may recognise that there is a difference in length or that advertisements are 26 <input type="text" class="answer-input" id="q26" placeholder="26"> than actual TV.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questions-3" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="27" data-q-end="31">
+                            <div class="question-prompt">
+                                <p><strong>Questions 27-31</strong></p>
+                                <p>Choose the correct answer, <strong>A, B, C or D</strong>.</p>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="27" data-q-end="27">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="27">27</span><span class="mcq-question-title">According to the third paragraph, why is dismissing bad teachers a poor solution to problems in educational standards?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="A"> A. Problems are increasing year on year.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="B"> B. There are not enough top graduates to replace them.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="C"> C. It leads to a poor relationship with teachers’ unions.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="D"> D. Replacement teachers have the same training as the dismissed ones.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="28" data-q-end="28">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="28">28</span><span class="mcq-question-title">What does the writer say about teacher-training institutions in the fourth paragraph?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="A"> A. Graduating teachers are not ready for the classroom.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="B"> B. Improving a teacher of average talent is a very difficult task.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="C"> C. More theory in teacher-training courses is required.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="D"> D. Primary teacher training is not taken seriously.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="29" data-q-end="29">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="29">29</span><span class="mcq-question-title">In their first few years of working, teachers improve in the classroom because they</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="A"> A. are well equipped to build on the theory they learned in college.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="B"> B. have to engage with the realities of the job.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="C"> C. have opportunities to observe and learn from their peers.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="D"> D. enjoy a high level of support from the schools that employ them.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="30" data-q-end="30">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="30">30</span><span class="mcq-question-title">Which of the following does the writer suggest is least effective for teachers to use?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="A"> A. enforcing strict standards of behaviour</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="B"> B. setting high goals that students are aware of</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="C"> C. responding to pupils who raise their hands to answer questions</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="D"> D. ensuring that lesson time is properly scheduled and used</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="31" data-q-end="31">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="31">31</span><span class="mcq-question-title">The author suggests that head teachers can assist newly qualified teachers by</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="A"> A. carrying out classroom observations personally.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="B"> B. providing critical feedback.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="C"> C. welcoming union interaction.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="D"> D. working closely with them.</label></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="32" data-q-end="36">
+                            <div class="question-prompt">
+                                <p><strong>Questions 32-36</strong></p>
+                                <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, choose <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="32" data-q-end="32"><div class="tf-question-line"><span class="tf-question-number">32</span><span class="tf-question-text">Of the many ‘miracle’ educational solutions that have been put forward, a few have been effective.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q32" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q32" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="33" data-q-end="33"><div class="tf-question-line"><span class="tf-question-number">33</span><span class="tf-question-text">Understanding educational theories is an essential part of teacher training.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q33" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q33" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="34" data-q-end="34"><div class="tf-question-line"><span class="tf-question-number">34</span><span class="tf-question-text">Courses producing unsuccessful teachers should be given grants to improve.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q34" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q34" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="35" data-q-end="35"><div class="tf-question-line"><span class="tf-question-number">35</span><span class="tf-question-text">Education is currently underfunded, which is leading to problems in schools.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q35" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q35" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="36" data-q-end="36"><div class="tf-question-line"><span class="tf-question-number">36</span><span class="tf-question-text">Good classroom teachers should be paid more to remain in the classroom.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q36" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q36" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q36" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="37" data-q-end="40">
+                            <div class="question-prompt">
+                                <p><strong>Questions 37-40</strong></p>
+                                <p>Complete each sentence with the correct ending, <strong>A-F</strong>, below.</p>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> practice will always be more important than theory.</li>
+                                    <li><span class="options-list-label">B</span> better trainers are the only answer.</li>
+                                    <li><span class="options-list-label">C</span> more capable graduates could be attracted into the profession.</li>
+                                    <li><span class="options-list-label">D</span> a teacher who is not outstanding can be improved.</li>
+                                    <li><span class="options-list-label">E</span> the assistance of teachers’ unions is essential.</li>
+                                    <li><span class="options-list-label">F</span> a better syllabus and more practical involvement will improve results.</li>
+                                </ul>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q37" class="matching-form-label"><strong>37</strong> Just as any athlete can be coached for better performance,</label>
+                                    <select class="answer-input" id="q37"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q38" class="matching-form-label"><strong>38</strong> If teachers are to be taught the complex skills they require,</label>
+                                    <select class="answer-input" id="q38"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q39" class="matching-form-label"><strong>39</strong> In teaching, as in the medical profession,</label>
+                                    <select class="answer-input" id="q39"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q40" class="matching-form-label"><strong>40</strong> If the status of teachers were improved,</label>
+                                    <select class="answer-input" id="q40"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-arrows">
+        <button class="nav-arrow" onclick="previousQuestion()" id="prevBtn">‹</button>
+        <button class="nav-arrow" onclick="nextQuestion()" id="nextBtn">›</button>
+    </div>
+
+    <nav class="nav-row perScorableItem" aria-label="Questions">
+        <div class="footer__questionWrapper___1tZ46 multiple selected" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(1)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">1</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(1)"><span class="sr-only">Question 1</span><span aria-hidden="true">1</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(2)"><span class="sr-only">Question 2</span><span aria-hidden="true">2</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(3)"><span class="sr-only">Question 3</span><span aria-hidden="true">3</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(4)"><span class="sr-only">Question 4</span><span aria-hidden="true">4</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(5)"><span class="sr-only">Question 5</span><span aria-hidden="true">5</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(6)"><span class="sr-only">Question 6</span><span aria-hidden="true">6</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(7)"><span class="sr-only">Question 7</span><span aria-hidden="true">7</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(8)"><span class="sr-only">Question 8</span><span aria-hidden="true">8</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(9)"><span class="sr-only">Question 9</span><span aria-hidden="true">9</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(10)"><span class="sr-only">Question 10</span><span aria-hidden="true">10</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(11)"><span class="sr-only">Question 11</span><span aria-hidden="true">11</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(12)"><span class="sr-only">Question 12</span><span aria-hidden="true">12</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(13)"><span class="sr-only">Question 13</span><span aria-hidden="true">13</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(2)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">2</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(14)"><span class="sr-only">Question 14</span><span aria-hidden="true">14</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(15)"><span class="sr-only">Question 15</span><span aria-hidden="true">15</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(16)"><span class="sr-only">Question 16</span><span aria-hidden="true">16</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(17)"><span class="sr-only">Question 17</span><span aria-hidden="true">17</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(18)"><span class="sr-only">Question 18</span><span aria-hidden="true">18</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(19)"><span class="sr-only">Question 19</span><span aria-hidden="true">19</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(20)"><span class="sr-only">Question 20</span><span aria-hidden="true">20</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(21)"><span class="sr-only">Question 21</span><span aria-hidden="true">21</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(22)"><span class="sr-only">Question 22</span><span aria-hidden="true">22</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(23)"><span class="sr-only">Question 23</span><span aria-hidden="true">23</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(24)"><span class="sr-only">Question 24</span><span aria-hidden="true">24</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(25)"><span class="sr-only">Question 25</span><span aria-hidden="true">25</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(26)"><span class="sr-only">Question 26</span><span aria-hidden="true">26</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(3)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">3</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 14</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(27)"><span class="sr-only">Question 27</span><span aria-hidden="true">27</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(28)"><span class="sr-only">Question 28</span><span aria-hidden="true">28</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(29)"><span class="sr-only">Question 29</span><span aria-hidden="true">29</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(30)"><span class="sr-only">Question 30</span><span aria-hidden="true">30</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(31)"><span class="sr-only">Question 31</span><span aria-hidden="true">31</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(32)"><span class="sr-only">Question 32</span><span aria-hidden="true">32</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(33)"><span class="sr-only">Question 33</span><span aria-hidden="true">33</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(34)"><span class="sr-only">Question 34</span><span aria-hidden="true">34</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(35)"><span class="sr-only">Question 35</span><span aria-hidden="true">35</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(36)"><span class="sr-only">Question 36</span><span aria-hidden="true">36</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(37)"><span class="sr-only">Question 37</span><span aria-hidden="true">37</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(38)"><span class="sr-only">Question 38</span><span aria-hidden="true">38</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(39)"><span class="sr-only">Question 39</span><span aria-hidden="true">39</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(40)"><span class="sr-only">Question 40</span><span aria-hidden="true">40</span></button>
+            </div>
+        </div>
+        <button id="deliver-button" aria-label="Review your answers" class="footer__deliverButton___3FM07">
+            <i class="fa fa fa-check" aria-hidden="true"></i>
+            <span>Check Answers</span>
+        </button>
+    </nav>
+
+    <div id="contextMenu" class="context-menu">
+        <div id="menu-note" class="context-menu-item" onclick="addNote()">📝 Take note</div>
+        <div id="menu-highlight-colors" class="context-menu-item" style="display: flex; gap: 15px; justify-content: center; padding: 12px 16px;">
+            <button type="button" class="color-btn yellow" onclick="highlightText('yellow')" title="Highlight Yellow"></button>
+            <button type="button" class="color-btn green" onclick="highlightText('green')" title="Highlight Green"></button>
+            <button type="button" class="color-btn pink" onclick="highlightText('pink')" title="Highlight Pink"></button>
+        </div>
+        <div id="menu-clear" class="context-menu-item" onclick="clearHighlight()">🗑️ Delete</div>
+        <div id="menu-clear-all" class="context-menu-item" onclick="clearAllHighlights()">🗑️ Delete all</div>
+    </div>
+
+    <div id="results-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeResultsModal()">&times;</button>
+            <h2>Results</h2>
+            <div id="submit-status" style="display: none; text-align: center; margin-bottom: 15px; padding: 10px; border-radius: 4px; font-weight: bold;"></div>
+            <div class="results-summary">
+                <p>Score: <span id="results-score"></span> / 40</p>
+                <p>IELTS Band: <span id="results-band"></span></p>
+            </div>
+            <div id="results-details" class="results-details-container"></div>
+        </div>
+    </div>
+
+    <script>
+    window.testMeta = {
+        "totalQuestions": 40,
+        "parts": [
+            {"part": 1, "start": 1, "end": 13},
+            {"part": 2, "start": 14, "end": 26},
+            {"part": 3, "start": 27, "end": 40}
+        ],
+        "correctAnswers": {
+            "1": ["drum", "Drum"], "2": ["crank", "Crank"], "3": ["paper", "Paper"], "4": ["slits", "Slits"], "5": ["glass", "Glass"], 
+            "6": ["moving", "Moving"], "7": ["Zoetrope", "zoetrope"], "8": ["disc", "Disc"], "9": "TRUE", "10": "FALSE", 
+            "11": "FALSE", "12": "TRUE", "13": "NOT GIVEN", 
+            "14": "C", "15": "D", "16": "G", "17": "D", "18": "E", "19": "B", "20": "D", 
+            "21": "C", "22": "F", "23": ["scene", "Scene"], "24": ["separators", "Separators"], "25": ["host-selling", "Host-selling"], "26": ["funnier", "Funnier"], 
+            "27": "D", "28": "A", "29": "B", "30": "C", "31": "D", "32": "YES", 
+            "33": "NO", "34": "NO", "35": "NOT GIVEN", "36": "YES", "37": "D", "38": "A", "39": "F", "40": "C"
+        }
+    };
+    </script>
+    
+    <script>
+    window.testExplanations = {
+        "1": 'Trích dẫn: Đoạn A: "Originally called a Daedalum, but better known by its later name of Zoetrope, Horner\'s device consisted of a hollow drum, rotated by means of a crank." (Từ điền: drum).',
+        "2": 'Trích dẫn: Đoạn A: "Originally called a Daedalum, but better known by its later name of Zoetrope, Horner\'s device consisted of a hollow drum, rotated by means of a crank." (Từ điền: crank).',
+        "3": 'Trích dẫn: Đoạn A: "Around the drum’s inner surface was a strip of paper with a sequence of paintings, drawings, or illustrations on it." (Từ điền: paper).',
+        "4": 'Trích dẫn: Đoạn A: "As the device turned, the viewer could observe the illusion of moving images through regularly spaced narrow slits." (Từ điền: slits).',
+        "5": 'Trích dẫn: Đoạn B: "In 1861, the US inventor Coleman Sellers patented the Kinematoscope, a device containing a sequence of stereoscopic (3D) photos on glass plates..." (Từ điền: glass).',
+        "6": 'Trích dẫn: Đoạn B: "1870 saw the first public demonstrations of US inventor Henry Renno Heyl\'s Phasmatrope, one of the earliest devices to show apparently ‘moving’ photographs." (Từ điền: moving).',
+        "7": 'Trích dẫn: Đoạn C: "Devised in 1877 by Frenchman Charles Emile Reynaud, this refined version of the Zoetrope had mirrors at the centre of the drum." (Từ điền: Zoetrope).',
+        "8": 'Trích dẫn: Đoạn C: "Images appeared on a screen, having been projected from a series of photos printed on a disc that turned when the machine was operating." (Từ điền: disc).',
+        "9": 'Trích dẫn: Đoạn D: "In 1882, French innovator and physiologist Etienne-Jules Marey... constructed a camera (or ‘photographic gun’) that could take 12 photographs per second. Marey\'s chronophotographs, as he called them, were revolutionary, and he was soon able to achieve a rate of 30 images per second." (TRUE).',
+        "10": 'Trích dẫn: Đoạn E: "Although its bulky motor was soon to be replaced with a lightweight hand-crank mechanism..." (Động cơ sớm bị thay thế, không phải dùng trong nhiều năm - FALSE).',
+        "11": 'Trích dẫn: Đoạn F: "...Monkeyshines No. 1, the only surviving film from the cylinder Kinetoscope..." (Chỉ duy nhất một bộ phim còn sống sót, không phải "several" - FALSE).',
+        "12": 'Trích dẫn: Đoạn G: "This multi-purpose device, which combined camera, printer, and projecting capabilities..." (Camera để làm, projecting để chiếu - TRUE).',
+        "13": 'Trích dẫn: Đoạn G chỉ nói Lumières trình chiếu bộ phim thương mại đầu tiên cho công chúng tại Salon Indien. Không nói về việc liệu "không có khán giả nào từng xem phim trước đó hay chưa" (NOT GIVEN).',
+        "14": 'Trích dẫn: Đoạn C: "Today, the number of channels received in the average US home has escalated with the diffusion of cable television and satellite technologies. In this new multi-channel era, there are numerous national program services..." (Khớp C).',
+        "15": 'Trích dẫn: Đoạn D: "Approximately 80% of all advertising targeted at children falls within four product categories: toys, cereals, candies, and fast-food restaurants..." (Khớp D).',
+        "16": 'Trích dẫn: Đoạn G: "This type of advertising makes the task of discriminating between program and commercial content particularly difficult for young children (Kunkel, 1988) and is thus restricted in the US by the Federal Communications Commission..." (Khớp G).',
+        "17": 'Trích dẫn: Đoạn D: "...they use the strategy of introducing unique sound effects and rapidly moving images... The other most common persuasive strategy... is to associate the product with playfulness and happiness..." (Khớp D).',
+        "18": 'Trích dẫn: Đoạn E: "Rather than informing young viewers about the importance of a nutritious breakfast, this common disclaimer actually leaves many children with the misimpression that cereal alone is sufficient for a meal." (Khớp E).',
+        "19": 'Trích dẫn: Đoạn D: "The other most common persuasive strategy employed in advertising to children is to associate the product with playfulness and happiness, rather than to provide any actual product-related information (Kunkel et al, 1992)." (Khớp B).',
+        "20": 'Trích dẫn: Đoạn C: "In decades past, television programming targeted at children was limited and relegated to time slots unpopular with their parents, such as Saturday mornings (Turow, 1981)." (Khớp D).',
+        "21": 'Trích dẫn: Đoạn B: "According to another estimate, children aged 14 years and under make $24 billion in direct purchases and influence $190 billion in family purchases... (McNeal, 1998)." (Khớp C).',
+        "22": 'Trích dẫn: Đoạn E: "In contrast, the use of child-friendly language such as ‘you have to put it together\' more than doubled the proportion of children who understood the qualifying message (Liebert et al, 1977)." (Khớp F).',
+        "23": 'Trích dẫn: Đoạn F: "Most children below the age of 4 or 5 exhibit low awareness of the concept of commercials, frequently explaining them as if they were a scene in the program itself." (Từ điền: scene).',
+        "24": 'Trích dẫn: Đoạn G: "Although most children\'s programs indicate that a commercial break is coming... research reveals that these \'separators\' generally do not help children to recognize advertising content..." (Từ điền: separators).',
+        "25": 'Trích dẫn: Đoạn G: "When an ad includes one of the characters featured in a program, this is known as host-selling." (Từ điền: host-selling).',
+        "26": 'Trích dẫn: Đoạn F: "...children first recognize the difference between programs and commercials based on either affective (\'commercials are funnier than TV programs\') or perceptual (\'commercials are short and programs are long\') cues..." (Từ điền: funnier).',
+        "27": 'Trích dẫn: Đoạn 3: "When poor teachers are fired, new ones are needed – and they will have come through the same educational system that failed to make fine teachers of their predecessors." (Khớp D).',
+        "28": 'Trích dẫn: Đoạn 4: "Around the world, few newly qualified teachers are well enough prepared for the classroom." (Khớp A).',
+        "29": 'Trích dẫn: Đoạn 5: "They become better teachers in their first few years as they get to grips with real pupils in real classrooms, but after that improvements tail off." (Khớp B).',
+        "30": 'Trích dẫn: Đoạn 6: "They use tried-and-tested instructional techniques to ensure that all brains are working all the time – for example, asking questions in the classroom with “cold calling*” rather than relying on the same eager pupils putting up their hands." (Khớp C).',
+        "31": 'Trích dẫn: Đoạn 9: "The best head teachers hold novices’ hands by helping them prepare high quality lessons and arranging for more-experienced teachers to cover for them when they need time for further study and practice." (Khớp D).',
+        "32": 'Trích dẫn: Đoạn 3: "Education has a history of lurching from one ‘miracle’ solution to the next. The best of them even achieve some good." (YES).',
+        "33": 'Trích dẫn: Đoạn 7: "Like other complex skills, teaching requires a route to mastery that is not based on abstruse theory but on intense, guided practice grounded in subject-matter knowledge and pedagogical methods." (Trái ngược, bài đọc nói không nên dựa trên lý thuyết trừu tượng - NO).',
+        "34": 'Trích dẫn: Đoạn 8: "Courses that produce teachers who go on to do little to improve their pupils’ learning should not receive subsidies..." (Trái ngược, không nên nhận trợ cấp - NO).',
+        "35": 'Trích dẫn: Bài viết không đề cập đến việc "giáo dục hiện đang thiếu kinh phí, điều này đang dẫn đến các vấn đề trong các trường học". (NOT GIVEN).',
+        "36": 'Trích dẫn: Đoạn 10: "But ensuring the best teachers stay in the classroom will, in most places, mean paying more." (YES).',
+        "37": 'Trích dẫn: Đoạn 2: "The aim is to make ordinary teachers great, just as sports coaches help athletes of all abilities to improve their personal best." (Khớp D).',
+        "38": 'Trích dẫn: Đoạn 7: "Like other complex skills, teaching requires a route to mastery that is not based on abstruse theory but on intense, guided practice..." (Khớp A).',
+        "39": 'Trích dẫn: Đoạn 8: "Teacher-training institutions need to be more rigorous. A century ago, medical schools raised the calibre of doctors by introducing systematic curriculums and providing clinical experience." (Khớp F).',
+        "40": 'Trích dẫn: Đoạn 11: "Improving the quality of the average teacher would raise the profession’s prestige, setting up a virtuous cycle in which more talented graduates clamoured to join." (Khớp C).'
+    };
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const launchScreen = document.getElementById('launchScreen');
+        const app = document.getElementById('app');
+        const startNormalBtn = document.getElementById('startNormalBtn');
+        const launchTitle = document.getElementById('launchTestTitle');
+        if (launchTitle && document.title) { launchTitle.textContent = document.title; }
+        let examStarted = false;
+        let currentStudentName = "";
+        let currentStudentClass = "";
+
+        const beginExam = () => {
+            if (examStarted) return;
+            const nameInput = document.getElementById('studentName');
+            const classInput = document.getElementById('studentClass');
+            const errorMsg = document.getElementById('launchError');
+            if (!nameInput.value.trim() || !classInput.value.trim()) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            errorMsg.style.display = 'none';
+            currentStudentName = nameInput.value.trim();
+            currentStudentClass = classInput.value.trim();
+            examStarted = true;
+            if (launchScreen) launchScreen.style.display = 'none';
+            if (app) app.style.display = 'block';
+            initialize();
+        };
+
+        if (startNormalBtn) { startNormalBtn.addEventListener('click', beginExam); }
+        
+        const testMeta = window.testMeta || { totalQuestions: 40, parts: [], correctAnswers: {} };
+        const partRanges = testMeta.parts || [];
+        const correctAnswers = testMeta.correctAnswers || {};
+        const totalQuestions = testMeta.totalQuestions || Object.keys(correctAnswers).length;
+
+        let currentPassage = partRanges[0]?.part || 1;
+        let currentQuestion = partRanges[0]?.start || 1;
+        let pendingSelectionRange = null;
+        let activeAnnotationTarget = null;
+        let timeInSeconds = 3600;
+        let timerInterval;
+        let hasSubmitted = false;
+        let activeQuestionElement = null;
+        const markedQuestions = new Set();
+        const markButtons = new Map();
+        const COUNTDOWN_THRESHOLD = 300;
+
+        const timerDisplay = document.querySelector('.timer-display');
+        const timerToggleButton = document.getElementById('timer-toggle-btn');
+        const timerResetButton = document.getElementById('timer-reset-btn');
+        const deliverButton = document.getElementById('deliver-button');
+        const resizer = document.getElementById('resizer');
+        const passagePanel = document.getElementById('passage-panel');
+        const questionsPanel = document.getElementById('questions-panel');
+        const contextMenu = document.getElementById('contextMenu');
+        const menuHighlightColors = document.getElementById('menu-highlight-colors');
+        const menuNote = document.getElementById('menu-note');
+        const menuClear = document.getElementById('menu-clear');
+        const menuClearAll = document.getElementById('menu-clear-all');
+
+        const playIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>';
+        const pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+        const bookmarkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>';
+
+        function initialize() {
+            startTimer();
+            const firstPart = partRanges[0]?.part || 1;
+            switchToPart(firstPart);
+            document.body.addEventListener('input', updateAllIndicators);
+            document.body.addEventListener('change', updateAllIndicators);
+            deliverButton.addEventListener('click', checkAnswers);
+            timerToggleButton.addEventListener('click', toggleTimer);
+            timerResetButton.addEventListener('click', resetTimer);
+            document.querySelectorAll('[data-q-start]').forEach(el => {
+                el.addEventListener('click', (ev) => {
+                    if (ev.target.closest('input, select, label, .tf-options, .multi-choice-option, .matching-form-row')) { return; }
+                    const qNum = parseInt(el.dataset.qStart, 10);
+                    if (currentQuestion !== qNum) { goToQuestion(qNum); }
+                });
+            });
+            resizer.addEventListener('mousedown', initResize, false);
+            initializeContextMenu();
+            initializeQuestionMarkers();
+        }
+
+        function highlightEvidenceInPassage(explanationText) {
+            let targetPhrase = "";
+            const match = explanationText.match(/"([^"]+)"/);
+            if (match) { targetPhrase = match[1].trim(); } 
+            else { targetPhrase = explanationText.replace(/^.*?Trích dẫn:\s*/i, "").trim(); }
+            if (!targetPhrase) return;
+            let cleanQuery = targetPhrase.replace(/^\.\.\./, "").replace(/\.\.\.$/, "").trim();
+            if (!cleanQuery) return;
+            const currentPassageEl = passagePanel.querySelector('.reading-passage:not(.hidden)');
+            if (!currentPassageEl) return;
+            const walker = document.createTreeWalker(currentPassageEl, NodeFilter.SHOW_TEXT, null, false);
+            let node;
+            let found = false;
+            while (node = walker.nextNode()) {
+                const text = node.nodeValue;
+                const index = text.indexOf(cleanQuery);
+                if (index !== -1) {
+                    const range = document.createRange();
+                    range.setStart(node, index);
+                    range.setEnd(node, index + cleanQuery.length);
+                    const span = document.createElement('span');
+                    span.className = 'annotation annotation-highlight highlight-blue';
+                    span.dataset.type = 'highlight';
+                    span.dataset.color = 'blue';
+                    try {
+                        range.surroundContents(span);
+                        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    } catch (e) {}
+                    break;
+                }
+            }
+            if (!found) {
+                const words = cleanQuery.split(/\s+/).filter(w => w.length > 4);
+                if (words.length > 0) {
+                    const keyword = words[0];
+                    walker.currentNode = currentPassageEl;
+                    while (node = walker.nextNode()) {
+                        const text = node.nodeValue;
+                        const index = text.indexOf(keyword);
+                        if (index !== -1) {
+                            const range = document.createRange();
+                            range.setStart(node, index);
+                            range.setEnd(node, Math.min(index + cleanQuery.length, text.length));
+                            const span = document.createElement('span');
+                            span.className = 'annotation annotation-highlight highlight-blue';
+                            span.dataset.type = 'highlight';
+                            span.dataset.color = 'blue';
+                            try {
+                                range.surroundContents(span);
+                                span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            } catch (e) {}
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        function checkAnswers() {
+            if (hasSubmitted) return;
+            hasSubmitted = true;
+            const allInputs = document.querySelectorAll('input, select, textarea');
+            allInputs.forEach(input => { input.disabled = true; });
+            deliverButton.disabled = true;
+            deliverButton.style.cursor = 'not-allowed';
+            const timeTakenSecs = 3600 - timeInSeconds;
+            clearInterval(timerInterval);
+            timerInterval = null;
+            timerToggleButton.innerHTML = playIcon;
+            let score = 0;
+            const resultsDetailsContainer = document.getElementById('results-details');
+            resultsDetailsContainer.innerHTML = '';
+            document.querySelectorAll('.correct, .incorrect, .correct-answer-highlight').forEach(el => { el.classList.remove('correct', 'incorrect', 'correct-answer-highlight'); });
+            document.querySelectorAll('.correct-answer-display').forEach(el => el.remove());
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionKey = String(i);
+                const correctAnswer = correctAnswers[questionKey];
+                let userAnswer = '';
+                let isCorrect = false;
+                let userAnswerDisplay = 'Not Answered';
+                const correctAnswerText = Array.isArray(correctAnswer) ? correctAnswer.join(' / ') : correctAnswer;
+
+                const textInput = document.getElementById(`q${i}`);
+                const radioGroup = document.querySelectorAll(`input[name="q${i}"][type="radio"]`);
+                const selectInput = document.getElementById(`q${i}`);
+                
+                if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                    const element = textInput.closest('.matching-form-row') || textInput;
+                    userAnswer = textInput.value.trim();
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        textInput.parentNode.insertBefore(correctAnswerSpan, textInput.nextSibling);
+                    }
+                }
+                else if (selectInput && selectInput.tagName === 'SELECT') {
+                    const element = selectInput.closest('.matching-form-row') || selectInput;
+                    userAnswer = selectInput.value;
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        selectInput.parentNode.insertBefore(correctAnswerSpan, selectInput.nextSibling);
+                    }
+                }
+                else if (radioGroup.length > 0) {
+                    const questionContainer = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    const checkedRadio = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (checkedRadio) {
+                        userAnswer = checkedRadio.value;
+                        userAnswerDisplay = userAnswer;
+                        isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                        const userLabel = checkedRadio.closest('.tf-option, .multi-choice-option');
+                        if (userLabel) { userLabel.classList.add(isCorrect ? 'correct' : 'incorrect'); }
+                    }
+                    if (isCorrect) { score++; }
+                    else {
+                        if (questionContainer){
+                            const firstCorrect = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswerText;
+                            const correctOptionEl = questionContainer.querySelector(`input[value="${firstCorrect}"]`);
+                            if (correctOptionEl) {
+                                const correctLabel = correctOptionEl.closest('.tf-option, .multi-choice-option');
+                                if (correctLabel) { correctLabel.classList.add('correct-answer-highlight'); }
+                            }
+                        }
+                    }
+                }
+                   
+                const resultRow = `
+                    <div class="result-row ${isCorrect ? '' : 'incorrect'}">
+                        <span class="q-num">${i}</span>
+                        <span class="user-ans">${userAnswerDisplay}</span>
+                        <span class="correct-ans">${correctAnswerText}</span>
+                    </div>`;
+                resultsDetailsContainer.innerHTML += resultRow;
+                
+                const navButton = document.querySelector(`.subQuestion[onclick="goToQuestion(${i})"]`);
+                if (navButton) {
+                    navButton.classList.remove('answered', 'active');
+                    navButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+
+                if (window.testExplanations && window.testExplanations[i]) {
+                    let container = null;
+                    if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                        container = textInput.closest('li') || textInput.closest('p');
+                    } else if (selectInput && selectInput.tagName === 'SELECT') {
+                        container = selectInput.closest('.matching-form-row');
+                    } else if (radioGroup.length > 0) {
+                        container = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    }
+                    if (container) {
+                        let expElement = document.createElement('div');
+                        expElement.className = 'explanation-box show';
+                        expElement.dataset.forQ = i;
+                        expElement.innerHTML = `<div class="explanation-title">💡 Giải thích câu ${i} (Bấm vào đây để xem evidence):</div><div>${window.testExplanations[i]}</div>`;
+                        expElement.addEventListener('click', () => { highlightEvidenceInPassage(window.testExplanations[i]); });
+                        const checkContainer = container.classList.contains('matching-form-row') || container.tagName === 'P' ? container.parentNode : container;
+                        if (!checkContainer.querySelector(`.explanation-box[data-for-q="${i}"]`)) { checkContainer.appendChild(expElement); }
+                    }
+                }
+            }
+            
+            const bandScore = calculateBandScore(score);
+            
+            document.getElementById('results-score').textContent = score;
+            document.getElementById('results-band').textContent = bandScore;
+            document.getElementById('results-modal').classList.remove('hidden');
+            
+            sendResultsToGoogle(score, bandScore, timeTakenSecs);
+        }
+        
+        function sendResultsToGoogle(score, bandScore, timeTakenSecs) {
+            const statusDiv = document.getElementById('submit-status');
+            statusDiv.style.display = 'block';
+            statusDiv.style.backgroundColor = '#fff3cd';
+            statusDiv.style.color = '#856404';
+            statusDiv.textContent = '⏳ Đang gửi kết quả về hệ thống...';
+
+            const minutes = Math.floor(timeTakenSecs / 60);
+            const seconds = timeTakenSecs % 60;
+            const timeStr = `${minutes} phút ${seconds} giây`;
+            const dateStr = new Date().toLocaleString('vi-VN');
+            const examTitle = document.getElementById('launchTestTitle').textContent || document.title;
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby7tYg_WIbxhkhK8NpoHs7s5GW3svAD56ZswWfimJgR-NMnzbbmTCBXwchyqhCI69pa/exec';
+            
+            const params = new URLSearchParams();
+            params.append('studentName', currentStudentName);
+            params.append('studentClass', currentStudentClass);
+            params.append('score', `${score}/${totalQuestions}`);
+            params.append('bandScore', bandScore); 
+            params.append('timeTaken', timeStr);
+            params.append('submitDate', dateStr);
+            params.append('examTitle', examTitle);
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: params.toString() 
+            })
+            .then(() => {
+                statusDiv.style.backgroundColor = '#d4edda';
+                statusDiv.style.color = '#155724';
+                statusDiv.textContent = '✅ Kết quả đã được ghi nhận và gửi thành công!';
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                statusDiv.style.backgroundColor = '#f8d7da';
+                statusDiv.style.color = '#721c24';
+                statusDiv.textContent = '⚠️ Có lỗi xảy ra khi gửi. Vui lòng chụp màn hình gửi giáo viên.';
+            });
+        }
+
+        function calculateBandScore(score) {
+            if (score >= 39) return '9.0';
+            const mapping = { 40: 9.0, 39: 9.0, 38: 8.5, 37: 8.5, 36: 8.0, 35: 8.0, 34: 7.5, 33: 7.5, 32: 7.0, 31: 7.0, 30: 7.0, 29: 6.5, 28: 6.5, 27: 6.5, 26: 6.0, 25: 6.0, 24: 6.0, 23: 5.5, 22: 5.5, 21: 5.5, 20: 5.5, 19: 5.0, 18: 5.0, 17: 5.0, 16: 5.0, 15: 5.0, 14: 4.5, 13: 4.5, 12: 4.0, 11: 4.0, 10: 4.0, 9: 3.5, 8: 3.5, 7: 3.0, 6: 3.0, 5: 2.5, 4: 2.5 };
+            if (score <= 0) return 0.0; if (score === 1) return 1.0; if (score <= 3) return 2.0; if (score <= 5) return 2.5; return mapping[score] || 0.0;
+        }
+
+        window.closeResultsModal = function() { document.getElementById('results-modal').classList.add('hidden'); }
+
+        const getFirstQuestionOfPart = (partNumber) => { const match = partRanges.find(p => p.part === partNumber); return match ? match.start : 1; };
+        const getPartForQuestion = (questionNumber) => { const match = partRanges.find(p => questionNumber >= p.start && questionNumber <= p.end); return match ? match.part : partRanges[0]?.part || 1; };
+
+        function switchToPart(partNumber) {
+            currentPassage = partNumber;
+            document.querySelectorAll('.reading-passage, .question-set, .part-header').forEach(el => { el.classList.add('hidden'); });
+            document.getElementById(`passage-text-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`questions-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`part-header-${partNumber}`).classList.remove('hidden');
+            document.querySelectorAll('.footer__questionWrapper___1tZ46').forEach((wrapper, index) => { wrapper.classList.toggle('selected', (index + 1) === partNumber); });
+            goToQuestion(getFirstQuestionOfPart(partNumber));
+        }
+        
+        function goToQuestion(questionNumber) {
+            currentQuestion = questionNumber;
+            const passageNumber = getPartForQuestion(questionNumber);
+            if (currentPassage !== passageNumber) { switchToPart(passageNumber); return; }
+            if (activeQuestionElement) { activeQuestionElement.classList.remove('active-question', 'active-input'); }
+            let targetEl = document.querySelector(`[data-q-start="${questionNumber}"]`);
+            if (targetEl) {
+                activeQuestionElement = targetEl;
+                if (targetEl.matches('input[type="text"]') || targetEl.matches('select')) { targetEl.classList.add('active-input'); } 
+                else { targetEl.classList.add('active-question'); }
+                scrollIntoViewIfNeeded(targetEl);
+            } else {
+                 const pMatch = document.querySelector(`.matching-form-row select[id="q${questionNumber}"]`);
+                 if(pMatch) {
+                    activeQuestionElement = pMatch; pMatch.classList.add('active-input'); scrollIntoViewIfNeeded(pMatch);
+                 }
+            }
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            const activeNav = Array.from(navButtons).find(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                return qNum === currentQuestion;
+            });
+            if (activeNav) { activeNav.classList.add('active'); }
+            const inputs = document.querySelectorAll('.answer-input');
+            inputs.forEach(input => input.classList.remove('active-input'));
+            const activeInput = document.getElementById(`q${currentQuestion}`);
+            if (activeInput) { activeInput.classList.add('active-input'); if (typeof activeInput.focus === 'function') { activeInput.focus(); } }
+        }
+        
+        window.nextQuestion = () => currentQuestion < totalQuestions && goToQuestion(currentQuestion + 1);
+        window.previousQuestion = () => currentQuestion > 1 && goToQuestion(currentQuestion - 1);
+
+        function updateAllIndicators() { partRanges.forEach(range => updateAttemptedCount(range.part, range.start, range.end)); updateAnsweredNav(); }
+        
+        function updateAnsweredNav() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                if (!isNaN(qNum) && isQuestionAnswered(qNum)) { btn.classList.add('answered'); } 
+                else { btn.classList.remove('answered'); }
+            });
+        }
+        
+        function isQuestionAnswered(qNum) {
+            const textInput = document.getElementById(`q${qNum}`);
+            if (textInput && typeof textInput.value === 'string' && textInput.value.trim() !== '') return true;
+            const radio = document.querySelector(`input[name="q${qNum}"]:checked`);
+            if (radio) return true;
+            const select = document.getElementById(`q${qNum}`);
+            if (select && select.tagName === 'SELECT' && select.value !== '') return true;
+            return false;
+        }
+
+        function scrollIntoViewIfNeeded(element) {
+            const panel = element.closest('.questions-panel, .passage-panel');
+            const panelRect = panel.getBoundingClientRect();
+            const elementRect = element.getBoundingClientRect();
+            if (elementRect.top < panelRect.top || elementRect.bottom > panelRect.bottom) { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        }
+        
+        function updateTimerDisplay() {
+            const displaySeconds = Math.max(timeInSeconds, 0);
+            if (displaySeconds > COUNTDOWN_THRESHOLD) {
+                const minutesRemaining = Math.ceil(displaySeconds / 60);
+                timerDisplay.textContent = `${minutesRemaining} minutes remaining`;
+            } else {
+                const minutes = Math.floor(displaySeconds / 60);
+                const seconds = displaySeconds % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+
+        function handleTimeExpired() {
+            timeInSeconds = 0; updateTimerDisplay(); clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; checkAnswers();
+        }
+
+        function startTimer() {
+            if (hasSubmitted) return;
+            if (timerInterval) clearInterval(timerInterval);
+            updateTimerDisplay();
+            timerInterval = setInterval(() => { timeInSeconds = Math.max(timeInSeconds - 1, 0); updateTimerDisplay(); if (timeInSeconds <= 0) { handleTimeExpired(); } }, 1000);
+            timerToggleButton.innerHTML = pauseIcon;
+        }
+
+        function pauseTimer() { clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; }
+        function toggleTimer() { if (timerInterval) { pauseTimer(); } else { startTimer(); } }
+        function resetTimer() { timeInSeconds = 3600; updateTimerDisplay(); startTimer(); }
+        
+        function initResize(e) {
+            e.preventDefault(); const startX = e.clientX; const startWidth = passagePanel.offsetWidth;
+            const doDrag = (e) => { const newWidth = startWidth + e.clientX - startX; if (newWidth > 200 && (document.body.clientWidth - newWidth - resizer.offsetWidth) > 200) { passagePanel.style.flex = `0 0 ${newWidth}px`; } };
+            const stopDrag = () => { window.removeEventListener('mousemove', doDrag, false); window.removeEventListener('mouseup', stopDrag, false); };
+            window.addEventListener('mousemove', doDrag, false); window.addEventListener('mouseup', stopDrag, false);
+        }
+        
+        const ANNOTATION_CLASSES = { highlight: 'annotation-highlight', note: 'annotation-note' };
+
+        function unwrapElement(element) {
+            const parent = element?.parentNode; if (!parent) return;
+            while (element.firstChild) { parent.insertBefore(element.firstChild, element); }
+            parent.removeChild(element);
+        }
+
+        function selectionWithinPanels(selection) {
+            const anchor = selection.anchorNode; const focus = selection.focusNode;
+            const inPanels = node => node && (passagePanel.contains(node) || questionsPanel.contains(node));
+            return inPanels(anchor) && inPanels(focus);
+        }
+
+        function isRangeInsidePanels(range) {
+            const root = range.commonAncestorContainer;
+            return passagePanel.contains(root) || questionsPanel.contains(root);
+        }
+
+        function getCurrentSelectionRange() {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
+            return selection.getRangeAt(0).cloneRange();
+        }
+
+        function positionContextMenu(x, y) {
+            contextMenu.style.display = 'block'; const menuHeight = contextMenu.offsetHeight; const menuWidth = contextMenu.offsetWidth;
+            let left = x; let top = y - menuHeight - 8;
+            if (left + menuWidth > window.innerWidth) left = window.innerWidth - menuWidth - 8;
+            if (left < 8) left = 8; if (top < 8) top = y + 8;
+            contextMenu.style.left = `${left}px`; contextMenu.style.top = `${top}px`;
+        }
+
+        function resetSelectionState() { pendingSelectionRange = null; activeAnnotationTarget = null; }
+
+        function showMenuForSelection(event) {
+            menuHighlightColors.style.display = 'flex'; menuNote.style.display = 'flex'; menuClear.style.display = 'none'; menuClearAll.style.display = 'none';
+            contextMenu.dataset.mode = 'create'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function showMenuForAnnotation(event, target) {
+            activeAnnotationTarget = target; pendingSelectionRange = null; window.getSelection().removeAllRanges();
+            menuHighlightColors.style.display = 'none'; menuNote.style.display = 'none'; menuClear.style.display = 'flex'; menuClearAll.style.display = 'flex';
+            contextMenu.dataset.mode = 'manage'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function closeContextMenu(resetSelection = false) {
+            contextMenu.style.display = 'none'; contextMenu.dataset.mode = '';
+            if (resetSelection) { window.getSelection().removeAllRanges(); }
+            resetSelectionState();
+        }
+
+        function expandRangeToAnnotations(range, selector) {
+            const spans = Array.from(document.querySelectorAll(selector));
+            spans.forEach(span => {
+                if (!range.intersectsNode(span)) return;
+                const spanRange = document.createRange(); spanRange.selectNode(span);
+                if (range.compareBoundaryPoints(Range.START_TO_START, spanRange) > 0) { range.setStartBefore(span); }
+                if (range.compareBoundaryPoints(Range.END_TO_END, spanRange) < 0) { range.setEndAfter(span); }
+            });
+        }
+
+        function unwrapAnnotationsInRange(range, type) {
+            const selector = type === 'highlight' ? `.${ANNOTATION_CLASSES.highlight}` : `.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`;
+            document.querySelectorAll(selector).forEach(span => { if (range.intersectsNode(span)) { unwrapElement(span); } });
+        }
+
+        function getTextNodesInRange(range, type) {
+            const nodes = [];
+            const shouldInclude = (node) => {
+                if (!node || !node.nodeValue || !node.nodeValue.trim()) return false;
+                if (!range.intersectsNode(node)) return false;
+                if (type === 'highlight' && node.parentElement?.closest(`.${ANNOTATION_CLASSES.note}`)) { return false; }
+                return true;
+            };
+            if (range.commonAncestorContainer.nodeType === Node.TEXT_NODE) {
+                if (shouldInclude(range.commonAncestorContainer)) { nodes.push(range.commonAncestorContainer); } return nodes;
+            }
+            const walker = document.createTreeWalker(range.commonAncestorContainer, NodeFilter.SHOW_TEXT, { acceptNode: (node) => shouldInclude(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+            while (walker.nextNode()) { nodes.push(walker.currentNode); }
+            return nodes;
+        }
+
+        function wrapTextPortion(node, range, type, noteText = '', highlightColor = 'yellow') {
+            let startOffset = 0; let endOffset = node.nodeValue.length;
+            if (node === range.startContainer && range.startOffset > startOffset) { startOffset = range.startOffset; }
+            if (node === range.endContainer && range.endOffset < endOffset) { endOffset = range.endOffset; }
+            if (startOffset >= endOffset) return;
+            const selectedText = node.splitText(startOffset); selectedText.splitText(endOffset - startOffset);
+            const span = document.createElement('span');
+            span.classList.add('annotation', type === 'highlight' ? ANNOTATION_CLASSES.highlight : ANNOTATION_CLASSES.note);
+            span.dataset.type = type;
+            if (type === 'highlight') {
+                const allowedColors = ['yellow', 'green', 'pink']; const safeColor = allowedColors.includes(highlightColor) ? highlightColor : 'yellow';
+                span.dataset.color = safeColor; span.classList.add(`highlight-${safeColor}`);
+            }
+            if (type === 'note') {
+                const content = noteText || ''; span.dataset.note = content;
+                if (content) { span.setAttribute('data-note', content); span.title = content; } 
+                else { span.removeAttribute('data-note'); span.title = 'Note'; }
+            }
+            selectedText.parentNode.insertBefore(span, selectedText);
+            span.appendChild(selectedText);
+        }
+
+        function mergeAdjacentAnnotations() {
+            const annotations = document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+            annotations.forEach(span => {
+                if (!span.parentNode) return;
+                let cursor = span.nextSibling;
+                while (true) {
+                    const whitespaceBetween = [];
+                    while (cursor && cursor.nodeType === Node.TEXT_NODE && !cursor.textContent.trim()) { whitespaceBetween.push(cursor); cursor = cursor.nextSibling; }
+                    if (cursor && cursor.nodeType === Node.ELEMENT_NODE && cursor.classList.contains('annotation') && cursor.dataset.type === span.dataset.type && (span.dataset.type !== 'note' || (span.dataset.note || '') === (cursor.dataset.note || ''))) {
+                        whitespaceBetween.forEach(node => span.appendChild(node));
+                        while (cursor.firstChild) { span.appendChild(cursor.firstChild); }
+                        const after = cursor.nextSibling; cursor.remove(); cursor = after;
+                    } else { break; }
+                }
+                if (!span.textContent.trim()) { unwrapElement(span); }
+            });
+        }
+
+        function handleTextSelection(event) {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed || !selection.toString().trim()) { return; }
+            if (!selectionWithinPanels(selection)) { return; }
+            const range = selection.getRangeAt(0).cloneRange();
+            pendingSelectionRange = range; activeAnnotationTarget = null;
+            showMenuForSelection(event);
+        }
+
+        function initializeContextMenu() {
+            const panels = [passagePanel, questionsPanel];
+            panels.forEach(panel => { panel.addEventListener('mouseup', (e) => { setTimeout(() => handleTextSelection(e), 0); }); });
+            document.addEventListener('click', (e) => {
+                if (contextMenu.contains(e.target)) return;
+                const annotation = e.target.closest(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+                if (annotation) { showMenuForAnnotation(e, annotation); return; }
+                closeContextMenu();
+            });
+        }
+
+        function applyAnnotation(type, noteText = '', highlightColor = 'yellow') {
+            const baseRange = pendingSelectionRange ? pendingSelectionRange.cloneRange() : getCurrentSelectionRange();
+            if (!baseRange || baseRange.collapsed || !isRangeInsidePanels(baseRange)) { closeContextMenu(true); return; }
+            if (type === 'highlight') { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.highlight}`); } 
+            else { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.note}`); }
+            unwrapAnnotationsInRange(baseRange, type);
+            const targets = getTextNodesInRange(baseRange, type);
+            targets.forEach(node => wrapTextPortion(node, baseRange, type, noteText, highlightColor));
+            mergeAdjacentAnnotations(); closeContextMenu(true);
+        }
+
+        function highlightText(color = 'yellow') { applyAnnotation('highlight', '', color); }
+        function addNote() { const note = prompt('Nhập nội dung ghi chú (Take note):'); if (note === null) { closeContextMenu(); return; } applyAnnotation('note', note.trim()); }
+        function clearHighlight() { if (activeAnnotationTarget) { unwrapElement(activeAnnotationTarget); mergeAdjacentAnnotations(); } closeContextMenu(true); }
+        function clearAllHighlights() { document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`).forEach(unwrapElement); mergeAdjacentAnnotations(); closeContextMenu(true); }
+
+        function findQuestionAnchor(qNum) {
+            const mcqNumber = document.querySelector(`.mcq-question-number[data-q-number="${qNum}"]`); if (mcqNumber) return mcqNumber;
+            const tfNumber = Array.from(document.querySelectorAll('.tf-question-number')).find(el => parseInt(el.textContent, 10) === qNum); if (tfNumber) return tfNumber;
+            const strongLabel = Array.from(document.querySelectorAll(`label[for="q${qNum}"] strong`)).find(el => /^\d+$/.test(el.textContent.trim())); if (strongLabel) return strongLabel;
+            const genericLabel = document.querySelector(`label[for="q${qNum}"]`); if (genericLabel) return genericLabel;
+            const textInput = document.getElementById(`q${qNum}`); if (textInput) return textInput; return null;
+        }
+
+        function createMarkerButton(anchor, qNum) {
+            if (!anchor || anchor.closest('.question-number-with-mark') || anchor.closest('.markable-blank-wrapper')) return null;
+            const isInput = anchor.tagName === 'INPUT' || anchor.tagName === 'SELECT';
+            const isInlineBlank = isInput;
+            const wrapper = document.createElement('span'); wrapper.dataset.questionNumber = qNum;
+            const parent = anchor.parentNode; if (!parent) return null;
+            if (isInlineBlank) { wrapper.className = 'markable-blank-wrapper'; parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor); } 
+            else {
+                wrapper.className = 'question-number-with-mark';
+                const displayMode = window.getComputedStyle(anchor).display;
+                if (displayMode === 'block' || displayMode === 'flex') { wrapper.style.display = 'flex'; wrapper.style.alignItems = 'center'; }
+                parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor);
+            }
+            const button = document.createElement('button'); button.type = 'button';
+            button.className = isInlineBlank ? 'mark-toggle-btn inside-blank' : 'mark-toggle-btn';
+            button.dataset.questionNumber = qNum; button.setAttribute('aria-label', `Đánh dấu câu ${qNum}`); button.innerHTML = bookmarkIcon;
+            button.addEventListener('click', (e) => { e.stopPropagation(); toggleMark(qNum); });
+            wrapper.appendChild(button);
+            const markHost = wrapper.closest('.tf-question, .matching-form-row, .matching-question-item, .question, .drag-drop-question, .summary-question, .paragraph-matching-question') || wrapper;
+            if(markHost) markHost.classList.add('markable-question');
+            markButtons.set(qNum, button); return button;
+        }
+
+        function initializeQuestionMarkers() { for (let i = 1; i <= totalQuestions; i++) { const anchor = findQuestionAnchor(i); createMarkerButton(anchor, i); } }
+
+        function toggleMark(qNum) {
+            const isMarked = markedQuestions.has(qNum);
+            if (isMarked) { markedQuestions.delete(qNum); } else { markedQuestions.add(qNum); }
+            updateMarkState(qNum, !isMarked);
+        }
+
+        function updateMarkState(qNum, marked) {
+            const btn = markButtons.get(qNum); if (btn) { btn.classList.toggle('marked', marked); btn.setAttribute('aria-pressed', marked ? 'true' : 'false'); }
+            const navButton = Array.from(document.querySelectorAll('.subQuestion')).find(b => { const hiddenSpan = b.querySelector('[aria-hidden="true"]'); const num = parseInt(hiddenSpan ? hiddenSpan.textContent : b.textContent.replace(/\D/g, ''), 10); return num === qNum; });
+            if (navButton) { navButton.classList.toggle('marked', marked); }
+        }
+
+        function updateAttemptedCount(part, startQ, endQ) {
+            let answeredCount = 0; for (let i = startQ; i <= endQ; i++) { if (isQuestionAnswered(i)) { answeredCount++; } }
+            const partHeader = document.querySelector(`.footer__questionNo___3WNct[onclick="switchToPart(${part})"]`);
+            if (partHeader) { const countSpan = partHeader.querySelector('.attemptedCount'); if (countSpan) { countSpan.textContent = `${answeredCount} of ${endQ - startQ + 1}`; } }
+        }
+
+        window.nextQuestion = nextQuestion; window.previousQuestion = previousQuestion; window.goToQuestion = goToQuestion; window.switchToPart = switchToPart; window.closeResultsModal = closeResultsModal; window.highlightText = highlightText; window.addNote = addNote; window.clearHighlight = clearHighlight; window.clearAllHighlights = clearAllHighlights;
+    });
+    </script>
+</body>
+</html>

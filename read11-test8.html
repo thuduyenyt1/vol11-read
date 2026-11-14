@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap" rel="stylesheet">
+    <title>IELTS Full Reading Practice - V11 Test 8</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; background-color: #ffffff; line-height: 1.4; font-size: 16px; }
+        .header { background: linear-gradient(120deg, #e9eefb, #dfe7ff, #e9eefb); background-size: 200% 200%; animation: bannerFlow 8s ease-in-out infinite; padding: 10px 20px; border-bottom: 1px solid #d7def5; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: nowrap; position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 60px; }
+        .header-right { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto; justify-content: flex-start; }
+        .header-ad { display: inline-flex; align-items: center; gap: 0; padding: 4px 10px; border-radius: 14px; border: 1px solid rgba(215, 222, 245, 0.9); background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(4px); text-decoration: none; color: inherit; box-shadow: 0 10px 24px rgba(33, 58, 128, 0.12); min-width: 180px; max-width: calc(100% - 70px); width: auto; flex: 1 1 auto; height: 48px; overflow: hidden; }
+        .ad-copy { display: flex; flex-direction: column; gap: 0; width: 100%; overflow: hidden; position: relative; }
+        .ad-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #6b7ac7; margin: 0; font-weight: 700; }
+        .ad-marquee { display: flex; gap: 24px; width: 100%; align-items: center; padding-left: 4px; }
+        .ad-headline { margin: 0; font-size: 16px; font-weight: 800; color: #1c2566; white-space: nowrap; }
+        .ad-loop { display: flex; gap: 40px; }
+        .ad-close { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #cdd6f5; background: rgba(255, 255, 255, 0.7); color: #46507a; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease; text-decoration: none; font-weight: 800; flex: 0 0 auto; margin-left: 6px; font-size: 16px; }
+        .ad-close:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(70, 80, 122, 0.25); background: #f6f8ff; }
+        @keyframes bannerFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .main-container { margin-top: 90px; display: flex; flex-direction: column; background: #ffffff; height: calc(100vh - 90px); }
+        .panels-container { display: flex; flex: 1; overflow: hidden; }
+        .passage-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; }
+        .text-center { text-align: center; }
+        .reading-passage h4 { font-family: 'Merriweather', 'Times New Roman', serif; font-size: 22px; font-weight: 600; color: #2c3e50; line-height: 1.4; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4a90e2; padding-bottom: 5px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+        .reading-passage p { margin-bottom: 1.2em; }
+        .questions-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; border-left: 1px solid #e0e0e0; }
+        .resizer { width: 10px; cursor: col-resize; background-color: #f0f0f0; background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 10 30"><path d="M4 11h2v2H4zM4 15h2v2H4zM4 19h2v2H4z" fill="%23888"/></svg>'); background-repeat: no-repeat; background-position: center; flex-shrink: 0; flex-grow: 0; }
+        .nav-arrows { position: fixed; bottom: 100px; right: 20px; display: flex; gap: 5px; z-index: 101; }
+        .nav-arrow { width: 50px; height: 50px; background: #333; color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; }
+        .nav-arrow:hover { background: #555; }
+        .nav-row { position: fixed; bottom: 0; left: 0; right: 0; background: #ffffff; padding: 0; display: flex; align-items: center; height: 80px; z-index: 100; }
+        .footer__questionWrapper___1tZ46 { display: flex; align-items: center; margin-right: 20px; }
+        .footer__questionNo___3WNct { background: none; border: none; padding: 10px 15px; font-size: 16px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background-color 0.2s; }
+        .footer__questionNo___3WNct:hover { background-color: #f8f9fa; }
+        .section-prefix { font-size: 16px; }
+        .sectionNr { font-size: 16px; font-weight: bold; }
+        .attemptedCount { font-size: 14px; color: #666; margin-left: 5px; font-weight: 400; }
+        @media (max-width: 768px) { .attemptedCount { display: none; } }
+        .footer__questionWrapper___1tZ46.selected .attemptedCount { display: none; }
+        .footer__subquestionWrapper___9GgoP { display: none; gap: 2px; margin-left: 10px; }
+        .footer__questionWrapper___1tZ46.selected .footer__subquestionWrapper___9GgoP { display: flex; }
+        .subQuestion { width: 32px; height: 32px; border: 1px solid #ccc; background: white; color: #333; font-size: 14px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; border-radius: 2px; }
+        .subQuestion.answered { background-color: #6b7ac7; color: #ffffff; border-color: #46507a; font-weight: bold; }
+        .subQuestion.correct { background-color: #28a745; color: white; border-color: #28a745; }
+        .subQuestion.incorrect { background-color: #dc3545; color: white; border-color: #dc3545; }
+        .subQuestion.marked { position: relative; color: #333; }
+        .subQuestion:hover { background-color: #f0f0f0; border-color: #999; }
+        .subQuestion.active { background-color: #4a90e2; color: white; border-color: #4a90e2; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+        .footer__deliverButton___3FM07 { margin-left: auto; margin-right: 20px; background-color: #f0f0f0; color: #333; border: 1px solid #ccc; padding: 12px 20px; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s, border-color 0.2s; min-width: 170px; justify-content: center; }
+        .footer__deliverButton___3FM07:hover { background-color: #e0e0e0; border-color: #bbb; }
+        .footer__deliverButton___3FM07:disabled { background: #e9ecef; color: #6c757d; cursor: not-allowed; border-color: #ddd; }
+        .fa-check::before { content: "✓"; }
+        .hidden { display: none !important; }
+        .context-menu { position: absolute; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: none; min-width: 140px; overflow: hidden; }
+        .context-menu-item { padding: 12px 16px; cursor: pointer; font-size: 16px; border-bottom: 1px solid #f0f0f0; transition: background-color 0.2s; display: flex; align-items: center; gap: 8px; }
+        .context-menu-item:hover { background-color: #f8f9fa; }
+        .context-menu-item:last-child { border-bottom: none; }
+        .color-btn { width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; padding: 0; background-color: transparent; }
+        .color-btn:hover { transform: scale(1.15); box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
+        .color-btn.yellow { background-color: #fff3a3; }
+        .color-btn.green { background-color: #b4f0c1; }
+        .color-btn.pink { background-color: #ffc7df; }
+        .annotation-highlight { background-color: var(--highlight-color, #fff3a3); border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); cursor: pointer; }
+        .annotation-highlight.highlight-yellow { --highlight-color: #fff3a3; }
+        .annotation-highlight.highlight-green { --highlight-color: #b4f0c1; }
+        .annotation-highlight.highlight-pink { --highlight-color: #ffc7df; }
+        .annotation-highlight.highlight-blue { --highlight-color: #d0ebff; border: 1px dashed #339af0; }
+        .annotation-note { background-color: #b4f0c1; border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); position: relative; cursor: pointer; }
+        .annotation-note[data-note]:hover::after { content: attr(data-note); position: absolute; left: 50%; bottom: 100%; transform: translate(-50%, -6px); background: #1f2937; color: #fff; padding: 6px 10px; border-radius: 4px; white-space: nowrap; font-size: 13px; z-index: 2000; }
+        .question { margin-bottom: 40px; }
+        .question p { margin-bottom: 10px; }
+        .question-prompt { margin-bottom: 20px; }
+        .question-title { font-size: 18px; font-weight: 700; text-align: center; margin: 6px 0 10px; color: #000; }
+        .answer-input { border: 1px solid #888; border-radius: 4px; background-color: #fff; padding: 2px 5px; font-size: 16px; text-align: center; margin-right: 4px; margin-left: 4px; transition: border-color 0.3s, box-shadow 0.3s; height: 28px; width: 150px; z-index: 10; position: relative; pointer-events: auto; }
+        .answer-input.active-input { border-color: #4a90e2; box-shadow: 0 0 3px 1px rgba(74, 144, 226, 0.5); }
+        .answer-input::placeholder { color: #999; font-weight: bold; text-align: center; }
+        .answer-input.correct { border-color: #28a745; background-color: #e9f7ef; }
+        .answer-input.incorrect { border-color: #dc3545; background-color: #f8d7da; color: #721c24; }
+        .part-header { background-color: #f1f2ec; padding: 10px 16px; border: 1px solid #e0e0e0; text-align: left; margin: 8px 20px; border-radius: 5px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .timer-container { display: flex; position: relative; cursor: default; color: #333; font-size: 16px; font-weight: 500; align-items: center; gap: 12px; flex: 0 0 auto; min-width: 220px; padding: 4px 10px; border-radius: 14px; border: 1px solid #d7def5; background: rgba(255, 255, 255, 0.24); box-shadow: 0 8px 18px rgba(33, 58, 128, 0.08); }
+        .timer-controls { display: flex; align-items: center; gap: 8px; margin-left: 15px; }
+        .timer-controls button { background: #f0f0f0; border: 1px solid #ccc; border-radius: 50%; padding: 0; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .timer-controls button:hover { background: #e0e0e0; }
+        .tf-question { margin-bottom: 25px; padding: 10px 0px; border-radius: 4px; transition: border-color 0.3s, background-color 0.3s; }
+        .tf-question-line { display: flex; align-items: flex-start; margin-bottom: 15px; padding: 5px 0px; border-radius: 4px; }
+        .tf-question-number, .question-number-box { border: 2px solid #ccc; padding: 2px 8px; margin-right: 10px; border-radius: 3px; font-weight: bold; transition: border-color 0.3s; display: inline-block; }
+        .tf-question-text { padding-top: 3px; }
+        .tf-options { padding-left: 5px; }
+        .tf-option { display: block; margin-bottom: 12px; cursor: pointer; display: flex; align-items: center; }
+        .tf-option input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .tf-question.correct .tf-question-line { background-color: #e9f7ef; }
+        .tf-question.incorrect .tf-question-line { background-color: #f8d7da; }
+        .multi-choice-question { margin-bottom: 20px; padding: 10px; border-radius: 4px; border: 3px solid transparent; transition: border-color 0.3s, background-color 0.3s; }
+        .multi-choice-option { margin-bottom: 10px; padding: 8px; border-radius: 4px; transition: background-color 0.3s; }
+        .multi-choice-option label { display: flex; align-items: center; cursor: pointer; font-size: 16px; }
+        .multi-choice-option input[type="checkbox"], .multi-choice-option input[type="radio"] { margin-right: 12px; transform: scale(1.3); accent-color: #4a90e2; }
+        .multi-choice-option.correct { background-color: #e9f7ef; }
+        .multi-choice-option.incorrect { background-color: #f8d7da; }
+        .matching-form-container { margin-top: 20px; }
+        .matching-form-row { display: flex; align-items: center; margin-bottom: 12px; gap: 12px; flex-wrap: wrap; }
+        .matching-form-label { width: auto; flex: 1 1 320px; margin-right: 8px; }
+        .matching-form-row select.answer-input { width: 220px; flex-shrink: 0; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; display: flex; justify-content: center; align-items: center; }
+        .modal-overlay.hidden { display: none; }
+        .modal-content { background: white; padding: 25px; border-radius: 8px; width: 90%; max-width: 600px; max-height: 80vh; display: flex; flex-direction: column; position: relative; }
+        .modal-close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 28px; cursor: pointer; color: #888; }
+        .modal-content h2 { text-align: center; margin-bottom: 15px; color: #333; }
+        .results-summary { display: flex; justify-content: space-around; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-align: center; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .results-details-container { overflow-y: auto; padding-right: 10px; }
+        .result-row { display: grid; grid-template-columns: 40px 1fr 1fr; gap: 15px; padding: 8px 5px; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+        .result-row.incorrect { background-color: #f8d7da; }
+        .result-row .q-num { font-weight: bold; }
+        .result-row .user-ans { color: #555; }
+        .result-row .correct-ans { color: #155724; font-weight: 500; }
+        .correct-answer-display { font-weight: bold; color: #28a745; margin-left: 10px; font-size: 14px; }
+        .correct-answer-highlight { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; padding: 4px; }
+        html, body { width: 100%; height: 100%; overflow: hidden; }
+        #launchScreen, #app { width: 100vw; height: 100vh; }
+        #app { display: none; }
+        #launchScreen { display: flex; align-items: center; justify-content: center; padding: 24px; background: radial-gradient(circle at 0% 0%, rgba(206, 219, 255, 0.48), transparent 34%), radial-gradient(circle at 100% 100%, rgba(221, 229, 255, 0.44), transparent 38%), #f4f6fc; color: #1f2b59; }
+        .launch-card { width: min(980px, 100%); border: 1px solid #d7def5; border-radius: 18px; background: linear-gradient(180deg, #ffffff, #f7f9ff); box-shadow: 0 16px 38px rgba(33, 58, 128, 0.14); padding: 28px 30px 22px; display: grid; gap: 12px; }
+        .launch-eyebrow { margin: 0; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #6f7cb2; font-weight: 700; }
+        .launch-title { margin: 4px 0 0; font-size: clamp(26px, 3.5vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: #1c2566; }
+        .launch-meta { margin: 8px 0 0; color: #3c4a81; font-size: 15px; font-weight: 600; }
+        .launch-guide { border: 1px solid #d7def5; border-radius: 12px; background: #f2f5ff; padding: 14px; display: grid; gap: 6px; }
+        .launch-main { margin: 0; font-size: clamp(18px, 2.2vw, 23px); line-height: 1.32; font-weight: 700; color: #1d2a60; }
+        .launch-sub { margin: 0; color: #4c598f; font-size: 14px; line-height: 1.45; }
+        .student-info-form { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .student-info-form input { width: 100%; padding: 12px 15px; border: 1px solid #c5d0f2; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.2s; }
+        .student-info-form input:focus { border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); }
+        .launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+        .launch-btn { border: 1px solid #c5d0f2; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 700; padding: 11px 16px; color: #24336e; background: #ffffff; transition: transform 0.12s ease; box-shadow: 0 8px 20px rgba(35, 54, 110, 0.14); width: 100%; text-align: center; font-size: 16px; }
+        .launch-btn:hover { transform: translateY(-1px); background: #f6f8ff; }
+        .explanation-box { display: none; margin-top: 10px; margin-bottom: 15px; padding: 12px 15px; background-color: #f0f7ff; border-left: 4px solid #4a90e2; border-radius: 4px; font-size: 15px; color: #2c3e50; line-height: 1.5; width: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: background-color 0.2s ease; }
+        .explanation-box:hover { background-color: #e2efff; }
+        .explanation-box.show { display: block; animation: fadeIn 0.4s ease-in-out; }
+        .explanation-title { font-weight: 700; margin-bottom: 6px; color: #1c2566; display: flex; align-items: center; gap: 6px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        .options-list { list-style-type: none; padding-left: 0; margin-bottom: 15px; }
+        .options-list li { margin-bottom: 5px; }
+        .options-list-label { font-weight: bold; margin-right: 8px; }
+        .example-box { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <section id="launchScreen" aria-label="Launch screen">
+        <div class="launch-card">
+            <div>
+                <p class="launch-eyebrow">IELTS Test Launcher</p>
+                <h1 class="launch-title" id="launchTestTitle">V11 Test 8 - Reading</h1>
+                <p class="launch-meta">Dạng bài: Reading</p>
+            </div>
+            <div class="launch-guide">
+                <p class="launch-main">Nhấn F11 để bắt đầu làm bài ở chế độ toàn màn hình.</p>
+                <p class="launch-sub">Nhấn F11 lần nữa để thoát toàn màn hình nếu cần.</p>
+                <div class="student-info-form">
+                    <input type="text" id="studentName" placeholder="Nhập Họ và tên của bạn..." required>
+                    <input type="text" id="studentClass" placeholder="Nhập Lớp của bạn..." required>
+                    <p id="launchError" style="color: #dc3545; font-size: 14px; display: none; margin: 0; font-weight: 600;">⚠️ Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+                </div>
+            </div>
+            <div class="launch-row">
+                <button id="startNormalBtn" class="launch-btn" type="button">Bắt đầu làm bài</button>
+            </div>
+        </div>
+    </section>
+    <div id="app">
+    <div class="header">
+        <div class="timer-container">
+            <span class="timer-display">60 minutes remaining</span>
+            <div class="timer-controls">
+                <button id="timer-toggle-btn" title="Pause/Resume Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>
+                </button>
+                <button id="timer-reset-btn" title="Reset Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" target="_blank" rel="noopener" class="header-ad">
+                <div class="ad-copy">
+                    <p class="ad-eyebrow">Study boost</p>
+                    <div class="ad-marquee">
+                        <div class="ad-loop">
+                            <span class="ad-headline">Chinh phục IELTS dễ dàng - Tài liệu đầy đủ, chiến lược rõ ràng!</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="ad-close" type="button" aria-label="Close ad" title="Close">×</button>
+        </div>
+    </div>
+
+        <div class="main-container" id="main-container">
+            <div id="passage-header-container">
+                <div id="part-header-1" class="part-header">
+                    <p><strong>Part 1</strong></p>
+                    <p>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</p>
+                </div>
+                <div id="part-header-2" class="part-header hidden">
+                    <p><strong>Part 2</strong></p>
+                    <p>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</p>
+                </div>
+                <div id="part-header-3" class="part-header hidden">
+                    <p><strong>Part 3</strong></p>
+                    <p>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</p>
+                </div>
+            </div>
+            <div class="panels-container">
+            <div class="passage-panel" id="passage-panel">
+                <div id="passage-text-1" class="reading-passage">
+                    <h4 class="text-center">Face recognition in everyday life</h4>
+                    <p><strong>A.</strong> Remembering faces is a skill that is in daily use, but in real life we are not often called on to recognise people by their faces alone. Information about a person’s identity is supplied by body build, clothes, gait, voice and the context in which the person is encountered, as well as the face. We know very little about the relative contribution of these different aspects of personal identity to the recognition process, but mistakes in, and difficulties of, identification suggest they are important cues. Clothes and context are both liable to change, and therefore ought to be less reliable as cues, but experience suggests that we do rely on them to a considerable extent.</p>
+                    <p><strong>B.</strong> In contrast to the real-life situation, many of the experiments that test face-recognition ability use still photographs of isolated faces, taken out of context, and stripped of all the additional information that normally accompanies a face. Unlike photographs, real faces are three-dimensional and dynamic, and these characteristics yield a great deal of additional information. Face recognition in natural situations can exploit a much wider and richer range of cues and is therefore more likely to be successful.</p>
+                    <p><strong>C.</strong> We know from our own experience that people seem to vary in face memory ability quite considerably, so that it is difficult to say what level of performance should be considered normal. The incidence of errors varies with the degree of familiarity. Identification failures for faces that we know well do sometimes occur, but they are usually temporary errors due to misleading circumstances, such as changes of appearance, seeing someone in an unusual context or poor visibility. Confusions may happen if a person is very similar in appearance to someone else, but such errors do not usually persist with prolonged inspection. With less well-known faces, identification failures are more common. It is quite easy to forget the face of someone you have only met casually, seldom or a long time ago.</p>
+                    <p><strong>D.</strong> When we need to describe a person to someone else, with the intention of enabling the hearer to identify that person, we do not usually supply much detail about the face. We generally describe age, height, build and any very distinctive features (e.g. ‘curly red hair’, ‘beard’ or ‘glasses’) rather than giving a comprehensive description of the face. However, more complete and accurate recall is sometimes required, as when witnesses are asked to describe suspects to the police or to construct a photofit picture. Not all faces are equally easy to recognise. Experiments have shown that face memory is superior if a face is seen in a variety of different poses rather than in repeated exposures of the same pose. In everyday life, faces that are familiar are ones that have been seen from many different viewpoints.</p>
+                    <p><strong>E.</strong> The everyday intuition that highly distinctive faces are easier to remember than faces that are ordinary and typical has also been experimentally confirmed. The effects of attractiveness are less clearcut. Some researchers have reported that attractive faces are easier to remember, and others have reported the opposite. There is also some evidence that the memory representations of faces are influenced by stereotypes. It appears that people do believe that facial appearance is linked to personality traits, and this means that judgments may be biased by the physical appearance of a person.</p>
+                    <p><strong>F.</strong> There is a growing body of evidence that suggests that faces are represented holistically or configurally (that is, by their overall shape or structure rather than as a list of features). Tanaka and Farah (1993) argued in their studies that if facial features are represented separately, then memory for a particular feature should be as good when it is seen in isolation as when it is seen in the context of the whole face. If faces are represented configurally, then it should be more difficult to recognise isolated features. Their results showed that features learned in the context of a whole normal face were better recognised when seen in a whole normal face, although this advantage did not hold for scrambled faces or when the faces were upside down. The conclusion is that normal faces are represented configurally in memory, but the representation of scrambled or inverted faces is different. By contrast, object recognition seems to involve specific parts or features being represented and processed separately and is not so much affected by inversion.</p>
+                    <p><strong>G.</strong> Despite the evidence that faces are represented configurally, features also seem to play some part in face recognition. There is evidence, for example, that some features are more salient than others. Subjects spend more time looking at some features when memorising a face; recognition is more disrupted by changing some features than by changing others; and a face with a highly distinctive feature is more easily recognised. Experiments suggest that features in the inner part of the face (eyes, nose, and mouth) are more important than features in the outer part (hair and face shape).</p>
+                    <p><strong>H.</strong> On the whole, current research has little to say about why some people are better than others at remembering faces, and little to offer in the way of suggestions as to how we could train people to improve their face-recognition skills. Laboratory experiments using artificial material, such as photographs presenting disembodied faces divorced from any social or situational context, are posing problems that are very different from those encountered in the real world.</p>
+                </div>
+                <div id="passage-text-2" class="reading-passage hidden">
+                    <h4 class="text-center">THE BEGINNING OF THE CONSUMER AGE</h4>
+                    <p>How the public became mass consumers in the late 19th and early 20th centuries</p>
+                    <p><strong>A</strong><br>By 1900 all major industrialised countries had become aware of the importance not only of production, but also of the consumption of goods by their citizens. As a result, a culture of consumption emerged, and this played an important role in the shaping of a country's social and economic identity. One feature of this new culture was a heightened awareness of social status and a strong desire at all levels to show off newly acquired wealth. New social aspirations were expressed most visibly through the acquisition of consumer goods, and the concept of style became increasingly significant as a measure of social status.</p>
+                    <p><strong>B</strong><br>One of the ways in which manufacturers tried to encourage consumption was by identifying a particular market and deliberately making their goods look attractive to potential customers. However, the dissemination of goods to a mass market depended on more than the efforts of manufacturers and designers to inject style into products. It also required a whole network of activities and institutions. These included changes in production methods so that more goods could be manufactured; the development of new kinds of retail outlets; and the expansion of advertising to promote sales. The introduction of a credit system of buying, initiated by the Singer Sewing Machine Company in the US in the 1860s and later adopted elsewhere by furniture and electrical appliance manufacturers, also went a long way towards making more goods available to more people.</p>
+                    <p><strong>C</strong><br>There were also changes to the selling environment. The department stores established in the second half of the 19th century—Bon Marche in Paris, Macy's in New York, Harvey Nichols in London—were joined, about the turn of the century, by multi-branch retailers appealing to the lower end of the market, such as John Jacobs' furniture stores in England. In US department stores, interior areas expanded and large shop windows were introduced to show off new products to their best advantage. Electric lighting increased their visual appeal. This idea was pioneered in 1877 by the US store-owner John Wanamaker, who persuaded inventor Thomas Edison to install electricity in his Philadelphia department store.</p>
+                    <p><strong>D</strong><br>In the United States, where there were large distances between urban centres, mail order became a vital means whereby the rural population could acquire goods that they would not otherwise have been able to buy. Chicago entrepreneur Montgomery Ward launched the concept, producing a single-sheet mail-order catalogue in 1872. Three years later, his catalogue had nearly four thousand items listed on it. Businessman Richard Sears followed suit in 1891, and together with partner Alvah C. Roebuck, moved on to develop the largest mail-order company of the 20th century.</p>
+                    <p><strong>E</strong><br>By the end of the 19th century, consumer culture had taken root in industrialized countries and was changing the way people lived and perceived their own status. People were becoming increasingly conscious of their own social status, which was expressed through the acquisition of consumer goods and the concept of style. In response, manufacturers began to create goods that were more appealing to the public and retailers expanded their advertising and sales efforts.</p>
+                    <p><strong>F</strong><br>Retail stores adapted to meet the demands of consumers, with large department stores opening in major cities and multi-branch retailers appealing to the lower end of the market. The selling environment was changed with large shop windows, electric lighting, and the expansion of interior areas to showcase goods. Additionally, mail-order catalogs became popular in the United States as a way for rural populations to access goods they wouldn't otherwise have access to. These developments helped to drive the growth of consumer culture and the associated economy.</p>
+                </div>
+                <div id="passage-text-3" class="reading-passage hidden">
+                    <h4 class="text-center">Linguistic diversity</h4>
+                    <p>More than half of the world's languages are at risk, but an unlikely saviour is at hand. What is an endangered language? As a rough guide, any language with fewer than 10,000 speakers is in danger. However, the total number of speakers is not always a clear indication of the health of a language. In the South Andaman Islands, for example, fewer than 100 people speak Onge, but it is the primary language of those who do, and, critically, the first language of all the islands' children. Consequently, it would be considered less threatened than a language such as Chipewyan in Canada, where more than 4,000 belong to the ethnic group that uses the language, but there is little use among the new generation.</p>
+                    <p>It could be argued that in today's globalised world, we would be better off all speaking the same language, be it Chinese, English or Spanish. It might bring us closer together, and we would certainly be more likely to make our ideas comprehensible. The majority of linguists argue, however, that when it comes to language, diversity matters.</p>
+                    <p>“People's understanding of themselves, and their relationship with their environment are all framed in terms of concepts expressed in their own languages,” says Marcus Colchester, director of the Forest Peoples Programme. “Many indigenous peoples derive their identities from the way they live off their land. Day-to-day activities such as hunting, fishing and farming are directly connected to the spirits and mythic beings whose stories make these people who they are.”</p>
+                    <p>Louisa Maffi of Terralingua, an organisation that protects cultural and biological diversity, believes linguistic diversity is of immense value to humanity as a whole. As we lose each language, we lose a repository of knowledge, values and beliefs that, in many cases, provide alternative solutions to human problems; we diminish that pool of creativity and inventiveness, and our ability to adapt to changing circumstances.</p>
+                    <p>Nicholas Ostler, chairman of the Foundation for Endangered Languages, points out the scientific interest in maintaining linguistic diversity. To lose diversity will mean losing awareness of the many and varied features of human language — what part of our vocal tract we use for communication, the different ways we use words to reflect meaning, and so on.</p>
+                    <p>Historically, colonial governments practised policies of compelling minority cultures to speak the majority language. But even where there was little or no forced assimilation, imperialism still took its toll. Ostler cites the example of the ancient Roman Empire, which had no specific policy of forcing subjects to speak Latin, but still greatly reduced linguistic diversity across Europe. There was some prestige associated with the language — it was the medium of trade and administration — and people who wanted to get on in life tended to learn it. And similar processes are threatening minority languages today, says Ostler. “The Romans succeeded in making people live in larger communities, what we now call urbanisation. And nowadays people move from the countryside to cities where regional languages aren't maintained. The new generation grows up with their lives focused on the wider community. It may take several generations for the traditional language to fall out of use completely.”</p>
+                    <p>“Many nation states see cultural diversity as a threat to national unity,” says Maffi, “so monolingualism is promoted in specific contexts, particularly schools, where there is no multilingual education offered, and in government, where politics is only conducted in the national language. Such implicit endorsement of monolingualism conspires to place pressure on minority peoples to assimilate. There is essentially a misconceived either/or ideology: either you maintain your mother tongue, in which case you can't participate in national life, or you forget your mother tongue and learn the majority language.”</p>
+                    <p>In recent decades, the mass media have reinforced this process further and extended the penetration of metropolitan languages like English and Spanish beyond urban centres into smaller communities. The pervasive influence of the media has effectively created a cultural divide between the generations. Ostler continues, where young people speak their traditional language with their elders, but English among themselves. Maffi describes similar trends among indigenous minority groups worldwide. “All of the images children see in the media are of the glamorised lifestyle of the majority, and that lifestyle is communicated in the majority language. So it becomes very difficult for them to find a reason to value their own language.”</p>
+                    <p>When the internet first took off during the mid-1990s, many feared it represented the end of the road for endangered languages. Because it was only available to English-speakers, it would only serve to continue the decline. However, these fears proved to be unfounded, as the diversity of languages on the web increased rapidly in the years that followed. Peter Austin, of London's School of Oriental and African Studies, attributes this to the lack of control on the internet. “Unlike most TV or radio, the web isn't in the hands of big media corporations. All you need is an internet account and a little technology, and you can produce information, news, videos, and so on, as much as you want.” Minority groups around the world — in Hawaii, Mexico, Siberia, and many other places — are now taking advantage of this autonomy to document their language in written, audio and visual format. And, crucially, it is in a form which appeals to young people. It seems that the mass media could, after all, be the salvation of the world's most threatened languages.</p>
+                </div>
+            </div>
+            <div class="resizer" id="resizer"></div>
+            <div class="questions-panel" id="questions-panel">
+                <div id="questions-1" class="question-set">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="1" data-q-end="4">
+                            <div class="question-prompt">
+                                <p><strong>Questions 1-4</strong></p>
+                                <p>Choose <strong>TRUE</strong> if the statement agrees with the information given in the text, choose <strong>FALSE</strong> if the statement contradicts the information, or choose <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="1" data-q-end="1"><div class="tf-question-line"><span class="tf-question-number">1</span><span class="tf-question-text">People may be temporarily confused when attempting to identify a person who looks like someone else.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q1" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q1" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="2" data-q-end="2"><div class="tf-question-line"><span class="tf-question-number">2</span><span class="tf-question-text">When describing someone, people generally describe the person’s whole face.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q2" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q2" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="3" data-q-end="3"><div class="tf-question-line"><span class="tf-question-number">3</span><span class="tf-question-text">The best remembered faces are those that have been seen frequently in the same pose.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q3" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q3" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="4" data-q-end="4"><div class="tf-question-line"><span class="tf-question-number">4</span><span class="tf-question-text">Face recognition improves in situations where observers are shown a very expressive face.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q4" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q4" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="5" data-q-end="10">
+                            <div class="question-prompt">
+                                <p><strong>Questions 5-10</strong></p>
+                                <p>Reading Passage 1 has eight paragraphs, A–H.</p>
+                                <p>Which paragraph contains the following information?</p>
+                                <p>Choose the correct letter, <strong>A–H</strong>.</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q5" class="matching-form-label"><strong>5</strong> how certain types of face suggest ideas about the person’s character</label>
+                                    <select class="answer-input" id="q5"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q6" class="matching-form-label"><strong>6</strong> a reference to the variability in the factors used to identify a person</label>
+                                    <select class="answer-input" id="q6"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q7" class="matching-form-label"><strong>7</strong> a reservation about the future usefulness of face recognition studies</label>
+                                    <select class="answer-input" id="q7"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q8" class="matching-form-label"><strong>8</strong> situations in which remembering a face can be vitally important</label>
+                                    <select class="answer-input" id="q8"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q9" class="matching-form-label"><strong>9</strong> the fact that some parts of the face receive more attention than others</label>
+                                    <select class="answer-input" id="q9"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q10" class="matching-form-label"><strong>10</strong> examples of how mistakes may arise when identifying a person</label>
+                                    <select class="answer-input" id="q10"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="11" data-q-end="13">
+                            <div class="question-prompt">
+                                <p><strong>Questions 11-13</strong></p>
+                                <p>Choose <strong>THREE</strong> correct answers.</p>
+                                <p>Which THREE of the following problems are mentioned by the writer of the passage?</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q11" class="matching-form-label"><strong>11</strong> Option 1</label>
+                                    <select class="answer-input" id="q11"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q12" class="matching-form-label"><strong>12</strong> Option 2</label>
+                                    <select class="answer-input" id="q12"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q13" class="matching-form-label"><strong>13</strong> Option 3</label>
+                                    <select class="answer-input" id="q13"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-top: 15px;">
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> the poor results obtained from the face recognition studies</li>
+                                    <li><span class="options-list-label">B</span> the difficulty of finding sufficiently well-known faces for research purposes</li>
+                                    <li><span class="options-list-label">C</span> the effect of age on the reliability of face recognition data</li>
+                                    <li><span class="options-list-label">D</span> the contradictory findings of some studies</li>
+                                    <li><span class="options-list-label">E</span> the difficulty in judging results from studies due to the variety of methods used</li>
+                                    <li><span class="options-list-label">F</span> an inability to assess the exact reasons for success in identifying faces</li>
+                                    <li><span class="options-list-label">G</span> a difficulty in applying information obtained from tests to everyday situations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="questions-2" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="14" data-q-end="19">
+                            <div class="question-prompt">
+                                <p><strong>Questions 14-19</strong></p>
+                                <p>Reading Passage 2 has six paragraphs.</p>
+                                <p>Choose the correct heading for paragraphs from the list of headings below.</p>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <p><strong>List of headings</strong></p>
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">i</span> The emergence of consumer culture and its impact on social and economic identity</li>
+                                    <li><span class="options-list-label">ii</span> The strategies adopted by manufacturers to promote consumption</li>
+                                    <li><span class="options-list-label">iii</span> The expansion of retail networks to meet market demands</li>
+                                    <li><span class="options-list-label">iv</span> The innovations in the selling environment to enhance product presentation</li>
+                                    <li><span class="options-list-label">ix</span> The underlying drivers behind the growth of consumer culture and its economy</li>
+                                    <li><span class="options-list-label">v</span> The significance of mail order in bridging the rural-urban divide</li>
+                                    <li><span class="options-list-label">vi</span> The interplay of social aspirations, consumer goods, and style in shaping consumer culture</li>
+                                    <li><span class="options-list-label">vii</span> The proliferation of credit systems and its impact on widespread availability of goods</li>
+                                    <li><span class="options-list-label">viii</span> The development of large department stores and multi-branch retailers to cater to a wider market</li>
+                                </ul>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q14" class="matching-form-label"><strong>14</strong> Paragraph A</label>
+                                    <select class="answer-input" id="q14"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q15" class="matching-form-label"><strong>15</strong> Paragraph B</label>
+                                    <select class="answer-input" id="q15"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q16" class="matching-form-label"><strong>16</strong> Paragraph C</label>
+                                    <select class="answer-input" id="q16"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q17" class="matching-form-label"><strong>17</strong> Paragraph D</label>
+                                    <select class="answer-input" id="q17"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q18" class="matching-form-label"><strong>18</strong> Paragraph E</label>
+                                    <select class="answer-input" id="q18"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q19" class="matching-form-label"><strong>19</strong> Paragraph F</label>
+                                    <select class="answer-input" id="q19"><option value=""></option><option value="i">i</option><option value="ii">ii</option><option value="iii">iii</option><option value="iv">iv</option><option value="v">v</option><option value="vi">vi</option><option value="vii">vii</option><option value="viii">viii</option><option value="ix">ix</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="20" data-q-end="24">
+                            <div class="question-prompt">
+                                <p><strong>Questions 20-24</strong></p>
+                                <p>Complete the sentences below:</p>
+                                <p>Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                            </div>
+                            <p>By 1900, all industrialized countries were aware of the importance of both 20 <input type="text" class="answer-input" id="q20" placeholder="20"> and consumption. The culture of consumption played a crucial role in shaping a country's 21 <input type="text" class="answer-input" id="q21" placeholder="21"> and economic identity. People expressed their newly acquired wealth through the acquisition of 22 <input type="text" class="answer-input" id="q22" placeholder="22"> goods. The dissemination of goods to a mass market required a network of activities and 23 <input type="text" class="answer-input" id="q23" placeholder="23">. John Wanamaker was the first to use 24 <input type="text" class="answer-input" id="q24" placeholder="24"> in his department store to increase the visual appeal of goods.</p>
+                        </div>
+
+                        <div class="question" data-q-start="25" data-q-end="26">
+                            <div class="question-prompt">
+                                <p><strong>Questions 25-26</strong></p>
+                                <p>Choose <strong>TWO</strong> correct answers.</p>
+                                <p>Which of the following played a role in the development of consumer culture in industrialized countries?</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q25" class="matching-form-label"><strong>25</strong> Option 1</label>
+                                    <select class="answer-input" id="q25"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q26" class="matching-form-label"><strong>26</strong> Option 2</label>
+                                    <select class="answer-input" id="q26"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-top: 15px;">
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> The Singer Sewing Machine Company</li>
+                                    <li><span class="options-list-label">B</span> The department stores established in the second half of the 19th century</li>
+                                    <li><span class="options-list-label">C</span> The large distances between urban centers</li>
+                                    <li><span class="options-list-label">D</span> The expansion of interior areas in retail stores</li>
+                                    <li><span class="options-list-label">E</span> The four thousand items listed in a mail-order catalog</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questions-3" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="27" data-q-end="31">
+                            <div class="question-prompt">
+                                <p><strong>Questions 27-31</strong></p>
+                                <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, choose <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="27" data-q-end="27"><div class="tf-question-line"><span class="tf-question-number">27</span><span class="tf-question-text">The Onge language has a particularly poor chance of survival.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q27" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q27" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="28" data-q-end="28"><div class="tf-question-line"><span class="tf-question-number">28</span><span class="tf-question-text">Most linguists oppose the idea of a single global language.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q28" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q28" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="29" data-q-end="29"><div class="tf-question-line"><span class="tf-question-number">29</span><span class="tf-question-text">Many citizens of the Roman Empire chose to become Latin speakers.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q29" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q29" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="30" data-q-end="30"><div class="tf-question-line"><span class="tf-question-number">30</span><span class="tf-question-text">Majority languages such as Spanish and English are now spreading faster within smaller communities than larger ones.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q30" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q30" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="31" data-q-end="31"><div class="tf-question-line"><span class="tf-question-number">31</span><span class="tf-question-text">There is a greater proportion of English used on the internet nowadays than in the 1990s.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q31" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q31" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="32" data-q-end="35">
+                            <div class="question-prompt">
+                                <p><strong>Questions 32-35</strong></p>
+                                <p>Complete the summary using the list of words, <strong>A–I</strong>, below.</p>
+                                <div class="question-title">Disappearing languages in today's globalised world</div>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <ul class="options-list" style="display: flex; flex-wrap: wrap; gap: 15px;">
+                                    <li><span class="options-list-label">A</span> ideas</li>
+                                    <li><span class="options-list-label">B</span> speakers</li>
+                                    <li><span class="options-list-label">C</span> connections</li>
+                                    <li><span class="options-list-label">D</span> surroundings</li>
+                                    <li><span class="options-list-label">E</span> families</li>
+                                    <li><span class="options-list-label">F</span> occupations</li>
+                                    <li><span class="options-list-label">G</span> relationship</li>
+                                    <li><span class="options-list-label">H</span> words</li>
+                                    <li><span class="options-list-label">I</span> misunderstandings</li>
+                                </ul>
+                            </div>
+                            <p>If everybody spoke the same language, whether Spanish, English or Chinese, there would certainly be less chance of 32 <select class="answer-input" id="q32"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select> between people. But would society suffer if there were one global language? Experts agree that it would.</p>
+                            <p>According to Marcus Colchester, people's use of native languages is key to how they relate to their 33 <select class="answer-input" id="q33"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select>. He also emphasises the link between indigenous people's traditional 34 <select class="answer-input" id="q34"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select> and the recounting of the myths and folk tales which are integral to their sense of identity.</p>
+                            <p>Louisa Maffi describes how loss of language diversity leads to a loss of collective human knowledge, so there could be fewer 35 <select class="answer-input" id="q35"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select> available to help solve problems in the world.</p>
+                        </div>
+
+                        <div class="question" data-q-start="36" data-q-end="40">
+                            <div class="question-prompt">
+                                <p><strong>Questions 36-40</strong></p>
+                                <p>Choose the correct answer, <strong>A, B, C or D</strong>.</p>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="36" data-q-end="36">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="36">36</span><span class="mcq-question-title">In the first paragraph, the writer mentions two particular languages in order to indicate</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q36" value="A"> A. a key factor in determining how endangered a language is.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q36" value="B"> B. alternative methods of interpreting data about languages at risk.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q36" value="C"> C. different reasons why a minority language might be under threat.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q36" value="D"> D. difficulties involved in assessing a language's survival prospects.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="37" data-q-end="37">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="37">37</span><span class="mcq-question-title">What similarity between the Roman Empire and the present day does Nicholas Ostler mention?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q37" value="A"> A. the growth of international trade</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q37" value="B"> B. the shift towards living in more extended social groups</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q37" value="C"> C. the attitude of governments towards minority languages</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q37" value="D"> D. the speed with which minority languages fall out of use</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="38" data-q-end="38">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="38">38</span><span class="mcq-question-title">According to Louisa Maffi, many people wrongly believe that</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q38" value="A"> A. it is more difficult for minority-language speakers to access education.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q38" value="B"> B. majority-language speakers can participate better in national life.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q38" value="C"> C. their national government is opposed to the use of minority languages.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q38" value="D"> D. they need to choose between being a minority- or majority-language speaker.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="39" data-q-end="39">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="39">39</span><span class="mcq-question-title">What problem among minority-language speakers is mentioned in the eighth paragraph?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q39" value="A"> A. younger people's perceptions of their mother tongue</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q39" value="B"> B. breakdown of communication between the generations</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q39" value="C"> C. older people's attitudes to their children's language use</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q39" value="D"> D. generational differences in ability to access the mass media</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="40" data-q-end="40">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="40">40</span><span class="mcq-question-title">What does Peter Austin see as the main advantage of the internet for minority language groups?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q40" value="A"> A. the variety of media it can use</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q40" value="B"> B. the freedom its users can have</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q40" value="C"> C. the wide geographical area it can reach</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q40" value="D"> D. the range of people it can be accessed by</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-arrows">
+        <button class="nav-arrow" onclick="previousQuestion()" id="prevBtn">‹</button>
+        <button class="nav-arrow" onclick="nextQuestion()" id="nextBtn">›</button>
+    </div>
+
+    <nav class="nav-row perScorableItem" aria-label="Questions">
+        <div class="footer__questionWrapper___1tZ46 multiple selected" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(1)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">1</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(1)"><span class="sr-only">Question 1</span><span aria-hidden="true">1</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(2)"><span class="sr-only">Question 2</span><span aria-hidden="true">2</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(3)"><span class="sr-only">Question 3</span><span aria-hidden="true">3</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(4)"><span class="sr-only">Question 4</span><span aria-hidden="true">4</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(5)"><span class="sr-only">Question 5</span><span aria-hidden="true">5</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(6)"><span class="sr-only">Question 6</span><span aria-hidden="true">6</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(7)"><span class="sr-only">Question 7</span><span aria-hidden="true">7</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(8)"><span class="sr-only">Question 8</span><span aria-hidden="true">8</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(9)"><span class="sr-only">Question 9</span><span aria-hidden="true">9</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(10)"><span class="sr-only">Question 10</span><span aria-hidden="true">10</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(11)"><span class="sr-only">Question 11</span><span aria-hidden="true">11</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(12)"><span class="sr-only">Question 12</span><span aria-hidden="true">12</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(13)"><span class="sr-only">Question 13</span><span aria-hidden="true">13</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(2)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">2</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(14)"><span class="sr-only">Question 14</span><span aria-hidden="true">14</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(15)"><span class="sr-only">Question 15</span><span aria-hidden="true">15</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(16)"><span class="sr-only">Question 16</span><span aria-hidden="true">16</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(17)"><span class="sr-only">Question 17</span><span aria-hidden="true">17</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(18)"><span class="sr-only">Question 18</span><span aria-hidden="true">18</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(19)"><span class="sr-only">Question 19</span><span aria-hidden="true">19</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(20)"><span class="sr-only">Question 20</span><span aria-hidden="true">20</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(21)"><span class="sr-only">Question 21</span><span aria-hidden="true">21</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(22)"><span class="sr-only">Question 22</span><span aria-hidden="true">22</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(23)"><span class="sr-only">Question 23</span><span aria-hidden="true">23</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(24)"><span class="sr-only">Question 24</span><span aria-hidden="true">24</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(25)"><span class="sr-only">Question 25</span><span aria-hidden="true">25</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(26)"><span class="sr-only">Question 26</span><span aria-hidden="true">26</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(3)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">3</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 14</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(27)"><span class="sr-only">Question 27</span><span aria-hidden="true">27</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(28)"><span class="sr-only">Question 28</span><span aria-hidden="true">28</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(29)"><span class="sr-only">Question 29</span><span aria-hidden="true">29</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(30)"><span class="sr-only">Question 30</span><span aria-hidden="true">30</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(31)"><span class="sr-only">Question 31</span><span aria-hidden="true">31</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(32)"><span class="sr-only">Question 32</span><span aria-hidden="true">32</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(33)"><span class="sr-only">Question 33</span><span aria-hidden="true">33</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(34)"><span class="sr-only">Question 34</span><span aria-hidden="true">34</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(35)"><span class="sr-only">Question 35</span><span aria-hidden="true">35</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(36)"><span class="sr-only">Question 36</span><span aria-hidden="true">36</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(37)"><span class="sr-only">Question 37</span><span aria-hidden="true">37</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(38)"><span class="sr-only">Question 38</span><span aria-hidden="true">38</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(39)"><span class="sr-only">Question 39</span><span aria-hidden="true">39</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(40)"><span class="sr-only">Question 40</span><span aria-hidden="true">40</span></button>
+            </div>
+        </div>
+        <button id="deliver-button" aria-label="Review your answers" class="footer__deliverButton___3FM07">
+            <i class="fa fa fa-check" aria-hidden="true"></i>
+            <span>Check Answers</span>
+        </button>
+    </nav>
+
+    <div id="contextMenu" class="context-menu">
+        <div id="menu-note" class="context-menu-item" onclick="addNote()">📝 Take note</div>
+        <div id="menu-highlight-colors" class="context-menu-item" style="display: flex; gap: 15px; justify-content: center; padding: 12px 16px;">
+            <button type="button" class="color-btn yellow" onclick="highlightText('yellow')" title="Highlight Yellow"></button>
+            <button type="button" class="color-btn green" onclick="highlightText('green')" title="Highlight Green"></button>
+            <button type="button" class="color-btn pink" onclick="highlightText('pink')" title="Highlight Pink"></button>
+        </div>
+        <div id="menu-clear" class="context-menu-item" onclick="clearHighlight()">🗑️ Delete</div>
+        <div id="menu-clear-all" class="context-menu-item" onclick="clearAllHighlights()">🗑️ Delete all</div>
+    </div>
+
+    <div id="results-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeResultsModal()">&times;</button>
+            <h2>Results</h2>
+            <div id="submit-status" style="display: none; text-align: center; margin-bottom: 15px; padding: 10px; border-radius: 4px; font-weight: bold;"></div>
+            <div class="results-summary">
+                <p>Score: <span id="results-score"></span> / 40</p>
+                <p>IELTS Band: <span id="results-band"></span></p>
+            </div>
+            <div id="results-details" class="results-details-container"></div>
+        </div>
+    </div>
+
+    <script>
+    window.testMeta = {
+        "totalQuestions": 40,
+        "parts": [
+            {"part": 1, "start": 1, "end": 13},
+            {"part": 2, "start": 14, "end": 26},
+            {"part": 3, "start": 27, "end": 40}
+        ],
+        "correctAnswers": {
+            "1": "TRUE", "2": "FALSE", "3": "FALSE", "4": "NOT GIVEN", 
+            "5": "E", "6": "A", "7": "H", "8": "D", "9": "G", "10": "C", 
+            "11": ["D", "F", "G"], "12": ["D", "F", "G"], "13": ["D", "F", "G"], 
+            "14": "vi", "15": "ii", "16": "iv", "17": "v", "18": "i", "19": "ix", 
+            "20": ["production", "Production"], "21": ["social", "Social"], "22": ["consumer", "Consumer"], "23": ["institutions", "Institutions"], "24": ["electricity", "Electricity"], 
+            "25": ["A", "B"], "26": ["A", "B"], 
+            "27": "NO", "28": "YES", "29": "YES", "30": "NOT GIVEN", "31": "NOT GIVEN", 
+            "32": "I", "33": "D", "34": "F", "35": "A", 
+            "36": "A", "37": "B", "38": "D", "39": "A", "40": "B"
+        }
+    };
+    </script>
+    
+    <script>
+    window.testExplanations = {
+        "1": 'Trích dẫn: Đoạn C: "Confusions may happen if a person is very similar in appearance to someone else, but such errors do not usually persist with prolonged inspection." (Đồng ý với thông tin).',
+        "2": 'Trích dẫn: Đoạn D: "We generally describe age, height, build and any very distinctive features... rather than giving a comprehensive description of the face." (Thường không mô tả chi tiết toàn bộ khuôn mặt - FALSE).',
+        "3": 'Trích dẫn: Đoạn D: "Experiments have shown that face memory is superior if a face is seen in a variety of different poses rather than in repeated exposures of the same pose." (Nhìn ở nhiều tư thế thì nhớ tốt hơn là lặp lại cùng một tư thế - FALSE).',
+        "4": 'Trích dẫn: Bài viết nói về ảnh hưởng của sự hấp dẫn (attractiveness) và nét đặc trưng (distinctive features), nhưng không đề cập việc "một khuôn mặt rất biểu cảm (very expressive face)" sẽ cải thiện trí nhớ. (NOT GIVEN).',
+        "5": 'Trích dẫn: Đoạn E: "It appears that people do believe that facial appearance is linked to personality traits..." (Khớp E).',
+        "6": 'Trích dẫn: Đoạn A: "Information about a person’s identity is supplied by body build, clothes, gait, voice and the context in which the person is encountered... Clothes and context are both liable to change..." (Khớp A).',
+        "7": 'Trích dẫn: Đoạn H: "Laboratory experiments... are posing problems that are very different from those encountered in the real world." (Khớp H).',
+        "8": 'Trích dẫn: Đoạn D: "...as when witnesses are asked to describe suspects to the police or to construct a photofit picture." (Khớp D).',
+        "9": 'Trích dẫn: Đoạn G: "Experiments suggest that features in the inner part of the face (eyes, nose, and mouth) are more important than features in the outer part..." (Khớp G).',
+        "10": 'Trích dẫn: Đoạn C: "Identification failures for faces that we know well do sometimes occur, but they are usually temporary errors due to misleading circumstances, such as changes of appearance, seeing someone in an unusual context or poor visibility." (Khớp C).',
+        "11": 'Trích dẫn: Đoạn E ("Some researchers have reported that attractive faces are easier to remember, and others have reported the opposite" - Khớp D: contradictory findings). Đoạn H ("On the whole, current research has little to say about why some people are better than others at remembering faces..." - Khớp F: inability to assess exact reasons). Đoạn H ("Laboratory experiments using artificial material... are posing problems that are very different from those encountered in the real world." - Khớp G: difficulty in applying to everyday situations).',
+        "12": 'Trích dẫn: Xem giải thích câu 11. Các vấn đề được nhắc đến: D, F, G.',
+        "13": 'Trích dẫn: Xem giải thích câu 11. Các vấn đề được nhắc đến: D, F, G.',
+        "14": 'Trích dẫn: Đoạn 1: "...played an important role in the shaping of a country\'s social and economic identity. One feature... was a heightened awareness of social status... New social aspirations were expressed most visibly through the acquisition of consumer goods, and the concept of style became increasingly significant..." (Khớp vi).',
+        "15": 'Trích dẫn: Đoạn 2: "One of the ways in which manufacturers tried to encourage consumption was by identifying a particular market and deliberately making their goods look attractive... changes in production methods... expansion of advertising..." (Khớp ii).',
+        "16": 'Trích dẫn: Đoạn 3: "There were also changes to the selling environment... interior areas expanded and large shop windows were introduced to show off new products to their best advantage. Electric lighting increased their visual appeal." (Khớp iv).',
+        "17": 'Trích dẫn: Đoạn 4: "...mail order became a vital means whereby the rural population could acquire goods that they would not otherwise have been able to buy." (Khớp v).',
+        "18": 'Trích dẫn: Đoạn 5: "By the end of the 19th century, consumer culture had taken root in industrialized countries and was changing the way people lived and perceived their own status." (Khớp i).',
+        "19": 'Trích dẫn: Đoạn 6: "Retail stores adapted to meet the demands of consumers... These developments helped to drive the growth of consumer culture and the associated economy." (Khớp ix).',
+        "20": 'Trích dẫn: Đoạn 1: "By 1900 all major industrialised countries had become aware of the importance not only of production, but also of the consumption of goods..." (Từ điền: production).',
+        "21": 'Trích dẫn: Đoạn 1: "...and this played an important role in the shaping of a country\'s social and economic identity." (Từ điền: social).',
+        "22": 'Trích dẫn: Đoạn 1: "New social aspirations were expressed most visibly through the acquisition of consumer goods..." (Từ điền: consumer).',
+        "23": 'Trích dẫn: Đoạn 2: "It also required a whole network of activities and institutions." (Từ điền: institutions).',
+        "24": 'Trích dẫn: Đoạn 3: "...who persuaded inventor Thomas Edison to install electricity in his Philadelphia department store." (Từ điền: electricity).',
+        "25": 'Trích dẫn: Đoạn 2 (Singer Sewing Machine Company) và Đoạn 3 (department stores). Khớp A và B.',
+        "26": 'Trích dẫn: Xem giải thích câu 25. Đáp án: A, B.',
+        "27": 'Trích dẫn: Đoạn 1: "In the South Andaman Islands... fewer than 100 people speak Onge, but it is the primary language... and... the first language of all the islands\' children. Consequently, it would be considered less threatened..." (Nó ít bị đe dọa hơn các ngôn ngữ khác, không phải "particularly poor chance" - NO).',
+        "28": 'Trích dẫn: Đoạn 2: "The majority of linguists argue, however, that when it comes to language, diversity matters." (Đa số các nhà ngôn ngữ học đều cho rằng sự đa dạng ngôn ngữ là quan trọng, tức là họ phản đối việc chỉ có 1 ngôn ngữ toàn cầu - YES).',
+        "29": 'Trích dẫn: Đoạn 6: "...which had no specific policy of forcing subjects to speak Latin... There was some prestige associated with the language... and people who wanted to get on in life tended to learn it." (Họ tự chọn học vì sự danh giá - YES).',
+        "30": 'Trích dẫn: Bài viết nói các ngôn ngữ này đang thâm nhập vào cộng đồng nhỏ, nhưng không có câu nào so sánh tốc độ lây lan giữa cộng đồng nhỏ (smaller communities) và cộng đồng lớn (larger ones). (NOT GIVEN).',
+        "31": 'Trích dẫn: Bài viết nói "the diversity of languages on the web increased rapidly" (sự đa dạng ngôn ngữ trên web đã tăng), không có tỷ lệ phần trăm (proportion) cụ thể của tiếng Anh ngày nay so với thập niên 1990 để kết luận tiếng Anh đang chiếm tỷ lệ lớn hơn. (NOT GIVEN).',
+        "32": 'Trích dẫn: Đoạn 2: "It might bring us closer together, and we would certainly be more likely to make our ideas comprehensible." (Làm ý tưởng dễ hiểu hơn = ít sự hiểu lầm hơn - Khớp I: misunderstandings).',
+        "33": 'Trích dẫn: Đoạn 3: "People\'s understanding of themselves, and their relationship with their environment are all framed in terms of concepts expressed in their own languages..." (environment = surroundings - Khớp D).',
+        "34": 'Trích dẫn: Đoạn 3: "Day-to-day activities such as hunting, fishing and farming are directly connected to the spirits and mythic beings whose stories make these people who they are." (hunting, fishing, farming = occupations - Khớp F).',
+        "35": 'Trích dẫn: Đoạn 4: "...we lose a repository of knowledge, values and beliefs that, in many cases, provide alternative solutions to human problems..." (knowledge, values, beliefs, alternative solutions = ideas - Khớp A).',
+        "36": 'Trích dẫn: Đoạn 1 so sánh ngôn ngữ Onge (dưới 100 người nói nhưng lại là ngôn ngữ chính) với ngôn ngữ Chipewyan (hơn 4,000 người nhưng ít dùng) để kết luận: "the total number of speakers is not always a clear indication of the health of a language" (số lượng người nói không phải là yếu tố then chốt nhất) - Khớp A.',
+        "37": 'Trích dẫn: Đoạn 6: "The Romans succeeded in making people live in larger communities... And nowadays people move from the countryside to cities..." (Sự chuyển dịch sang các cộng đồng lớn hơn/đô thị hóa - Khớp B).',
+        "38": 'Trích dẫn: Đoạn 7: "There is essentially a misconceived either/or ideology: either you maintain your mother tongue... or you forget your mother tongue and learn the majority language." (Hiểu nhầm phổ biến: phải chọn 1 trong 2 - Khớp D).',
+        "39": 'Trích dẫn: Đoạn 8: "...where young people speak their traditional language with their elders, but English among themselves... All of the images children see in the media are of the glamorised lifestyle of the majority... So it becomes very difficult for them to find a reason to value their own language." (Người trẻ cảm thấy không có lý do để trân trọng ngôn ngữ của mình - Khớp A).',
+        "40": 'Trích dẫn: Đoạn 9: "...the web isn\'t in the hands of big media corporations. All you need is an internet account and a little technology, and you can produce information, news, videos, and so on, as much as you want... taking advantage of this autonomy..." (Sự tự chủ/không bị kiểm soát bởi tập đoàn lớn - Khớp C). *(Chú ý, Barem gốc chọn C dù văn bản nhấn mạnh autonomy (freedom). Chúng ta giữ đáp án C theo KEY của Test).*'
+    };
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const launchScreen = document.getElementById('launchScreen');
+        const app = document.getElementById('app');
+        const startNormalBtn = document.getElementById('startNormalBtn');
+        const launchTitle = document.getElementById('launchTestTitle');
+        if (launchTitle && document.title) { launchTitle.textContent = document.title; }
+        let examStarted = false;
+        let currentStudentName = "";
+        let currentStudentClass = "";
+
+        const beginExam = () => {
+            if (examStarted) return;
+            const nameInput = document.getElementById('studentName');
+            const classInput = document.getElementById('studentClass');
+            const errorMsg = document.getElementById('launchError');
+            if (!nameInput.value.trim() || !classInput.value.trim()) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            errorMsg.style.display = 'none';
+            currentStudentName = nameInput.value.trim();
+            currentStudentClass = classInput.value.trim();
+            examStarted = true;
+            if (launchScreen) launchScreen.style.display = 'none';
+            if (app) app.style.display = 'block';
+            initialize();
+        };
+
+        if (startNormalBtn) { startNormalBtn.addEventListener('click', beginExam); }
+        
+        const testMeta = window.testMeta || { totalQuestions: 40, parts: [], correctAnswers: {} };
+        const partRanges = testMeta.parts || [];
+        const correctAnswers = testMeta.correctAnswers || {};
+        const totalQuestions = testMeta.totalQuestions || Object.keys(correctAnswers).length;
+
+        let currentPassage = partRanges[0]?.part || 1;
+        let currentQuestion = partRanges[0]?.start || 1;
+        let pendingSelectionRange = null;
+        let activeAnnotationTarget = null;
+        let timeInSeconds = 3600;
+        let timerInterval;
+        let hasSubmitted = false;
+        let activeQuestionElement = null;
+        const markedQuestions = new Set();
+        const markButtons = new Map();
+        const COUNTDOWN_THRESHOLD = 300;
+
+        const timerDisplay = document.querySelector('.timer-display');
+        const timerToggleButton = document.getElementById('timer-toggle-btn');
+        const timerResetButton = document.getElementById('timer-reset-btn');
+        const deliverButton = document.getElementById('deliver-button');
+        const resizer = document.getElementById('resizer');
+        const passagePanel = document.getElementById('passage-panel');
+        const questionsPanel = document.getElementById('questions-panel');
+        const contextMenu = document.getElementById('contextMenu');
+        const menuHighlightColors = document.getElementById('menu-highlight-colors');
+        const menuNote = document.getElementById('menu-note');
+        const menuClear = document.getElementById('menu-clear');
+        const menuClearAll = document.getElementById('menu-clear-all');
+
+        const playIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>';
+        const pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+        const bookmarkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>';
+
+        function initialize() {
+            startTimer();
+            const firstPart = partRanges[0]?.part || 1;
+            switchToPart(firstPart);
+            document.body.addEventListener('input', updateAllIndicators);
+            document.body.addEventListener('change', updateAllIndicators);
+            deliverButton.addEventListener('click', checkAnswers);
+            timerToggleButton.addEventListener('click', toggleTimer);
+            timerResetButton.addEventListener('click', resetTimer);
+            document.querySelectorAll('[data-q-start]').forEach(el => {
+                el.addEventListener('click', (ev) => {
+                    if (ev.target.closest('input, select, label, .tf-options, .multi-choice-option, .matching-form-row')) { return; }
+                    const qNum = parseInt(el.dataset.qStart, 10);
+                    if (currentQuestion !== qNum) { goToQuestion(qNum); }
+                });
+            });
+            resizer.addEventListener('mousedown', initResize, false);
+            initializeContextMenu();
+            initializeQuestionMarkers();
+        }
+
+        function highlightEvidenceInPassage(explanationText) {
+            let targetPhrase = "";
+            const match = explanationText.match(/"([^"]+)"/);
+            if (match) { targetPhrase = match[1].trim(); } 
+            else { targetPhrase = explanationText.replace(/^.*?Trích dẫn:\s*/i, "").trim(); }
+            if (!targetPhrase) return;
+            let cleanQuery = targetPhrase.replace(/^\.\.\./, "").replace(/\.\.\.$/, "").trim();
+            if (!cleanQuery) return;
+            const currentPassageEl = passagePanel.querySelector('.reading-passage:not(.hidden)');
+            if (!currentPassageEl) return;
+            const walker = document.createTreeWalker(currentPassageEl, NodeFilter.SHOW_TEXT, null, false);
+            let node;
+            let found = false;
+            while (node = walker.nextNode()) {
+                const text = node.nodeValue;
+                const index = text.indexOf(cleanQuery);
+                if (index !== -1) {
+                    const range = document.createRange();
+                    range.setStart(node, index);
+                    range.setEnd(node, index + cleanQuery.length);
+                    const span = document.createElement('span');
+                    span.className = 'annotation annotation-highlight highlight-blue';
+                    span.dataset.type = 'highlight';
+                    span.dataset.color = 'blue';
+                    try {
+                        range.surroundContents(span);
+                        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    } catch (e) {}
+                    break;
+                }
+            }
+            if (!found) {
+                const words = cleanQuery.split(/\s+/).filter(w => w.length > 4);
+                if (words.length > 0) {
+                    const keyword = words[0];
+                    walker.currentNode = currentPassageEl;
+                    while (node = walker.nextNode()) {
+                        const text = node.nodeValue;
+                        const index = text.indexOf(keyword);
+                        if (index !== -1) {
+                            const range = document.createRange();
+                            range.setStart(node, index);
+                            range.setEnd(node, Math.min(index + cleanQuery.length, text.length));
+                            const span = document.createElement('span');
+                            span.className = 'annotation annotation-highlight highlight-blue';
+                            span.dataset.type = 'highlight';
+                            span.dataset.color = 'blue';
+                            try {
+                                range.surroundContents(span);
+                                span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            } catch (e) {}
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        function checkAnswers() {
+            if (hasSubmitted) return;
+            hasSubmitted = true;
+            const allInputs = document.querySelectorAll('input, select, textarea');
+            allInputs.forEach(input => { input.disabled = true; });
+            deliverButton.disabled = true;
+            deliverButton.style.cursor = 'not-allowed';
+            const timeTakenSecs = 3600 - timeInSeconds;
+            clearInterval(timerInterval);
+            timerInterval = null;
+            timerToggleButton.innerHTML = playIcon;
+            let score = 0;
+            const resultsDetailsContainer = document.getElementById('results-details');
+            resultsDetailsContainer.innerHTML = '';
+            document.querySelectorAll('.correct, .incorrect, .correct-answer-highlight').forEach(el => { el.classList.remove('correct', 'incorrect', 'correct-answer-highlight'); });
+            document.querySelectorAll('.correct-answer-display').forEach(el => el.remove());
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionKey = String(i);
+                const correctAnswer = correctAnswers[questionKey];
+                let userAnswer = '';
+                let isCorrect = false;
+                let userAnswerDisplay = 'Not Answered';
+                const correctAnswerText = Array.isArray(correctAnswer) ? correctAnswer.join(' / ') : correctAnswer;
+
+                const textInput = document.getElementById(`q${i}`);
+                const radioGroup = document.querySelectorAll(`input[name="q${i}"][type="radio"]`);
+                const selectInput = document.getElementById(`q${i}`);
+                
+                if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                    const element = textInput.closest('.matching-form-row') || textInput;
+                    userAnswer = textInput.value.trim();
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        textInput.parentNode.insertBefore(correctAnswerSpan, textInput.nextSibling);
+                    }
+                }
+                else if (selectInput && selectInput.tagName === 'SELECT') {
+                    const element = selectInput.closest('.matching-form-row') || selectInput;
+                    userAnswer = selectInput.value;
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        selectInput.parentNode.insertBefore(correctAnswerSpan, selectInput.nextSibling);
+                    }
+                }
+                else if (radioGroup.length > 0) {
+                    const questionContainer = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    const checkedRadio = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (checkedRadio) {
+                        userAnswer = checkedRadio.value;
+                        userAnswerDisplay = userAnswer;
+                        isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                        const userLabel = checkedRadio.closest('.tf-option, .multi-choice-option');
+                        if (userLabel) { userLabel.classList.add(isCorrect ? 'correct' : 'incorrect'); }
+                    }
+                    if (isCorrect) { score++; }
+                    else {
+                        if (questionContainer){
+                            const firstCorrect = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswerText;
+                            const correctOptionEl = questionContainer.querySelector(`input[value="${firstCorrect}"]`);
+                            if (correctOptionEl) {
+                                const correctLabel = correctOptionEl.closest('.tf-option, .multi-choice-option');
+                                if (correctLabel) { correctLabel.classList.add('correct-answer-highlight'); }
+                            }
+                        }
+                    }
+                }
+                   
+                const resultRow = `
+                    <div class="result-row ${isCorrect ? '' : 'incorrect'}">
+                        <span class="q-num">${i}</span>
+                        <span class="user-ans">${userAnswerDisplay}</span>
+                        <span class="correct-ans">${correctAnswerText}</span>
+                    </div>`;
+                resultsDetailsContainer.innerHTML += resultRow;
+                
+                const navButton = document.querySelector(`.subQuestion[onclick="goToQuestion(${i})"]`);
+                if (navButton) {
+                    navButton.classList.remove('answered', 'active');
+                    navButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+
+                if (window.testExplanations && window.testExplanations[i]) {
+                    let container = null;
+                    if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                        container = textInput.closest('li') || textInput.closest('p');
+                    } else if (selectInput && selectInput.tagName === 'SELECT') {
+                        container = selectInput.closest('.matching-form-row');
+                    } else if (radioGroup.length > 0) {
+                        container = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    }
+                    if (container) {
+                        let expElement = document.createElement('div');
+                        expElement.className = 'explanation-box show';
+                        expElement.dataset.forQ = i;
+                        expElement.innerHTML = `<div class="explanation-title">💡 Giải thích câu ${i} (Bấm vào đây để xem evidence):</div><div>${window.testExplanations[i]}</div>`;
+                        expElement.addEventListener('click', () => { highlightEvidenceInPassage(window.testExplanations[i]); });
+                        const checkContainer = container.classList.contains('matching-form-row') || container.tagName === 'P' ? container.parentNode : container;
+                        if (!checkContainer.querySelector(`.explanation-box[data-for-q="${i}"]`)) { checkContainer.appendChild(expElement); }
+                    }
+                }
+            }
+            
+            const bandScore = calculateBandScore(score);
+            
+            document.getElementById('results-score').textContent = score;
+            document.getElementById('results-band').textContent = bandScore;
+            document.getElementById('results-modal').classList.remove('hidden');
+            
+            sendResultsToGoogle(score, bandScore, timeTakenSecs);
+        }
+        
+        function sendResultsToGoogle(score, bandScore, timeTakenSecs) {
+            const statusDiv = document.getElementById('submit-status');
+            statusDiv.style.display = 'block';
+            statusDiv.style.backgroundColor = '#fff3cd';
+            statusDiv.style.color = '#856404';
+            statusDiv.textContent = '⏳ Đang gửi kết quả về hệ thống...';
+
+            const minutes = Math.floor(timeTakenSecs / 60);
+            const seconds = timeTakenSecs % 60;
+            const timeStr = `${minutes} phút ${seconds} giây`;
+            const dateStr = new Date().toLocaleString('vi-VN');
+            const examTitle = document.getElementById('launchTestTitle').textContent || document.title;
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby7tYg_WIbxhkhK8NpoHs7s5GW3svAD56ZswWfimJgR-NMnzbbmTCBXwchyqhCI69pa/exec';
+            
+            const params = new URLSearchParams();
+            params.append('studentName', currentStudentName);
+            params.append('studentClass', currentStudentClass);
+            params.append('score', `${score}/${totalQuestions}`);
+            params.append('bandScore', bandScore); 
+            params.append('timeTaken', timeStr);
+            params.append('submitDate', dateStr);
+            params.append('examTitle', examTitle);
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: params.toString() 
+            })
+            .then(() => {
+                statusDiv.style.backgroundColor = '#d4edda';
+                statusDiv.style.color = '#155724';
+                statusDiv.textContent = '✅ Kết quả đã được ghi nhận và gửi thành công!';
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                statusDiv.style.backgroundColor = '#f8d7da';
+                statusDiv.style.color = '#721c24';
+                statusDiv.textContent = '⚠️ Có lỗi xảy ra khi gửi. Vui lòng kiểm tra lại kết nối.';
+            });
+        }
+
+        function calculateBandScore(score) {
+            if (score >= 39) return '9.0';
+            const mapping = { 40: 9.0, 39: 9.0, 38: 8.5, 37: 8.5, 36: 8.0, 35: 8.0, 34: 7.5, 33: 7.5, 32: 7.0, 31: 7.0, 30: 7.0, 29: 6.5, 28: 6.5, 27: 6.5, 26: 6.0, 25: 6.0, 24: 6.0, 23: 5.5, 22: 5.5, 21: 5.5, 20: 5.5, 19: 5.0, 18: 5.0, 17: 5.0, 16: 5.0, 15: 5.0, 14: 4.5, 13: 4.5, 12: 4.0, 11: 4.0, 10: 4.0, 9: 3.5, 8: 3.5, 7: 3.0, 6: 3.0, 5: 2.5, 4: 2.5 };
+            if (score <= 0) return 0.0; if (score === 1) return 1.0; if (score <= 3) return 2.0; if (score <= 5) return 2.5; return mapping[score] || 0.0;
+        }
+
+        window.closeResultsModal = function() { document.getElementById('results-modal').classList.add('hidden'); }
+
+        const getFirstQuestionOfPart = (partNumber) => { const match = partRanges.find(p => p.part === partNumber); return match ? match.start : 1; };
+        const getPartForQuestion = (questionNumber) => { const match = partRanges.find(p => questionNumber >= p.start && questionNumber <= p.end); return match ? match.part : partRanges[0]?.part || 1; };
+
+        function switchToPart(partNumber) {
+            currentPassage = partNumber;
+            document.querySelectorAll('.reading-passage, .question-set, .part-header').forEach(el => { el.classList.add('hidden'); });
+            document.getElementById(`passage-text-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`questions-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`part-header-${partNumber}`).classList.remove('hidden');
+            document.querySelectorAll('.footer__questionWrapper___1tZ46').forEach((wrapper, index) => { wrapper.classList.toggle('selected', (index + 1) === partNumber); });
+            goToQuestion(getFirstQuestionOfPart(partNumber));
+        }
+        
+        function goToQuestion(questionNumber) {
+            currentQuestion = questionNumber;
+            const passageNumber = getPartForQuestion(questionNumber);
+            if (currentPassage !== passageNumber) { switchToPart(passageNumber); return; }
+            if (activeQuestionElement) { activeQuestionElement.classList.remove('active-question', 'active-input'); }
+            let targetEl = document.querySelector(`[data-q-start="${questionNumber}"]`);
+            if (targetEl) {
+                activeQuestionElement = targetEl;
+                if (targetEl.matches('input[type="text"]') || targetEl.matches('select')) { targetEl.classList.add('active-input'); } 
+                else { targetEl.classList.add('active-question'); }
+                scrollIntoViewIfNeeded(targetEl);
+            } else {
+                 const pMatch = document.querySelector(`.matching-form-row select[id="q${questionNumber}"]`);
+                 if(pMatch) {
+                    activeQuestionElement = pMatch; pMatch.classList.add('active-input'); scrollIntoViewIfNeeded(pMatch);
+                 }
+            }
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            const activeNav = Array.from(navButtons).find(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                return qNum === currentQuestion;
+            });
+            if (activeNav) { activeNav.classList.add('active'); }
+            const inputs = document.querySelectorAll('.answer-input');
+            inputs.forEach(input => input.classList.remove('active-input'));
+            const activeInput = document.getElementById(`q${currentQuestion}`);
+            if (activeInput) { activeInput.classList.add('active-input'); if (typeof activeInput.focus === 'function') { activeInput.focus(); } }
+        }
+        
+        window.nextQuestion = () => currentQuestion < totalQuestions && goToQuestion(currentQuestion + 1);
+        window.previousQuestion = () => currentQuestion > 1 && goToQuestion(currentQuestion - 1);
+
+        function updateAllIndicators() { partRanges.forEach(range => updateAttemptedCount(range.part, range.start, range.end)); updateAnsweredNav(); }
+        
+        function updateAnsweredNav() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                if (!isNaN(qNum) && isQuestionAnswered(qNum)) { btn.classList.add('answered'); } 
+                else { btn.classList.remove('answered'); }
+            });
+        }
+        
+        function isQuestionAnswered(qNum) {
+            const textInput = document.getElementById(`q${qNum}`);
+            if (textInput && typeof textInput.value === 'string' && textInput.value.trim() !== '') return true;
+            const radio = document.querySelector(`input[name="q${qNum}"]:checked`);
+            if (radio) return true;
+            const select = document.getElementById(`q${qNum}`);
+            if (select && select.tagName === 'SELECT' && select.value !== '') return true;
+            return false;
+        }
+
+        function scrollIntoViewIfNeeded(element) {
+            const panel = element.closest('.questions-panel, .passage-panel');
+            const panelRect = panel.getBoundingClientRect();
+            const elementRect = element.getBoundingClientRect();
+            if (elementRect.top < panelRect.top || elementRect.bottom > panelRect.bottom) { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        }
+        
+        function updateTimerDisplay() {
+            const displaySeconds = Math.max(timeInSeconds, 0);
+            if (displaySeconds > COUNTDOWN_THRESHOLD) {
+                const minutesRemaining = Math.ceil(displaySeconds / 60);
+                timerDisplay.textContent = `${minutesRemaining} minutes remaining`;
+            } else {
+                const minutes = Math.floor(displaySeconds / 60);
+                const seconds = displaySeconds % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+
+        function handleTimeExpired() {
+            timeInSeconds = 0; updateTimerDisplay(); clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; checkAnswers();
+        }
+
+        function startTimer() {
+            if (hasSubmitted) return;
+            if (timerInterval) clearInterval(timerInterval);
+            updateTimerDisplay();
+            timerInterval = setInterval(() => { timeInSeconds = Math.max(timeInSeconds - 1, 0); updateTimerDisplay(); if (timeInSeconds <= 0) { handleTimeExpired(); } }, 1000);
+            timerToggleButton.innerHTML = pauseIcon;
+        }
+
+        function pauseTimer() { clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; }
+        function toggleTimer() { if (timerInterval) { pauseTimer(); } else { startTimer(); } }
+        function resetTimer() { timeInSeconds = 3600; updateTimerDisplay(); startTimer(); }
+        
+        function initResize(e) {
+            e.preventDefault(); const startX = e.clientX; const startWidth = passagePanel.offsetWidth;
+            const doDrag = (e) => { const newWidth = startWidth + e.clientX - startX; if (newWidth > 200 && (document.body.clientWidth - newWidth - resizer.offsetWidth) > 200) { passagePanel.style.flex = `0 0 ${newWidth}px`; } };
+            const stopDrag = () => { window.removeEventListener('mousemove', doDrag, false); window.removeEventListener('mouseup', stopDrag, false); };
+            window.addEventListener('mousemove', doDrag, false); window.addEventListener('mouseup', stopDrag, false);
+        }
+        
+        const ANNOTATION_CLASSES = { highlight: 'annotation-highlight', note: 'annotation-note' };
+
+        function unwrapElement(element) {
+            const parent = element?.parentNode; if (!parent) return;
+            while (element.firstChild) { parent.insertBefore(element.firstChild, element); }
+            parent.removeChild(element);
+        }
+
+        function selectionWithinPanels(selection) {
+            const anchor = selection.anchorNode; const focus = selection.focusNode;
+            const inPanels = node => node && (passagePanel.contains(node) || questionsPanel.contains(node));
+            return inPanels(anchor) && inPanels(focus);
+        }
+
+        function isRangeInsidePanels(range) {
+            const root = range.commonAncestorContainer;
+            return passagePanel.contains(root) || questionsPanel.contains(root);
+        }
+
+        function getCurrentSelectionRange() {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
+            return selection.getRangeAt(0).cloneRange();
+        }
+
+        function positionContextMenu(x, y) {
+            contextMenu.style.display = 'block'; const menuHeight = contextMenu.offsetHeight; const menuWidth = contextMenu.offsetWidth;
+            let left = x; let top = y - menuHeight - 8;
+            if (left + menuWidth > window.innerWidth) left = window.innerWidth - menuWidth - 8;
+            if (left < 8) left = 8; if (top < 8) top = y + 8;
+            contextMenu.style.left = `${left}px`; contextMenu.style.top = `${top}px`;
+        }
+
+        function resetSelectionState() { pendingSelectionRange = null; activeAnnotationTarget = null; }
+
+        function showMenuForSelection(event) {
+            menuHighlightColors.style.display = 'flex'; menuNote.style.display = 'flex'; menuClear.style.display = 'none'; menuClearAll.style.display = 'none';
+            contextMenu.dataset.mode = 'create'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function showMenuForAnnotation(event, target) {
+            activeAnnotationTarget = target; pendingSelectionRange = null; window.getSelection().removeAllRanges();
+            menuHighlightColors.style.display = 'none'; menuNote.style.display = 'none'; menuClear.style.display = 'flex'; menuClearAll.style.display = 'flex';
+            contextMenu.dataset.mode = 'manage'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function closeContextMenu(resetSelection = false) {
+            contextMenu.style.display = 'none'; contextMenu.dataset.mode = '';
+            if (resetSelection) { window.getSelection().removeAllRanges(); }
+            resetSelectionState();
+        }
+
+        function expandRangeToAnnotations(range, selector) {
+            const spans = Array.from(document.querySelectorAll(selector));
+            spans.forEach(span => {
+                if (!range.intersectsNode(span)) return;
+                const spanRange = document.createRange(); spanRange.selectNode(span);
+                if (range.compareBoundaryPoints(Range.START_TO_START, spanRange) > 0) { range.setStartBefore(span); }
+                if (range.compareBoundaryPoints(Range.END_TO_END, spanRange) < 0) { range.setEndAfter(span); }
+            });
+        }
+
+        function unwrapAnnotationsInRange(range, type) {
+            const selector = type === 'highlight' ? `.${ANNOTATION_CLASSES.highlight}` : `.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`;
+            document.querySelectorAll(selector).forEach(span => { if (range.intersectsNode(span)) { unwrapElement(span); } });
+        }
+
+        function getTextNodesInRange(range, type) {
+            const nodes = [];
+            const shouldInclude = (node) => {
+                if (!node || !node.nodeValue || !node.nodeValue.trim()) return false;
+                if (!range.intersectsNode(node)) return false;
+                if (type === 'highlight' && node.parentElement?.closest(`.${ANNOTATION_CLASSES.note}`)) { return false; }
+                return true;
+            };
+            if (range.commonAncestorContainer.nodeType === Node.TEXT_NODE) {
+                if (shouldInclude(range.commonAncestorContainer)) { nodes.push(range.commonAncestorContainer); } return nodes;
+            }
+            const walker = document.createTreeWalker(range.commonAncestorContainer, NodeFilter.SHOW_TEXT, { acceptNode: (node) => shouldInclude(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+            while (walker.nextNode()) { nodes.push(walker.currentNode); }
+            return nodes;
+        }
+
+        function wrapTextPortion(node, range, type, noteText = '', highlightColor = 'yellow') {
+            let startOffset = 0; let endOffset = node.nodeValue.length;
+            if (node === range.startContainer && range.startOffset > startOffset) { startOffset = range.startOffset; }
+            if (node === range.endContainer && range.endOffset < endOffset) { endOffset = range.endOffset; }
+            if (startOffset >= endOffset) return;
+            const selectedText = node.splitText(startOffset); selectedText.splitText(endOffset - startOffset);
+            const span = document.createElement('span');
+            span.classList.add('annotation', type === 'highlight' ? ANNOTATION_CLASSES.highlight : ANNOTATION_CLASSES.note);
+            span.dataset.type = type;
+            if (type === 'highlight') {
+                const allowedColors = ['yellow', 'green', 'pink']; const safeColor = allowedColors.includes(highlightColor) ? highlightColor : 'yellow';
+                span.dataset.color = safeColor; span.classList.add(`highlight-${safeColor}`);
+            }
+            if (type === 'note') {
+                const content = noteText || ''; span.dataset.note = content;
+                if (content) { span.setAttribute('data-note', content); span.title = content; } 
+                else { span.removeAttribute('data-note'); span.title = 'Note'; }
+            }
+            selectedText.parentNode.insertBefore(span, selectedText);
+            span.appendChild(selectedText);
+        }
+
+        function mergeAdjacentAnnotations() {
+            const annotations = document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+            annotations.forEach(span => {
+                if (!span.parentNode) return;
+                let cursor = span.nextSibling;
+                while (true) {
+                    const whitespaceBetween = [];
+                    while (cursor && cursor.nodeType === Node.TEXT_NODE && !cursor.textContent.trim()) { whitespaceBetween.push(cursor); cursor = cursor.nextSibling; }
+                    if (cursor && cursor.nodeType === Node.ELEMENT_NODE && cursor.classList.contains('annotation') && cursor.dataset.type === span.dataset.type && (span.dataset.type !== 'note' || (span.dataset.note || '') === (cursor.dataset.note || ''))) {
+                        whitespaceBetween.forEach(node => span.appendChild(node));
+                        while (cursor.firstChild) { span.appendChild(cursor.firstChild); }
+                        const after = cursor.nextSibling; cursor.remove(); cursor = after;
+                    } else { break; }
+                }
+                if (!span.textContent.trim()) { unwrapElement(span); }
+            });
+        }
+
+        function handleTextSelection(event) {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed || !selection.toString().trim()) { return; }
+            if (!selectionWithinPanels(selection)) { return; }
+            const range = selection.getRangeAt(0).cloneRange();
+            pendingSelectionRange = range; activeAnnotationTarget = null;
+            showMenuForSelection(event);
+        }
+
+        function initializeContextMenu() {
+            const panels = [passagePanel, questionsPanel];
+            panels.forEach(panel => { panel.addEventListener('mouseup', (e) => { setTimeout(() => handleTextSelection(e), 0); }); });
+            document.addEventListener('click', (e) => {
+                if (contextMenu.contains(e.target)) return;
+                const annotation = e.target.closest(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+                if (annotation) { showMenuForAnnotation(e, annotation); return; }
+                closeContextMenu();
+            });
+        }
+
+        function applyAnnotation(type, noteText = '', highlightColor = 'yellow') {
+            const baseRange = pendingSelectionRange ? pendingSelectionRange.cloneRange() : getCurrentSelectionRange();
+            if (!baseRange || baseRange.collapsed || !isRangeInsidePanels(baseRange)) { closeContextMenu(true); return; }
+            if (type === 'highlight') { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.highlight}`); } 
+            else { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.note}`); }
+            unwrapAnnotationsInRange(baseRange, type);
+            const targets = getTextNodesInRange(baseRange, type);
+            targets.forEach(node => wrapTextPortion(node, baseRange, type, noteText, highlightColor));
+            mergeAdjacentAnnotations(); closeContextMenu(true);
+        }
+
+        function highlightText(color = 'yellow') { applyAnnotation('highlight', '', color); }
+        function addNote() { const note = prompt('Nhập nội dung ghi chú (Take note):'); if (note === null) { closeContextMenu(); return; } applyAnnotation('note', note.trim()); }
+        function clearHighlight() { if (activeAnnotationTarget) { unwrapElement(activeAnnotationTarget); mergeAdjacentAnnotations(); } closeContextMenu(true); }
+        function clearAllHighlights() { document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`).forEach(unwrapElement); mergeAdjacentAnnotations(); closeContextMenu(true); }
+
+        function findQuestionAnchor(qNum) {
+            const mcqNumber = document.querySelector(`.mcq-question-number[data-q-number="${qNum}"]`); if (mcqNumber) return mcqNumber;
+            const tfNumber = Array.from(document.querySelectorAll('.tf-question-number')).find(el => parseInt(el.textContent, 10) === qNum); if (tfNumber) return tfNumber;
+            const strongLabel = Array.from(document.querySelectorAll(`label[for="q${qNum}"] strong`)).find(el => /^\d+$/.test(el.textContent.trim())); if (strongLabel) return strongLabel;
+            const genericLabel = document.querySelector(`label[for="q${qNum}"]`); if (genericLabel) return genericLabel;
+            const textInput = document.getElementById(`q${qNum}`); if (textInput) return textInput; return null;
+        }
+
+        function createMarkerButton(anchor, qNum) {
+            if (!anchor || anchor.closest('.question-number-with-mark') || anchor.closest('.markable-blank-wrapper')) return null;
+            const isInput = anchor.tagName === 'INPUT' || anchor.tagName === 'SELECT';
+            const isInlineBlank = isInput;
+            const wrapper = document.createElement('span'); wrapper.dataset.questionNumber = qNum;
+            const parent = anchor.parentNode; if (!parent) return null;
+            if (isInlineBlank) { wrapper.className = 'markable-blank-wrapper'; parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor); } 
+            else {
+                wrapper.className = 'question-number-with-mark';
+                const displayMode = window.getComputedStyle(anchor).display;
+                if (displayMode === 'block' || displayMode === 'flex') { wrapper.style.display = 'flex'; wrapper.style.alignItems = 'center'; }
+                parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor);
+            }
+            const button = document.createElement('button'); button.type = 'button';
+            button.className = isInlineBlank ? 'mark-toggle-btn inside-blank' : 'mark-toggle-btn';
+            button.dataset.questionNumber = qNum; button.setAttribute('aria-label', `Đánh dấu câu ${qNum}`); button.innerHTML = bookmarkIcon;
+            button.addEventListener('click', (e) => { e.stopPropagation(); toggleMark(qNum); });
+            wrapper.appendChild(button);
+            const markHost = wrapper.closest('.tf-question, .matching-form-row, .matching-question-item, .question, .drag-drop-question, .summary-question, .paragraph-matching-question') || wrapper;
+            if(markHost) markHost.classList.add('markable-question');
+            markButtons.set(qNum, button); return button;
+        }
+
+        function initializeQuestionMarkers() { for (let i = 1; i <= totalQuestions; i++) { const anchor = findQuestionAnchor(i); createMarkerButton(anchor, i); } }
+
+        function toggleMark(qNum) {
+            const isMarked = markedQuestions.has(qNum);
+            if (isMarked) { markedQuestions.delete(qNum); } else { markedQuestions.add(qNum); }
+            updateMarkState(qNum, !isMarked);
+        }
+
+        function updateMarkState(qNum, marked) {
+            const btn = markButtons.get(qNum); if (btn) { btn.classList.toggle('marked', marked); btn.setAttribute('aria-pressed', marked ? 'true' : 'false'); }
+            const navButton = Array.from(document.querySelectorAll('.subQuestion')).find(b => { const hiddenSpan = b.querySelector('[aria-hidden="true"]'); const num = parseInt(hiddenSpan ? hiddenSpan.textContent : b.textContent.replace(/\D/g, ''), 10); return num === qNum; });
+            if (navButton) { navButton.classList.toggle('marked', marked); }
+        }
+
+        function updateAttemptedCount(part, startQ, endQ) {
+            let answeredCount = 0; for (let i = startQ; i <= endQ; i++) { if (isQuestionAnswered(i)) { answeredCount++; } }
+            const partHeader = document.querySelector(`.footer__questionNo___3WNct[onclick="switchToPart(${part})"]`);
+            if (partHeader) { const countSpan = partHeader.querySelector('.attemptedCount'); if (countSpan) { countSpan.textContent = `${answeredCount} of ${endQ - startQ + 1}`; } }
+        }
+
+        window.nextQuestion = nextQuestion; window.previousQuestion = previousQuestion; window.goToQuestion = goToQuestion; window.switchToPart = switchToPart; window.closeResultsModal = closeResultsModal; window.highlightText = highlightText; window.addNote = addNote; window.clearHighlight = clearHighlight; window.clearAllHighlights = clearAllHighlights;
+    });
+    </script>
+</body>
+</html>

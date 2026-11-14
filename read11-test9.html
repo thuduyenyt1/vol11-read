@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap" rel="stylesheet">
+    <title>IELTS Full Reading Practice - V11 Test 9</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; background-color: #ffffff; line-height: 1.4; font-size: 16px; }
+        .header { background: linear-gradient(120deg, #e9eefb, #dfe7ff, #e9eefb); background-size: 200% 200%; animation: bannerFlow 8s ease-in-out infinite; padding: 10px 20px; border-bottom: 1px solid #d7def5; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: nowrap; position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 60px; }
+        .header-right { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto; justify-content: flex-start; }
+        .header-ad { display: inline-flex; align-items: center; gap: 0; padding: 4px 10px; border-radius: 14px; border: 1px solid rgba(215, 222, 245, 0.9); background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(4px); text-decoration: none; color: inherit; box-shadow: 0 10px 24px rgba(33, 58, 128, 0.12); min-width: 180px; max-width: calc(100% - 70px); width: auto; flex: 1 1 auto; height: 48px; overflow: hidden; }
+        .ad-copy { display: flex; flex-direction: column; gap: 0; width: 100%; overflow: hidden; position: relative; }
+        .ad-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #6b7ac7; margin: 0; font-weight: 700; }
+        .ad-marquee { display: flex; gap: 24px; width: 100%; align-items: center; padding-left: 4px; }
+        .ad-headline { margin: 0; font-size: 16px; font-weight: 800; color: #1c2566; white-space: nowrap; }
+        .ad-loop { display: flex; gap: 40px; }
+        .ad-close { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #cdd6f5; background: rgba(255, 255, 255, 0.7); color: #46507a; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease; text-decoration: none; font-weight: 800; flex: 0 0 auto; margin-left: 6px; font-size: 16px; }
+        .ad-close:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(70, 80, 122, 0.25); background: #f6f8ff; }
+        @keyframes bannerFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .main-container { margin-top: 90px; display: flex; flex-direction: column; background: #ffffff; height: calc(100vh - 90px); }
+        .panels-container { display: flex; flex: 1; overflow: hidden; }
+        .passage-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; }
+        .text-center { text-align: center; }
+        .reading-passage h4 { font-family: 'Merriweather', 'Times New Roman', serif; font-size: 22px; font-weight: 600; color: #2c3e50; line-height: 1.4; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4a90e2; padding-bottom: 5px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+        .reading-passage p { margin-bottom: 1.2em; }
+        .questions-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; border-left: 1px solid #e0e0e0; }
+        .resizer { width: 10px; cursor: col-resize; background-color: #f0f0f0; background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 10 30"><path d="M4 11h2v2H4zM4 15h2v2H4zM4 19h2v2H4z" fill="%23888"/></svg>'); background-repeat: no-repeat; background-position: center; flex-shrink: 0; flex-grow: 0; }
+        .nav-arrows { position: fixed; bottom: 100px; right: 20px; display: flex; gap: 5px; z-index: 101; }
+        .nav-arrow { width: 50px; height: 50px; background: #333; color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; }
+        .nav-arrow:hover { background: #555; }
+        .nav-row { position: fixed; bottom: 0; left: 0; right: 0; background: #ffffff; padding: 0; display: flex; align-items: center; height: 80px; z-index: 100; }
+        .footer__questionWrapper___1tZ46 { display: flex; align-items: center; margin-right: 20px; }
+        .footer__questionNo___3WNct { background: none; border: none; padding: 10px 15px; font-size: 16px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background-color 0.2s; }
+        .footer__questionNo___3WNct:hover { background-color: #f8f9fa; }
+        .section-prefix { font-size: 16px; }
+        .sectionNr { font-size: 16px; font-weight: bold; }
+        .attemptedCount { font-size: 14px; color: #666; margin-left: 5px; font-weight: 400; }
+        @media (max-width: 768px) { .attemptedCount { display: none; } }
+        .footer__questionWrapper___1tZ46.selected .attemptedCount { display: none; }
+        .footer__subquestionWrapper___9GgoP { display: none; gap: 2px; margin-left: 10px; }
+        .footer__questionWrapper___1tZ46.selected .footer__subquestionWrapper___9GgoP { display: flex; }
+        .subQuestion { width: 32px; height: 32px; border: 1px solid #ccc; background: white; color: #333; font-size: 14px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; border-radius: 2px; }
+        .subQuestion.answered { background-color: #6b7ac7; color: #ffffff; border-color: #46507a; font-weight: bold; }
+        .subQuestion.correct { background-color: #28a745; color: white; border-color: #28a745; }
+        .subQuestion.incorrect { background-color: #dc3545; color: white; border-color: #dc3545; }
+        .subQuestion.marked { position: relative; color: #333; }
+        .subQuestion:hover { background-color: #f0f0f0; border-color: #999; }
+        .subQuestion.active { background-color: #4a90e2; color: white; border-color: #4a90e2; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+        .footer__deliverButton___3FM07 { margin-left: auto; margin-right: 20px; background-color: #f0f0f0; color: #333; border: 1px solid #ccc; padding: 12px 20px; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s, border-color 0.2s; min-width: 170px; justify-content: center; }
+        .footer__deliverButton___3FM07:hover { background-color: #e0e0e0; border-color: #bbb; }
+        .footer__deliverButton___3FM07:disabled { background: #e9ecef; color: #6c757d; cursor: not-allowed; border-color: #ddd; }
+        .fa-check::before { content: "✓"; }
+        .hidden { display: none !important; }
+        .context-menu { position: absolute; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: none; min-width: 140px; overflow: hidden; }
+        .context-menu-item { padding: 12px 16px; cursor: pointer; font-size: 16px; border-bottom: 1px solid #f0f0f0; transition: background-color 0.2s; display: flex; align-items: center; gap: 8px; }
+        .context-menu-item:hover { background-color: #f8f9fa; }
+        .context-menu-item:last-child { border-bottom: none; }
+        .color-btn { width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; padding: 0; background-color: transparent; }
+        .color-btn:hover { transform: scale(1.15); box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
+        .color-btn.yellow { background-color: #fff3a3; }
+        .color-btn.green { background-color: #b4f0c1; }
+        .color-btn.pink { background-color: #ffc7df; }
+        .annotation-highlight { background-color: var(--highlight-color, #fff3a3); border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); cursor: pointer; }
+        .annotation-highlight.highlight-yellow { --highlight-color: #fff3a3; }
+        .annotation-highlight.highlight-green { --highlight-color: #b4f0c1; }
+        .annotation-highlight.highlight-pink { --highlight-color: #ffc7df; }
+        .annotation-highlight.highlight-blue { --highlight-color: #d0ebff; border: 1px dashed #339af0; }
+        .annotation-note { background-color: #b4f0c1; border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); position: relative; cursor: pointer; }
+        .annotation-note[data-note]:hover::after { content: attr(data-note); position: absolute; left: 50%; bottom: 100%; transform: translate(-50%, -6px); background: #1f2937; color: #fff; padding: 6px 10px; border-radius: 4px; white-space: nowrap; font-size: 13px; z-index: 2000; }
+        .question { margin-bottom: 40px; }
+        .question p { margin-bottom: 10px; }
+        .question-prompt { margin-bottom: 20px; }
+        .question-title { font-size: 18px; font-weight: 700; text-align: center; margin: 6px 0 10px; color: #000; }
+        .answer-input { border: 1px solid #888; border-radius: 4px; background-color: #fff; padding: 2px 5px; font-size: 16px; text-align: center; margin-right: 4px; margin-left: 4px; transition: border-color 0.3s, box-shadow 0.3s; height: 28px; width: 150px; z-index: 10; position: relative; pointer-events: auto; }
+        .answer-input.active-input { border-color: #4a90e2; box-shadow: 0 0 3px 1px rgba(74, 144, 226, 0.5); }
+        .answer-input::placeholder { color: #999; font-weight: bold; text-align: center; }
+        .answer-input.correct { border-color: #28a745; background-color: #e9f7ef; }
+        .answer-input.incorrect { border-color: #dc3545; background-color: #f8d7da; color: #721c24; }
+        .part-header { background-color: #f1f2ec; padding: 10px 16px; border: 1px solid #e0e0e0; text-align: left; margin: 8px 20px; border-radius: 5px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .timer-container { display: flex; position: relative; cursor: default; color: #333; font-size: 16px; font-weight: 500; align-items: center; gap: 12px; flex: 0 0 auto; min-width: 220px; padding: 4px 10px; border-radius: 14px; border: 1px solid #d7def5; background: rgba(255, 255, 255, 0.24); box-shadow: 0 8px 18px rgba(33, 58, 128, 0.08); }
+        .timer-controls { display: flex; align-items: center; gap: 8px; margin-left: 15px; }
+        .timer-controls button { background: #f0f0f0; border: 1px solid #ccc; border-radius: 50%; padding: 0; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .timer-controls button:hover { background: #e0e0e0; }
+        .tf-question { margin-bottom: 25px; padding: 10px 0px; border-radius: 4px; transition: border-color 0.3s, background-color 0.3s; }
+        .tf-question-line { display: flex; align-items: flex-start; margin-bottom: 15px; padding: 5px 0px; border-radius: 4px; }
+        .tf-question-number, .question-number-box { border: 2px solid #ccc; padding: 2px 8px; margin-right: 10px; border-radius: 3px; font-weight: bold; transition: border-color 0.3s; display: inline-block; }
+        .tf-question-text { padding-top: 3px; }
+        .tf-options { padding-left: 5px; }
+        .tf-option { display: block; margin-bottom: 12px; cursor: pointer; display: flex; align-items: center; }
+        .tf-option input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .tf-question.correct .tf-question-line { background-color: #e9f7ef; }
+        .tf-question.incorrect .tf-question-line { background-color: #f8d7da; }
+        .multi-choice-question { margin-bottom: 20px; padding: 10px; border-radius: 4px; border: 3px solid transparent; transition: border-color 0.3s, background-color 0.3s; }
+        .multi-choice-option { margin-bottom: 10px; padding: 8px; border-radius: 4px; transition: background-color 0.3s; }
+        .multi-choice-option label { display: flex; align-items: center; cursor: pointer; font-size: 16px; }
+        .multi-choice-option input[type="checkbox"], .multi-choice-option input[type="radio"] { margin-right: 12px; transform: scale(1.3); accent-color: #4a90e2; }
+        .multi-choice-option.correct { background-color: #e9f7ef; }
+        .multi-choice-option.incorrect { background-color: #f8d7da; }
+        .matching-form-container { margin-top: 20px; }
+        .matching-form-row { display: flex; align-items: center; margin-bottom: 12px; gap: 12px; flex-wrap: wrap; }
+        .matching-form-label { width: auto; flex: 1 1 320px; margin-right: 8px; }
+        .matching-form-row select.answer-input { width: 220px; flex-shrink: 0; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; display: flex; justify-content: center; align-items: center; }
+        .modal-overlay.hidden { display: none; }
+        .modal-content { background: white; padding: 25px; border-radius: 8px; width: 90%; max-width: 600px; max-height: 80vh; display: flex; flex-direction: column; position: relative; }
+        .modal-close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 28px; cursor: pointer; color: #888; }
+        .modal-content h2 { text-align: center; margin-bottom: 15px; color: #333; }
+        .results-summary { display: flex; justify-content: space-around; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-align: center; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .results-details-container { overflow-y: auto; padding-right: 10px; }
+        .result-row { display: grid; grid-template-columns: 40px 1fr 1fr; gap: 15px; padding: 8px 5px; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+        .result-row.incorrect { background-color: #f8d7da; }
+        .result-row .q-num { font-weight: bold; }
+        .result-row .user-ans { color: #555; }
+        .result-row .correct-ans { color: #155724; font-weight: 500; }
+        .correct-answer-display { font-weight: bold; color: #28a745; margin-left: 10px; font-size: 14px; }
+        .correct-answer-highlight { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; padding: 4px; }
+        html, body { width: 100%; height: 100%; overflow: hidden; }
+        #launchScreen, #app { width: 100vw; height: 100vh; }
+        #app { display: none; }
+        #launchScreen { display: flex; align-items: center; justify-content: center; padding: 24px; background: radial-gradient(circle at 0% 0%, rgba(206, 219, 255, 0.48), transparent 34%), radial-gradient(circle at 100% 100%, rgba(221, 229, 255, 0.44), transparent 38%), #f4f6fc; color: #1f2b59; }
+        .launch-card { width: min(980px, 100%); border: 1px solid #d7def5; border-radius: 18px; background: linear-gradient(180deg, #ffffff, #f7f9ff); box-shadow: 0 16px 38px rgba(33, 58, 128, 0.14); padding: 28px 30px 22px; display: grid; gap: 12px; }
+        .launch-eyebrow { margin: 0; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #6f7cb2; font-weight: 700; }
+        .launch-title { margin: 4px 0 0; font-size: clamp(26px, 3.5vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: #1c2566; }
+        .launch-meta { margin: 8px 0 0; color: #3c4a81; font-size: 15px; font-weight: 600; }
+        .launch-guide { border: 1px solid #d7def5; border-radius: 12px; background: #f2f5ff; padding: 14px; display: grid; gap: 6px; }
+        .launch-main { margin: 0; font-size: clamp(18px, 2.2vw, 23px); line-height: 1.32; font-weight: 700; color: #1d2a60; }
+        .launch-sub { margin: 0; color: #4c598f; font-size: 14px; line-height: 1.45; }
+        .student-info-form { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .student-info-form input { width: 100%; padding: 12px 15px; border: 1px solid #c5d0f2; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.2s; }
+        .student-info-form input:focus { border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); }
+        .launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+        .launch-btn { border: 1px solid #c5d0f2; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 700; padding: 11px 16px; color: #24336e; background: #ffffff; transition: transform 0.12s ease; box-shadow: 0 8px 20px rgba(35, 54, 110, 0.14); width: 100%; text-align: center; font-size: 16px; }
+        .launch-btn:hover { transform: translateY(-1px); background: #f6f8ff; }
+        .explanation-box { display: none; margin-top: 10px; margin-bottom: 15px; padding: 12px 15px; background-color: #f0f7ff; border-left: 4px solid #4a90e2; border-radius: 4px; font-size: 15px; color: #2c3e50; line-height: 1.5; width: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: background-color 0.2s ease; }
+        .explanation-box:hover { background-color: #e2efff; }
+        .explanation-box.show { display: block; animation: fadeIn 0.4s ease-in-out; }
+        .explanation-title { font-weight: 700; margin-bottom: 6px; color: #1c2566; display: flex; align-items: center; gap: 6px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        .options-list { list-style-type: none; padding-left: 0; margin-bottom: 15px; }
+        .options-list li { margin-bottom: 5px; }
+        .options-list-label { font-weight: bold; margin-right: 8px; }
+        .example-box { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <section id="launchScreen" aria-label="Launch screen">
+        <div class="launch-card">
+            <div>
+                <p class="launch-eyebrow">IELTS Test Launcher</p>
+                <h1 class="launch-title" id="launchTestTitle">V11 Test 9 - Reading</h1>
+                <p class="launch-meta">Dạng bài: Reading</p>
+            </div>
+            <div class="launch-guide">
+                <p class="launch-main">Nhấn F11 để bắt đầu làm bài ở chế độ toàn màn hình.</p>
+                <p class="launch-sub">Nhấn F11 lần nữa để thoát toàn màn hình nếu cần.</p>
+                <div class="student-info-form">
+                    <input type="text" id="studentName" placeholder="Nhập Họ và tên của bạn..." required>
+                    <input type="text" id="studentClass" placeholder="Nhập Lớp của bạn..." required>
+                    <p id="launchError" style="color: #dc3545; font-size: 14px; display: none; margin: 0; font-weight: 600;">⚠️ Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+                </div>
+            </div>
+            <div class="launch-row">
+                <button id="startNormalBtn" class="launch-btn" type="button">Bắt đầu làm bài</button>
+            </div>
+        </div>
+    </section>
+    <div id="app">
+    <div class="header">
+        <div class="timer-container">
+            <span class="timer-display">60 minutes remaining</span>
+            <div class="timer-controls">
+                <button id="timer-toggle-btn" title="Pause/Resume Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>
+                </button>
+                <button id="timer-reset-btn" title="Reset Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" target="_blank" rel="noopener" class="header-ad">
+                <div class="ad-copy">
+                    <p class="ad-eyebrow">Study boost</p>
+                    <div class="ad-marquee">
+                        <div class="ad-loop">
+                            <span class="ad-headline">Chinh phục IELTS dễ dàng - Tài liệu đầy đủ, chiến lược rõ ràng!</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="ad-close" type="button" aria-label="Close ad" title="Close">×</button>
+        </div>
+    </div>
+
+        <div class="main-container" id="main-container">
+            <div id="passage-header-container">
+                <div id="part-header-1" class="part-header">
+                    <p><strong>Part 1</strong></p>
+                    <p>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</p>
+                </div>
+                <div id="part-header-2" class="part-header hidden">
+                    <p><strong>Part 2</strong></p>
+                    <p>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</p>
+                </div>
+                <div id="part-header-3" class="part-header hidden">
+                    <p><strong>Part 3</strong></p>
+                    <p>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</p>
+                </div>
+            </div>
+            <div class="panels-container">
+            <div class="passage-panel" id="passage-panel">
+                <div id="passage-text-1" class="reading-passage">
+                    <h4 class="text-center">Minds of their own</h4>
+                    <p>Virginia Morell explains why animals are smarter than you think. In 1977, Irene Peperberg, a recent graduate of Harvard University, brought a one-year-old African gray parrot named Alex into her laboratory to start teaching him to reproduce the sounds of the English language. ‘I thought if he eventually learned to communicate, I could ask him questions about how he sees the world.’</p>
+                    <p>When Pepperberg began her dialog with Alex, many scientists believed animals were incapable of any thought. They were simply machines, robots programmed to react to stimuli but lacking the ability to think or feel. Although most pet owners would argue otherwise, their claims are highly controversial, Gut instinct is not science and it is all too easy to project human thoughts and feelings onto another creature How, then, does a scientist prove that an animal is capable of thinking-that it is able to acquire information about the world and act on it?</p>
+                    <p>‘That’s why I started my studies with Alex.’ Pepperberg explained when I interviewed her. They were seated at her desk, on top of his cage - in her laboratory at Brandeis University in Massachusetts. They were clearly a team and because of their work, the motion that animals can think is no longer so fanciful.</p>
+                    <p>Certain skills are considered key signs of higher mental abilities: a grasp of grammar and symbols, self-awareness, good memory, understanding others’ motives, imitating others, and being creative. Bit by bit, in ingenious experiments, researchers have documented these talents in other species, gradually chipping away at what we thought made human beings distinctive, while offering a glimpse of where our own abilities came from: sheep can recognize face; chimpanzees use a variety of tools to probe termite mounds and even use weapons to hunt small mammals dolphins can imitate human postures and Alex - the parrot turned out to be a surprisingly good talker.</p>
+                    <p>Thirty years after Alex studies began, Pepperberg and a changing collection of assistants were still giving him English lessons. The humans, along with two younger parrots, also served as Alex's flock, providing the social input all parrots crave. Like any flock, this one-as small as it was-had its share of drama, Alex dominated his fellow parrots, acted huffy at times around Pepperberg, and barely tolerated the other humans.</p>
+                    <p>Pepperberg bought Alex in a Chicago pet store. She let someone working in the store pick him out because she didn’t want other scientists saying later that she'd deliberately chosen a bird that was especially intelligent for her work. Given that a parrot’s brain is the size of a walnut, most researchers thought Peperberg’ s interspecies communication study would be futile. ‘Some people actually called me crazy for trying this with Alex, ‘she said. ‘Scientists thought that chimpanzees were better subjects, although, of course, they can’t speak.’</p>
+                    <p>Under Pepperberg’s patient tutelage, Alex learned how to use his vocal tract to imitate almost one hundred English words, including the sounds for a variety of foods. Alex could also count to six and was learning the sounds for seven and eight.</p>
+                    <p>‘I’m sure he already knows both numbers,’ Pepperberg said. ‘But he’s still learning to say the words. It takes far longer to teach him certain sounds than I ever imagined but I don’t have to make him practice.’</p>
+                    <p>It sounded a bit mad, the idea of a bird having lessons to practice, and willingly doing it. But after listening to and watching Alex, it was difficult to argue with Pepperberg’s explanation for his behaviors. She wasn’t handing him any treats to get him to say the sounds.</p>
+                    <p>‘He has to hear the words over and over before he can correctly imitate them.’ Peperberg said, after pronouncing ‘seven’ for Alex a dozen times. ‘I’m not trying to see if Alex can learn a human language. That’s never been the point’. My plan always was to use his imitative skills to get a better understanding of avian cognition.’</p>
+                    <p>In other words, because Alex was able to produce a close approximation of the sounds of some English words Peperberg could ask him questions about how he understood the world. To show exactly what Alex could do, Pepperberg took him from his cage and carried him to a wooden perch in the middle of the room. She then retrieved a green key and a small green cup from a basket. She held up the two items to Alex.</p>
+                    <p>‘What's the same? she asked. Without hesitation, Alex’s beak Opened: ‘Color’. ‘What’s different’? Pepperberg asked. ‘Shape,’ Alex said.</p>
+                    <p>For the next 20 minutes, Alex ran through his tests. He did some simple arithmetic, such as adding up yellow blocks among a pile of mixed hues. And then, as if to offer final proof of the mind inside his bird’s brain, Alex spoke up. ‘Talk clearly!’ he commanded, when one of the younger birds Peperberg was also teaching gave the wrong pronunciation of the word’ green’.</p>
+                    <p>Don’t try to be smart, ’Pepperberg said, shaking her head. ‘He gets bored, so he interrupts the others. He’s like a teenager; he’s moody.’</p>
+                    <p>Many of Alex’s cognitive skills, such as his ability to understand the concepts of same and different, are generally ascribed only to higher mammals, particularly primates.</p>
+                    <p>But parrots, like great apes, live a long time in complex societies. And like primates, these birds must keep track of changing relationships and environments.’ They need to be able to distinguish when fruit is ripe or unripe.’ Pepperberg noted. ‘They also need to categorize things-what is edible, what isn’t –and to recognize predators amongst the many species they encounter. And it helps to have a concept of numbers to keep track of your flock. A long-lived bird can’t do all of this with instinct; cognition must be involved.</p>
+                </div>
+                <div id="passage-text-2" class="reading-passage hidden">
+                    <h4 class="text-center">American businesses aim to support employees and their families</h4>
+                    <p><strong>A</strong>    Companies of all sizes in the US recognize the importance of family-friendly policies, thanks in large part to the increasing number of people-centered entrepreneurs and company CEOs. Many of these go into business themselves as a result of negative experiences they have had in the workplace. So says Jennifer West, Managing Director of the Ohio-based Business Research Center, a non-profit organization dedicated to studying work-life balance. 'Taking, recruitment and retention strategy,' says West. 'Employers who care about their employees and help them grow take into account the full range of issues and external pressures that employees have and arrange things so that people can manage their lives. These considerations are a conscious part of how people-centered bosses organize their practices and strategies.</p>
+                    <p><strong>B</strong>    One employer who exemplifies this philosophy is Stephen Harper, co-owner and CEO of Plastic Solutions in California. His company manufactures custom plastics, mainly for medical devices, and offers engineering solutions for other plastics needs. Harper believes in having employees who understand the business. That's why every two weeks, when his employees receive their salary, they also get an update about the company, including who their new customers are, what successes they've had, and what challenges they are facing. Harper also includes a 'coaching' section. This addresses issues like gossip, which employees sometimes indulge in around the water cooler or the rest rooms, and which can negatively impact on the morale of staff. He encourages people to work their way up in the company, and pays, at least partially, for educational opportunities and textbooks. His employees line up to attend his monthly invitation-only Business Pragmatics seminar, in which communication and other vital skills are taught, along with ethics and workplace morals and philosophy. The structure of his company is very family-friendly, and includes a regular Open House day for employees' families where, among other things, kids can experiment with the company's machines that manufacture their products and so on. The Harper philosophy pays off. Attrition at the company is low, and many employees remain with the company for much of their career.</p>
+                    <p><strong>C</strong>    In Vermont, the Margaret Mills Corporation also strives to be people-centered. It is a third generation, family-run business that sells children's wooden toys internationally, and the company's founder (Margaret Mills) understood all too well the challenges of raising a family while running a business. Like many other like-minded companies, the Margaret Mills Corporation offers liberal leave, flexi-time, good health and retirement packages, and other benefits. The corporation also allows workers to have their children dropped off when school is over, or to spend time with them during the vacations. Annual Christmas and summer parties are standard, and this year, to celebrate an especially strong performance, the company took all employees and their families on a 2-day trip to Montreal, Canada. Says Victor Davies, Human Resources Director, 'We enable employees to maintain equilibrium between work and home, a policy which ultimately results in a more productive and stable workforce.' It works – this year the company will celebrate six 5-year anniversaries, and one 25-year anniversary among its employees.</p>
+                    <p><strong>D</strong>    For Hazel Gibbs, CEO of Disposal System inc. in Houston, Texas, a waste disposal and environmental cleanup and consultancy firm, the bottom line is keeping her business going. But she realized that it takes a certain kind of mutuality to do that. 'I'm not altruistic,' she says, 'but if everyone understands what it takes to be in business, that's good for all of us.' That's why she works hard to ensure that everyone, from managers to workers, realizes that they count. 'It's not about "us" and "them", we are a team,' Gibbs says. 'When our employees understand what it takes to keep business going, then it works and we can accommodate each other's needs.' Despite the fact that Gibbs sometimes struggles with being taken seriously, she sees this as a long-term challenge. 'Working mothers still need to be taken more seriously, and so do mothers who are business owners.' She has two children of her own to think about.</p>
+                    <p><strong>E</strong>    Family-friendly entrepreneurs are becoming more commonplace internationally, and they clearly influence those companies which have so far been slow to accommodate employee needs. According to West, it is already possible to document the dwindling workforces of these latter businesses, or the migration of labor to more family-friendly ones. What is more, parents are important consumers and investors who can change buying practices. Further, in the public policy arena, multinational corporations and aid agencies are beginning to recognize the need to integrate social and economic policy and practice. Family-friendly employers are creating a groundswell of awareness that can only result in changing business practices. And as Hazel Gibbs says, when that happens, 'you've got it working.'</p>
+                </div>
+                <div id="passage-text-3" class="reading-passage hidden">
+                    <h4 class="text-center">Literacy and Rural Communities in Australia</h4>
+                    <p><strong>A.</strong>    Little is known about the incidence of literacy in rural areas of Australia, but anecdotal evidence suggests that lack of literacy skills may present particular problems and have different social costs in rural areas compared to urban areas. Social costs, of course, differ at different life stages. For young people, inadequate literacy skills can affect their transition from school to work: for older people lack of literacy skills can reduce their employment options as well as reducing their effectiveness or ability in the workplace. Assuming life stage differences remain much the same in both city and country areas, it is still possible to make some general comments about differences between urban and rural areas in Australia. It is important, however, to remind the reader of the considerable diversity of rural areas.</p>
+                    <p><strong>B.</strong>    It is not unusual for males in rural areas to have left school early, or to have left with inadequate literacy skills, and then to move onto farms. This can be due to a number of causes, among which are family pressure or desire to follow the father into the family business, learning difficulties or unhappiness at school, or even peer-group pressure from other young male who have decided to work on their family farms. There are numerous areas where literacy skills are required in farming, such as reading directions for (often dangerous) sprays, the mixing of animal feed, the mixing of fuel for machinery, care of machinery, care of animals, and understanding letters from government authorities. In addition, there are the numerous tasks associated with running a business. Although the responsibility for the business side of the farm may be carried by a female partner with more adequate literacy skills, there remain a number of areas where inadequate literacy skills in males can lead to difficult or dangerous situations.</p>
+                    <p><strong>C.</strong>    It is difficult to estimate the social costs of low literacy levels for women in non metropolitan areas. Some research in this area has shown that women leave school early and travel to the city to find work: women's employment options are limited generally, but for women with low literacy skills there is often no alternative to dependence-on family, partner or government benefits. Also, according to a 1989 survey, about ten per cent of women living in rural areas were born outside Australia. We can assume that a fair proportion of these have literacy needs.</p>
+                    <p><strong>D.</strong>    It is suggested that in times of hardship in farming areas, when there is the threat or actuality of banks foreclosing on mortgages, inadequate literacy skills add to the normal stresses. Farmers and others with inadequate literacy skills affected by a rural down-turn have fewer alternatives employment, less flexibility, perhaps fewer support mechanisms, and therefore more strains both personally and with a partner. It is not inconceivable that the additional stress contributes to marriage breakdown or suicide.</p>
+                    <p><strong>E.</strong>    Problems can become acute in regional towns or areas which are based on one or two major industries. A proportion of manual and construction workers and trade assistants in such towns have low levels of literacy, but are able to find employment so long as new projects and development continue. Shift work and relatively high wages make such work relatively attractive. Once the development is completed, however, there are few alternative options. Mate is a thief.</p>
+                    <p><strong>F.</strong>    In some small communities, there is a tendency for the problem of poor literacy skills to be continued with the next generation, thereby repeating the problem. Economic hardship, the need for children to travel (or be driven) long distances to school, and the low value placed on literacy may mean that helping with farm work is seen as more important than regular attendance at school. More children in rural areas than urban areas tend to leave school without completing a full secondary education, despite increasing school retention rates generally, although there is considerable variation between rural areas.</p>
+                    <p><strong>G.</strong>    The closeness of some rural communities and country towns sometimes means that people are reluctant to admit their literacy problems. While this is generally the case in both city and country locations, cities at least do offer some anonymity for people who make the decision to start a literacy class. In a small country town or rural area, going to a class becomes much more public tutors in country areas have reported that some students travelled long distances to another town in order to avoid having to reveal their ‘problem’ in the local area. Obviously, a change in public perception of literacy problems is needed, if people with low literacy skills in rural areas are to avoid the social stigma which is attached to them in the minds of most people.</p>
+                </div>
+            </div>
+            <div class="resizer" id="resizer"></div>
+            <div class="questions-panel" id="questions-panel">
+                <div id="questions-1" class="question-set">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="1" data-q-end="5">
+                            <div class="question-prompt">
+                                <p><strong>Questions 1-5</strong></p>
+                                <p>Choose <strong>TRUE</strong> if the statement agrees with the information given in the text, choose <strong>FALSE</strong> if the statement contradicts the information, or choose <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="1" data-q-end="1"><div class="tf-question-line"><span class="tf-question-number">1</span><span class="tf-question-text">Alex had a relatively wide vocabulary range at the start of Pepperberg’s experiment.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q1" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q1" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q1" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="2" data-q-end="2"><div class="tf-question-line"><span class="tf-question-number">2</span><span class="tf-question-text">When Pepperberg started talking to Alex, he seemed afraid of humans.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q2" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q2" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q2" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="3" data-q-end="3"><div class="tf-question-line"><span class="tf-question-number">3</span><span class="tf-question-text">When Pepperberg started her experiment, the cognitive skills of animals were widely acknowledged in the scientific community.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q3" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q3" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q3" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="4" data-q-end="4"><div class="tf-question-line"><span class="tf-question-number">4</span><span class="tf-question-text">The ability to remember things for a long time is thought to indicate a higher mental capacity.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q4" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q4" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q4" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="5" data-q-end="5"><div class="tf-question-line"><span class="tf-question-number">5</span><span class="tf-question-text">It has taken scientists a great deal of research to demonstrate that humans share certain abilities with other species.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q5" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q5" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q5" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="6" data-q-end="10">
+                            <div class="question-prompt">
+                                <p><strong>Questions 6-10</strong></p>
+                                <p>Complete the notes below</p>
+                                <p>Write <strong>NO MORE THAN TWO WORDS AND/OR A NUMBER</strong> from the passage for each answer.</p>
+                                <div class="question-title">The Alex studies</div>
+                            </div>
+                            <p><strong>The start of the study</strong></p>
+                            <ul>
+                                <li>Alex was selected by a shop assistant to avoid criticism of him for being particularly 6 <input type="text" class="answer-input" id="q6" placeholder="6"></li>
+                                <li>scientists were doubtful because Alex's 7 <input type="text" class="answer-input" id="q7" placeholder="7"> is small</li>
+                                <li>scientists thought birds were not a good subject - better to study 8 <input type="text" class="answer-input" id="q8" placeholder="8"> instead</li>
+                            </ul>
+                            <p><strong>Alex's training</strong></p>
+                            <ul>
+                                <li>number of words Alex can produce in English now: approximately 9 <input type="text" class="answer-input" id="q9" placeholder="9"></li>
+                                <li>Alex willingly practises sounds - not given treats</li>
+                                <li>Pepperberg is not trying to teach Alex human language - her aim is to learn about 10 <input type="text" class="answer-input" id="q10" placeholder="10"></li>
+                            </ul>
+                        </div>
+
+                        <div class="question" data-q-start="11" data-q-end="13">
+                            <div class="question-prompt">
+                                <p><strong>Questions 11-13</strong></p>
+                                <p>Answer the questions below.</p>
+                            </div>
+                            <p>11 What colour were the two objects shown to Alex? 11 <input type="text" class="answer-input" id="q11" placeholder="11"></p>
+                            <p>12 What type of mistake did Alex recognise in a younger bird’s speech? 12 <input type="text" class="answer-input" id="q12" placeholder="12"></p>
+                            <p>13 When she talks about his behaviour, which group of animals does Pepperberg compare Alex to? 13 <input type="text" class="answer-input" id="q13" placeholder="13"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="questions-2" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="14" data-q-end="18">
+                            <div class="question-prompt">
+                                <p><strong>Questions 14-18</strong></p>
+                                <p>Reading Passage 2 has five paragraphs, A-E. Which paragraph contains the following information?</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q14" class="matching-form-label"><strong>14</strong> a description of a company that provides financial assistance for employees to continue their learning</label>
+                                    <select class="answer-input" id="q14"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q15" class="matching-form-label"><strong>15</strong> a mention of worldwide trends in the changing attitudes of business customers</label>
+                                    <select class="answer-input" id="q15"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q16" class="matching-form-label"><strong>16</strong> details about years of continuous service by employees at one company</label>
+                                    <select class="answer-input" id="q16"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q17" class="matching-form-label"><strong>17</strong> a reference to the reason why many people-centred workers first start their own businesses</label>
+                                    <select class="answer-input" id="q17"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q18" class="matching-form-label"><strong>18</strong> a comment about how certain groups are still fighting for respect in the business world</label>
+                                    <select class="answer-input" id="q18"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="19" data-q-end="21">
+                            <div class="question-prompt">
+                                <p><strong>Questions 19-21</strong></p>
+                                <p>Look at the following statements and the list of people below.</p>
+                                <p>Choose each statement with the correct business person, <strong>A-D</strong>.</p>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <p><strong>List of business people</strong></p>
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> Jennifer West</li>
+                                    <li><span class="options-list-label">B</span> Stephen Harper</li>
+                                    <li><span class="options-list-label">C</span> Margaret Mills</li>
+                                    <li><span class="options-list-label">D</span> Victor Davies</li>
+                                    <li><span class="options-list-label">E</span> Hazel Gibbs</li>
+                                </ul>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q19" class="matching-form-label"><strong>19</strong> Employees should be kept informed about business development and performance.</label>
+                                    <select class="answer-input" id="q19"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q20" class="matching-form-label"><strong>20</strong> Work output increases when employees have a good balance between company and family responsibilities.</label>
+                                    <select class="answer-input" id="q20"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q21" class="matching-form-label"><strong>21</strong> It is critical to business success that all company members recognise that they matter.</label>
+                                    <select class="answer-input" id="q21"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="22" data-q-end="26">
+                            <div class="question-prompt">
+                                <p><strong>Questions 22-26</strong></p>
+                                <p>Complete the summary below.</p>
+                                <p>Write <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+                                <div class="question-title">Family-friendly practices at Plastic Solutions and the Margaret Mills Corporation</div>
+                            </div>
+                            <p>At Plastic Solutions, a bi-weekly update is issued for workers at the same time as their pay. This includes a section dealing with problems such as 22 <input type="text" class="answer-input" id="q22" placeholder="22"> in communal areas of the workplace. The CEO also arranges a regular 23 <input type="text" class="answer-input" id="q23" placeholder="23"> for employees for the workplace is in great demand. Finally, employees' families are invited to company open days, when they are allowed to try out the 24 <input type="text" class="answer-input" id="q24" placeholder="24">.</p>
+                            <p>The Margaret Mills Corporation also allows employees a great deal of flexibility with their children, who can be brought to the office once 25 <input type="text" class="answer-input" id="q25" placeholder="25"> has finished. Mills likes to reward employees for company performance with a party or even a 26 <input type="text" class="answer-input" id="q26" placeholder="26"> for families. There is considerable evidence that these practices are having the desired effect.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questions-3" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="27" data-q-end="32">
+                            <div class="question-prompt">
+                                <p><strong>Questions 27-32</strong></p>
+                                <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, choose <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="27" data-q-end="27"><div class="tf-question-line"><span class="tf-question-number">27</span><span class="tf-question-text">There is a lack of factual information on literacy levels in rural Australia.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q27" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q27" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q27" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="28" data-q-end="28"><div class="tf-question-line"><span class="tf-question-number">28</span><span class="tf-question-text">The rural areas of Australia are very similar to each other.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q28" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q28" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q28" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="29" data-q-end="29"><div class="tf-question-line"><span class="tf-question-number">29</span><span class="tf-question-text">Most businesses in rural areas are family-run.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q29" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q29" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q29" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="30" data-q-end="30"><div class="tf-question-line"><span class="tf-question-number">30</span><span class="tf-question-text">Women who can read and write have a wider choice of jobs in rural areas.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q30" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q30" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q30" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="31" data-q-end="31"><div class="tf-question-line"><span class="tf-question-number">31</span><span class="tf-question-text">In some rural areas, industrial jobs are popular.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q31" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q31" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q31" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="32" data-q-end="32"><div class="tf-question-line"><span class="tf-question-number">32</span><span class="tf-question-text">Children in urban areas likely stay on at school longer than children in rural areas.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q32" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q32" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="33" data-q-end="37">
+                            <div class="question-prompt">
+                                <p><strong>Questions 33-37</strong></p>
+                                <p>Reading Passage 3 has seven paragraphs, A-G. Which paragraph contains the following information?</p>
+                                <p><em>NB You may use any letter more than once</em></p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q33" class="matching-form-label"><strong>33</strong> how an economic recession may aggravate the problems caused by low levels of literacy</label>
+                                    <select class="answer-input" id="q33"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q34" class="matching-form-label"><strong>34</strong> a reference to a measure which individuals may take to hide the fact that they have poor literacy skills</label>
+                                    <select class="answer-input" id="q34"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q35" class="matching-form-label"><strong>35</strong> examples of things that rural workers may need to read</label>
+                                    <select class="answer-input" id="q35"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q36" class="matching-form-label"><strong>36</strong> the ways literacy problems can affect people at different stages of their working life</label>
+                                    <select class="answer-input" id="q36"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q37" class="matching-form-label"><strong>37</strong> a reference to youngsters encouraging each other to leave school early.</label>
+                                    <select class="answer-input" id="q37"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="38" data-q-end="40">
+                            <div class="question-prompt">
+                                <p><strong>Questions 38-40</strong></p>
+                                <p>Choose <strong>THREE</strong> correct answers.</p>
+                                <p>Which THREE of the following areas are explored by the writer of this article?</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q38" class="matching-form-label"><strong>38</strong> Option 1</label>
+                                    <select class="answer-input" id="q38"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q39" class="matching-form-label"><strong>39</strong> Option 2</label>
+                                    <select class="answer-input" id="q39"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q40" class="matching-form-label"><strong>40</strong> Option 3</label>
+                                    <select class="answer-input" id="q40"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select>
+                                </div>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-top: 15px;">
+                                <ul class="options-list">
+                                    <li><span class="options-list-label">A</span> the effectiveness of tuition for literacy problems</li>
+                                    <li><span class="options-list-label">B</span> how literacy problems can limit people’s career prospects.</li>
+                                    <li><span class="options-list-label">C</span> the effect of literacy problems on family mobility</li>
+                                    <li><span class="options-list-label">D</span> factors that worsen the difficulties caused by literacy problems</li>
+                                    <li><span class="options-list-label">E</span> how families had a low regard for literacy</li>
+                                    <li><span class="options-list-label">F</span> how literacy levels among men compare with those of women</li>
+                                    <li><span class="options-list-label">G</span> the probability of literacy levels rising in the future</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-arrows">
+        <button class="nav-arrow" onclick="previousQuestion()" id="prevBtn">‹</button>
+        <button class="nav-arrow" onclick="nextQuestion()" id="nextBtn">›</button>
+    </div>
+
+    <nav class="nav-row perScorableItem" aria-label="Questions">
+        <div class="footer__questionWrapper___1tZ46 multiple selected" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(1)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">1</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(1)"><span class="sr-only">Question 1</span><span aria-hidden="true">1</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(2)"><span class="sr-only">Question 2</span><span aria-hidden="true">2</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(3)"><span class="sr-only">Question 3</span><span aria-hidden="true">3</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(4)"><span class="sr-only">Question 4</span><span aria-hidden="true">4</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(5)"><span class="sr-only">Question 5</span><span aria-hidden="true">5</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(6)"><span class="sr-only">Question 6</span><span aria-hidden="true">6</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(7)"><span class="sr-only">Question 7</span><span aria-hidden="true">7</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(8)"><span class="sr-only">Question 8</span><span aria-hidden="true">8</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(9)"><span class="sr-only">Question 9</span><span aria-hidden="true">9</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(10)"><span class="sr-only">Question 10</span><span aria-hidden="true">10</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(11)"><span class="sr-only">Question 11</span><span aria-hidden="true">11</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(12)"><span class="sr-only">Question 12</span><span aria-hidden="true">12</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(13)"><span class="sr-only">Question 13</span><span aria-hidden="true">13</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(2)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">2</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(14)"><span class="sr-only">Question 14</span><span aria-hidden="true">14</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(15)"><span class="sr-only">Question 15</span><span aria-hidden="true">15</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(16)"><span class="sr-only">Question 16</span><span aria-hidden="true">16</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(17)"><span class="sr-only">Question 17</span><span aria-hidden="true">17</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(18)"><span class="sr-only">Question 18</span><span aria-hidden="true">18</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(19)"><span class="sr-only">Question 19</span><span aria-hidden="true">19</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(20)"><span class="sr-only">Question 20</span><span aria-hidden="true">20</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(21)"><span class="sr-only">Question 21</span><span aria-hidden="true">21</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(22)"><span class="sr-only">Question 22</span><span aria-hidden="true">22</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(23)"><span class="sr-only">Question 23</span><span aria-hidden="true">23</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(24)"><span class="sr-only">Question 24</span><span aria-hidden="true">24</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(25)"><span class="sr-only">Question 25</span><span aria-hidden="true">25</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(26)"><span class="sr-only">Question 26</span><span aria-hidden="true">26</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(3)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">3</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 14</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(27)"><span class="sr-only">Question 27</span><span aria-hidden="true">27</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(28)"><span class="sr-only">Question 28</span><span aria-hidden="true">28</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(29)"><span class="sr-only">Question 29</span><span aria-hidden="true">29</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(30)"><span class="sr-only">Question 30</span><span aria-hidden="true">30</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(31)"><span class="sr-only">Question 31</span><span aria-hidden="true">31</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(32)"><span class="sr-only">Question 32</span><span aria-hidden="true">32</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(33)"><span class="sr-only">Question 33</span><span aria-hidden="true">33</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(34)"><span class="sr-only">Question 34</span><span aria-hidden="true">34</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(35)"><span class="sr-only">Question 35</span><span aria-hidden="true">35</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(36)"><span class="sr-only">Question 36</span><span aria-hidden="true">36</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(37)"><span class="sr-only">Question 37</span><span aria-hidden="true">37</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(38)"><span class="sr-only">Question 38</span><span aria-hidden="true">38</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(39)"><span class="sr-only">Question 39</span><span aria-hidden="true">39</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(40)"><span class="sr-only">Question 40</span><span aria-hidden="true">40</span></button>
+            </div>
+        </div>
+        <button id="deliver-button" aria-label="Review your answers" class="footer__deliverButton___3FM07">
+            <i class="fa fa fa-check" aria-hidden="true"></i>
+            <span>Check Answers</span>
+        </button>
+    </nav>
+
+    <div id="contextMenu" class="context-menu">
+        <div id="menu-note" class="context-menu-item" onclick="addNote()">📝 Take note</div>
+        <div id="menu-highlight-colors" class="context-menu-item" style="display: flex; gap: 15px; justify-content: center; padding: 12px 16px;">
+            <button type="button" class="color-btn yellow" onclick="highlightText('yellow')" title="Highlight Yellow"></button>
+            <button type="button" class="color-btn green" onclick="highlightText('green')" title="Highlight Green"></button>
+            <button type="button" class="color-btn pink" onclick="highlightText('pink')" title="Highlight Pink"></button>
+        </div>
+        <div id="menu-clear" class="context-menu-item" onclick="clearHighlight()">🗑️ Delete</div>
+        <div id="menu-clear-all" class="context-menu-item" onclick="clearAllHighlights()">🗑️ Delete all</div>
+    </div>
+
+    <div id="results-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeResultsModal()">&times;</button>
+            <h2>Results</h2>
+            <div id="submit-status" style="display: none; text-align: center; margin-bottom: 15px; padding: 10px; border-radius: 4px; font-weight: bold;"></div>
+            <div class="results-summary">
+                <p>Score: <span id="results-score"></span> / 40</p>
+                <p>IELTS Band: <span id="results-band"></span></p>
+            </div>
+            <div id="results-details" class="results-details-container"></div>
+        </div>
+    </div>
+
+    <script>
+    window.testMeta = {
+        "totalQuestions": 40,
+        "parts": [
+            {"part": 1, "start": 1, "end": 13},
+            {"part": 2, "start": 14, "end": 26},
+            {"part": 3, "start": 27, "end": 40}
+        ],
+        "correctAnswers": {
+            "1": "NOT GIVEN", "2": "NOT GIVEN", "3": "FALSE", "4": "TRUE", "5": "TRUE", 
+            "6": ["intelligent", "Intelligent"], "7": ["brain", "Brain"], "8": ["chimpanzees", "Chimpanzees"], "9": ["one hundred", "100", "One hundred"], "10": ["avian cognition", "Avian cognition"], "11": ["green", "Green"], "12": ["pronunciation", "pronunciation of the word", "Pronunciation"], "13": ["primates", "Primates"], 
+            "14": "B", "15": "E", "16": "C", "17": "A", "18": "D", 
+            "19": "B", "20": "D", "21": "E", 
+            "22": ["gossip", "Gossip"], "23": ["seminar", "Seminar"], "24": ["machines", "Machines"], "25": ["school", "School"], "26": ["trip", "Trip"], 
+            "27": "YES", "28": "NO", "29": "NOT GIVEN", "30": "NO", "31": "YES", "32": "YES", 
+            "33": "D", "34": "G", "35": "B", "36": "A", "37": "B", 
+            "38": ["B", "D", "E"], "39": ["B", "D", "E"], "40": ["B", "D", "E"]
+        }
+    };
+    </script>
+    
+    <script>
+    window.testExplanations = {
+        "1": 'Trích dẫn: Đoạn 1: "In 1977, Irene Peperberg, a recent graduate of Harvard University, brought a one-year-old African gray parrot she named Alex into her laboratory to start teaching him to reproduce the sounds of the English language. \'I thought if he eventually learned to communicate. I could ask him questions about how he saw the world.\'" (Đáp án: NOT GIVEN).',
+        "2": 'Trích dẫn: Đoạn 1: Không có đoạn thông tin nào cho thấy thái độ của Alex đối với con người. Không thể khẳng định rằng Alex có sợ con người hay không. (Đáp án: NOT GIVEN).',
+        "3": 'Trích dẫn: Đoạn 2: "When Pepperberg began her dialog with Alex, many scientists believed animals were incapable of any thought. They were simply machines..." (Các nhà khoa học tưởng các loài động vật là những cỗ máy được lập trình sẵn -> khả năng nhận thức của động vật thời bấy giờ thì được các nhà khoa học đánh giá thấp, trái ngược hoàn toàn với "widely acknowledged" - FALSE).',
+        "4": 'Trích dẫn: Đoạn 4: "Certain skills are considered key signs of higher mental abilities: a grasp of grammar and symbols, self-awareness, good memory, understanding others’ motives..." (good memory = remember things for a long time; abilities = capacities - TRUE).',
+        "5": 'Trích dẫn: Đoạn 4: "Bit by bit, in ingenious experiments, researchers have documented these talents in other species, gradually chipping away at what we thought made human beings distinctive, while offering a glimpse of where our own abilities came from..." (Từng chút một... dần dần tước bỏ những gì chúng ta từng nghĩ là làm nên sự khác biệt của con người - TRUE).',
+        "6": 'Trích dẫn: Đoạn 6: "She let someone working in the store pick him out because she didn’t want other scientists saying later that she\'d deliberately chosen a bird that was especially intelligent for her work." (Từ cần điền: intelligent).',
+        "7": 'Trích dẫn: Đoạn 6: "Given that a parrot’s brain is the size of a walnut, most researchers thought Peperberg’ s interspecies communication study would be futile." (Từ cần điền: brain).',
+        "8": 'Trích dẫn: Đoạn 6: "‘Scientists thought that chimpanzees were better subjects, although, of course, they can’t speak.’" (Từ cần điền: chimpanzees).',
+        "9": 'Trích dẫn: Đoạn 7: "Under Pepperberg’s patient tutelage, Alex learned how to use his vocal tract to imitate almost one hundred English words..." (Từ cần điền: one hundred / 100).',
+        "10": 'Trích dẫn: Đoạn 10: "‘I’m not trying to see if Alex can learn a human language. That’s never been the point. My plan always was to use his imitative skills to get a better understanding of avian cognition.’" (Từ cần điền: avian cognition).',
+        "11": 'Trích dẫn: Đoạn 11: "She then retrieved a green key and a small green cup from a basket. She held up the two items to Alex." (Từ cần điền: green).',
+        "12": 'Trích dẫn: Đoạn 12: "...when one of the younger birds Peperberg was also teaching gave the wrong pronunciation of the word ’green’." (Từ cần điền: pronunciation).',
+        "13": 'Trích dẫn: Đoạn 14: "Many of Alex’s cognitive skills, such as his ability to understand the concepts of same and different, are generally ascribed only to higher mammals, particularly primates." (Từ cần điền: primates).',
+        "14": 'Trích dẫn: Đoạn B: "He encourages people to work their way up in the company, and pays, at least partially, for educational opportunities and textbooks." (Khớp đoạn B).',
+        "15": 'Trích dẫn: Đoạn E: "Family-friendly entrepreneurs are becoming more commonplace internationally... parents are important consumers and investors who can change buying practices." (Khớp đoạn E).',
+        "16": 'Trích dẫn: Đoạn C: "...this year the company will celebrate six 5-year anniversaries, and one 25-year anniversary among its employees." (Khớp đoạn C).',
+        "17": 'Trích dẫn: Đoạn A: "Many of these go into business themselves as a result of negative experiences they have had in the workplace." (Khớp đoạn A).',
+        "18": 'Trích dẫn: Đoạn D: "Despite the fact that Gibbs sometimes struggles with being taken seriously, she sees this as a long-term challenge. \'Working mothers still need to be taken more seriously, and so do mothers who are business owners.\'" (Khớp đoạn D).',
+        "19": 'Trích dẫn: Đoạn B: "Harper believes in having employees who understand the business. That\'s why every two weeks... they also get an update about the company, including who their new customers are, what successes they\'ve had, and what challenges they are facing." (Stephen Harper - Khớp B).',
+        "20": 'Trích dẫn: Đoạn C: "Says Victor Davies, Human Resources Director, \'We enable employees to maintain equilibrium between work and home, a policy which ultimately results in a more productive and stable workforce.\'" (Victor Davies - Khớp D).',
+        "21": 'Trích dẫn: Đoạn D: "But she realized that it takes a certain kind of mutuality to do that... That\'s why she works hard to ensure that everyone, from managers to workers, realizes that they count." (Hazel Gibbs - Khớp E).',
+        "22": 'Trích dẫn: Đoạn B: "This addresses issues like gossip, which employees sometimes indulge in around the water cooler or the rest rooms..." (Từ điền: gossip).',
+        "23": 'Trích dẫn: Đoạn B: "His employees line up to attend his monthly invitation-only Business Pragmatics seminar, in which communication and other vital skills are taught..." (Từ điền: seminar).',
+        "24": 'Trích dẫn: Đoạn B: "...includes a regular Open House day for employees\' families where, among other things, kids can experiment with the company\'s machines that manufacture their products..." (Từ điền: machines).',
+        "25": 'Trích dẫn: Đoạn C: "The corporation also allows workers to have their children dropped off when school is over, or to spend time with them during the vacations." (Từ điền: school).',
+        "26": 'Trích dẫn: Đoạn C: "Annual Christmas and summer parties are standard, and this year, to celebrate an especially strong performance, the company took all employees and their families on a 2-day trip to Montreal, Canada." (Từ điền: trip).',
+        "27": 'Trích dẫn: Đoạn A: "Little is known about the incidence of literacy in rural areas of Australia..." (Biết rất ít về tỷ lệ biết chữ ở các vùng nông thôn nước Úc - Đang thiếu thông tin về vấn đề này - YES).',
+        "28": 'Trích dẫn: Đoạn A: "It is important, however, to remind the reader of the considerable diversity of rural areas." (Có tính đa dạng đáng kể, không phải rất giống nhau - NO).',
+        "29": 'Trích dẫn: Không hề tồn tại đoạn thông tin nào có chứa thông tin liên quan hay đáp án. (NOT GIVEN).',
+        "30": 'Trích dẫn: Đoạn C: "Some research in this area has shown that women leave school early and travel to the city to find work: women\'s employment options are limited generally, but for women with low literacy skills there is often no alternative to dependence-on family, partner or government benefits." (Những người có kĩ năng đọc viết kém không có lựa chọn công việc, người biết đọc biết viết cũng có lựa chọn việc làm hạn chế ở nông thôn - NO).',
+        "31": 'Trích dẫn: Đoạn E: "Problems can become acute in regional towns or areas which are based on one or two major industries." (YES).',
+        "32": 'Trích dẫn: Đoạn F: "More children in rural areas than urban areas tend to leave school without completing a full secondary education..." (Trẻ em thành thị ở lại trường lâu hơn - YES).',
+        "33": 'Trích dẫn: Đoạn D: "It is suggested that in times of hardship in farming areas, when there is the threat or actuality of banks foreclosing on mortgages, inadequate literacy skills add to the normal stresses." (Khớp D).',
+        "34": 'Trích dẫn: Đoạn G: "...tutors in country areas have reported that some students travelled long distances to another town in order to avoid having to reveal their ‘problem’ in the local area." (Khớp G).',
+        "35": 'Trích dẫn: Đoạn B: "There are numerous areas where literacy skills are required in farming, such as reading directions for (often dangerous) sprays, the mixing of animal feed..." (Khớp B).',
+        "36": 'Trích dẫn: Đoạn A: "For young people, inadequate literacy skills can affect their transition from school to work: for older people lack of literacy skills can reduce their employment options as well as reducing their effectiveness or ability in the workplace." (Khớp A).',
+        "37": 'Trích dẫn: Đoạn B: "...or even peer-group pressure from other young male who have decided to work on their family farms." (Khớp B).',
+        "38": 'Trích dẫn: Đoạn A ("reduce their employment options"), Đoạn C ("women\'s employment options are limited generally..."), Đoạn E ("few alternative options") - Khớp B (hạn chế triển vọng nghề nghiệp).',
+        "39": 'Trích dẫn: Đoạn D ("in times of hardship... inadequate literacy skills add to the normal stresses... fewer alternative employment..."), Đoạn F ("low value placed on literacy") - Khớp D, E.',
+        "40": 'Trích dẫn: Các lựa chọn đúng là B, D, E (khả năng hạn chế nghề nghiệp, các yếu tố làm trầm trọng vấn đề, và gia đình không coi trọng việc biết chữ).'
+    };
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const launchScreen = document.getElementById('launchScreen');
+        const app = document.getElementById('app');
+        const startNormalBtn = document.getElementById('startNormalBtn');
+        const launchTitle = document.getElementById('launchTestTitle');
+        if (launchTitle && document.title) { launchTitle.textContent = document.title; }
+        let examStarted = false;
+        let currentStudentName = "";
+        let currentStudentClass = "";
+
+        const beginExam = () => {
+            if (examStarted) return;
+            const nameInput = document.getElementById('studentName');
+            const classInput = document.getElementById('studentClass');
+            const errorMsg = document.getElementById('launchError');
+            if (!nameInput.value.trim() || !classInput.value.trim()) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            errorMsg.style.display = 'none';
+            currentStudentName = nameInput.value.trim();
+            currentStudentClass = classInput.value.trim();
+            examStarted = true;
+            if (launchScreen) launchScreen.style.display = 'none';
+            if (app) app.style.display = 'block';
+            initialize();
+        };
+
+        if (startNormalBtn) { startNormalBtn.addEventListener('click', beginExam); }
+        
+        const testMeta = window.testMeta || { totalQuestions: 40, parts: [], correctAnswers: {} };
+        const partRanges = testMeta.parts || [];
+        const correctAnswers = testMeta.correctAnswers || {};
+        const totalQuestions = testMeta.totalQuestions || Object.keys(correctAnswers).length;
+
+        let currentPassage = partRanges[0]?.part || 1;
+        let currentQuestion = partRanges[0]?.start || 1;
+        let pendingSelectionRange = null;
+        let activeAnnotationTarget = null;
+        let timeInSeconds = 3600;
+        let timerInterval;
+        let hasSubmitted = false;
+        let activeQuestionElement = null;
+        const markedQuestions = new Set();
+        const markButtons = new Map();
+        const COUNTDOWN_THRESHOLD = 300;
+
+        const timerDisplay = document.querySelector('.timer-display');
+        const timerToggleButton = document.getElementById('timer-toggle-btn');
+        const timerResetButton = document.getElementById('timer-reset-btn');
+        const deliverButton = document.getElementById('deliver-button');
+        const resizer = document.getElementById('resizer');
+        const passagePanel = document.getElementById('passage-panel');
+        const questionsPanel = document.getElementById('questions-panel');
+        const contextMenu = document.getElementById('contextMenu');
+        const menuHighlightColors = document.getElementById('menu-highlight-colors');
+        const menuNote = document.getElementById('menu-note');
+        const menuClear = document.getElementById('menu-clear');
+        const menuClearAll = document.getElementById('menu-clear-all');
+
+        const playIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>';
+        const pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+        const bookmarkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>';
+
+        function initialize() {
+            startTimer();
+            const firstPart = partRanges[0]?.part || 1;
+            switchToPart(firstPart);
+            document.body.addEventListener('input', updateAllIndicators);
+            document.body.addEventListener('change', updateAllIndicators);
+            deliverButton.addEventListener('click', checkAnswers);
+            timerToggleButton.addEventListener('click', toggleTimer);
+            timerResetButton.addEventListener('click', resetTimer);
+            document.querySelectorAll('[data-q-start]').forEach(el => {
+                el.addEventListener('click', (ev) => {
+                    if (ev.target.closest('input, select, label, .tf-options, .multi-choice-option, .matching-form-row')) { return; }
+                    const qNum = parseInt(el.dataset.qStart, 10);
+                    if (currentQuestion !== qNum) { goToQuestion(qNum); }
+                });
+            });
+            resizer.addEventListener('mousedown', initResize, false);
+            initializeContextMenu();
+            initializeQuestionMarkers();
+        }
+
+        function highlightEvidenceInPassage(explanationText) {
+            let targetPhrase = "";
+            const match = explanationText.match(/"([^"]+)"/);
+            if (match) { targetPhrase = match[1].trim(); } 
+            else { targetPhrase = explanationText.replace(/^.*?Trích dẫn:\s*/i, "").trim(); }
+            if (!targetPhrase) return;
+            let cleanQuery = targetPhrase.replace(/^\.\.\./, "").replace(/\.\.\.$/, "").trim();
+            if (!cleanQuery) return;
+            const currentPassageEl = passagePanel.querySelector('.reading-passage:not(.hidden)');
+            if (!currentPassageEl) return;
+            const walker = document.createTreeWalker(currentPassageEl, NodeFilter.SHOW_TEXT, null, false);
+            let node;
+            let found = false;
+            while (node = walker.nextNode()) {
+                const text = node.nodeValue;
+                const index = text.indexOf(cleanQuery);
+                if (index !== -1) {
+                    const range = document.createRange();
+                    range.setStart(node, index);
+                    range.setEnd(node, index + cleanQuery.length);
+                    const span = document.createElement('span');
+                    span.className = 'annotation annotation-highlight highlight-blue';
+                    span.dataset.type = 'highlight';
+                    span.dataset.color = 'blue';
+                    try {
+                        range.surroundContents(span);
+                        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    } catch (e) {}
+                    break;
+                }
+            }
+            if (!found) {
+                const words = cleanQuery.split(/\s+/).filter(w => w.length > 4);
+                if (words.length > 0) {
+                    const keyword = words[0];
+                    walker.currentNode = currentPassageEl;
+                    while (node = walker.nextNode()) {
+                        const text = node.nodeValue;
+                        const index = text.indexOf(keyword);
+                        if (index !== -1) {
+                            const range = document.createRange();
+                            range.setStart(node, index);
+                            range.setEnd(node, Math.min(index + cleanQuery.length, text.length));
+                            const span = document.createElement('span');
+                            span.className = 'annotation annotation-highlight highlight-blue';
+                            span.dataset.type = 'highlight';
+                            span.dataset.color = 'blue';
+                            try {
+                                range.surroundContents(span);
+                                span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            } catch (e) {}
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        function checkAnswers() {
+            if (hasSubmitted) return;
+            hasSubmitted = true;
+            const allInputs = document.querySelectorAll('input, select, textarea');
+            allInputs.forEach(input => { input.disabled = true; });
+            deliverButton.disabled = true;
+            deliverButton.style.cursor = 'not-allowed';
+            const timeTakenSecs = 3600 - timeInSeconds;
+            clearInterval(timerInterval);
+            timerInterval = null;
+            timerToggleButton.innerHTML = playIcon;
+            let score = 0;
+            const resultsDetailsContainer = document.getElementById('results-details');
+            resultsDetailsContainer.innerHTML = '';
+            document.querySelectorAll('.correct, .incorrect, .correct-answer-highlight').forEach(el => { el.classList.remove('correct', 'incorrect', 'correct-answer-highlight'); });
+            document.querySelectorAll('.correct-answer-display').forEach(el => el.remove());
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionKey = String(i);
+                const correctAnswer = correctAnswers[questionKey];
+                let userAnswer = '';
+                let isCorrect = false;
+                let userAnswerDisplay = 'Not Answered';
+                const correctAnswerText = Array.isArray(correctAnswer) ? correctAnswer.join(' / ') : correctAnswer;
+
+                const textInput = document.getElementById(`q${i}`);
+                const radioGroup = document.querySelectorAll(`input[name="q${i}"][type="radio"]`);
+                const selectInput = document.getElementById(`q${i}`);
+                
+                if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                    const element = textInput.closest('.matching-form-row') || textInput;
+                    userAnswer = textInput.value.trim();
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        textInput.parentNode.insertBefore(correctAnswerSpan, textInput.nextSibling);
+                    }
+                }
+                else if (selectInput && selectInput.tagName === 'SELECT') {
+                    const element = selectInput.closest('.matching-form-row') || selectInput;
+                    userAnswer = selectInput.value;
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        selectInput.parentNode.insertBefore(correctAnswerSpan, selectInput.nextSibling);
+                    }
+                }
+                else if (radioGroup.length > 0) {
+                    const questionContainer = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    const checkedRadio = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (checkedRadio) {
+                        userAnswer = checkedRadio.value;
+                        userAnswerDisplay = userAnswer;
+                        isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                        const userLabel = checkedRadio.closest('.tf-option, .multi-choice-option');
+                        if (userLabel) { userLabel.classList.add(isCorrect ? 'correct' : 'incorrect'); }
+                    }
+                    if (isCorrect) { score++; }
+                    else {
+                        if (questionContainer){
+                            const firstCorrect = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswerText;
+                            const correctOptionEl = questionContainer.querySelector(`input[value="${firstCorrect}"]`);
+                            if (correctOptionEl) {
+                                const correctLabel = correctOptionEl.closest('.tf-option, .multi-choice-option');
+                                if (correctLabel) { correctLabel.classList.add('correct-answer-highlight'); }
+                            }
+                        }
+                    }
+                }
+                   
+                const resultRow = `
+                    <div class="result-row ${isCorrect ? '' : 'incorrect'}">
+                        <span class="q-num">${i}</span>
+                        <span class="user-ans">${userAnswerDisplay}</span>
+                        <span class="correct-ans">${correctAnswerText}</span>
+                    </div>`;
+                resultsDetailsContainer.innerHTML += resultRow;
+                
+                const navButton = document.querySelector(`.subQuestion[onclick="goToQuestion(${i})"]`);
+                if (navButton) {
+                    navButton.classList.remove('answered', 'active');
+                    navButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+
+                if (window.testExplanations && window.testExplanations[i]) {
+                    let container = null;
+                    if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                        container = textInput.closest('li') || textInput.closest('p');
+                    } else if (selectInput && selectInput.tagName === 'SELECT') {
+                        container = selectInput.closest('.matching-form-row');
+                    } else if (radioGroup.length > 0) {
+                        container = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    }
+                    if (container) {
+                        let expElement = document.createElement('div');
+                        expElement.className = 'explanation-box show';
+                        expElement.dataset.forQ = i;
+                        expElement.innerHTML = `<div class="explanation-title">💡 Giải thích câu ${i} (Bấm vào đây để xem evidence):</div><div>${window.testExplanations[i]}</div>`;
+                        expElement.addEventListener('click', () => { highlightEvidenceInPassage(window.testExplanations[i]); });
+                        const checkContainer = container.classList.contains('matching-form-row') || container.tagName === 'P' ? container.parentNode : container;
+                        if (!checkContainer.querySelector(`.explanation-box[data-for-q="${i}"]`)) { checkContainer.appendChild(expElement); }
+                    }
+                }
+            }
+            
+            const bandScore = calculateBandScore(score);
+            
+            document.getElementById('results-score').textContent = score;
+            document.getElementById('results-band').textContent = bandScore;
+            document.getElementById('results-modal').classList.remove('hidden');
+            
+            sendResultsToGoogle(score, bandScore, timeTakenSecs);
+        }
+        
+        function sendResultsToGoogle(score, bandScore, timeTakenSecs) {
+            const statusDiv = document.getElementById('submit-status');
+            statusDiv.style.display = 'block';
+            statusDiv.style.backgroundColor = '#fff3cd';
+            statusDiv.style.color = '#856404';
+            statusDiv.textContent = '⏳ Đang gửi kết quả về hệ thống...';
+
+            const minutes = Math.floor(timeTakenSecs / 60);
+            const seconds = timeTakenSecs % 60;
+            const timeStr = `${minutes} phút ${seconds} giây`;
+            const dateStr = new Date().toLocaleString('vi-VN');
+            const examTitle = document.getElementById('launchTestTitle').textContent || document.title;
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby7tYg_WIbxhkhK8NpoHs7s5GW3svAD56ZswWfimJgR-NMnzbbmTCBXwchyqhCI69pa/exec';
+            
+            const params = new URLSearchParams();
+            params.append('studentName', currentStudentName);
+            params.append('studentClass', currentStudentClass);
+            params.append('score', `${score}/${totalQuestions}`);
+            params.append('bandScore', bandScore); 
+            params.append('timeTaken', timeStr);
+            params.append('submitDate', dateStr);
+            params.append('examTitle', examTitle);
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: params.toString() 
+            })
+            .then(() => {
+                statusDiv.style.backgroundColor = '#d4edda';
+                statusDiv.style.color = '#155724';
+                statusDiv.textContent = '✅ Kết quả đã được ghi nhận và gửi thành công!';
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                statusDiv.style.backgroundColor = '#f8d7da';
+                statusDiv.style.color = '#721c24';
+                statusDiv.textContent = '⚠️ Có lỗi xảy ra khi gửi. Vui lòng chụp màn hình gửi giáo viên.';
+            });
+        }
+
+        function calculateBandScore(score) {
+            if (score >= 39) return '9.0';
+            const mapping = { 40: 9.0, 39: 9.0, 38: 8.5, 37: 8.5, 36: 8.0, 35: 8.0, 34: 7.5, 33: 7.5, 32: 7.0, 31: 7.0, 30: 7.0, 29: 6.5, 28: 6.5, 27: 6.5, 26: 6.0, 25: 6.0, 24: 6.0, 23: 5.5, 22: 5.5, 21: 5.5, 20: 5.5, 19: 5.0, 18: 5.0, 17: 5.0, 16: 5.0, 15: 5.0, 14: 4.5, 13: 4.5, 12: 4.0, 11: 4.0, 10: 4.0, 9: 3.5, 8: 3.5, 7: 3.0, 6: 3.0, 5: 2.5, 4: 2.5 };
+            if (score <= 0) return 0.0; if (score === 1) return 1.0; if (score <= 3) return 2.0; if (score <= 5) return 2.5; return mapping[score] || 0.0;
+        }
+
+        window.closeResultsModal = function() { document.getElementById('results-modal').classList.add('hidden'); }
+
+        const getFirstQuestionOfPart = (partNumber) => { const match = partRanges.find(p => p.part === partNumber); return match ? match.start : 1; };
+        const getPartForQuestion = (questionNumber) => { const match = partRanges.find(p => questionNumber >= p.start && questionNumber <= p.end); return match ? match.part : partRanges[0]?.part || 1; };
+
+        function switchToPart(partNumber) {
+            currentPassage = partNumber;
+            document.querySelectorAll('.reading-passage, .question-set, .part-header').forEach(el => { el.classList.add('hidden'); });
+            document.getElementById(`passage-text-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`questions-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`part-header-${partNumber}`).classList.remove('hidden');
+            document.querySelectorAll('.footer__questionWrapper___1tZ46').forEach((wrapper, index) => { wrapper.classList.toggle('selected', (index + 1) === partNumber); });
+            goToQuestion(getFirstQuestionOfPart(partNumber));
+        }
+        
+        function goToQuestion(questionNumber) {
+            currentQuestion = questionNumber;
+            const passageNumber = getPartForQuestion(questionNumber);
+            if (currentPassage !== passageNumber) { switchToPart(passageNumber); return; }
+            if (activeQuestionElement) { activeQuestionElement.classList.remove('active-question', 'active-input'); }
+            let targetEl = document.querySelector(`[data-q-start="${questionNumber}"]`);
+            if (targetEl) {
+                activeQuestionElement = targetEl;
+                if (targetEl.matches('input[type="text"]') || targetEl.matches('select')) { targetEl.classList.add('active-input'); } 
+                else { targetEl.classList.add('active-question'); }
+                scrollIntoViewIfNeeded(targetEl);
+            } else {
+                 const pMatch = document.querySelector(`.matching-form-row select[id="q${questionNumber}"]`);
+                 if(pMatch) {
+                    activeQuestionElement = pMatch; pMatch.classList.add('active-input'); scrollIntoViewIfNeeded(pMatch);
+                 }
+            }
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            const activeNav = Array.from(navButtons).find(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                return qNum === currentQuestion;
+            });
+            if (activeNav) { activeNav.classList.add('active'); }
+            const inputs = document.querySelectorAll('.answer-input');
+            inputs.forEach(input => input.classList.remove('active-input'));
+            const activeInput = document.getElementById(`q${currentQuestion}`);
+            if (activeInput) { activeInput.classList.add('active-input'); if (typeof activeInput.focus === 'function') { activeInput.focus(); } }
+        }
+        
+        window.nextQuestion = () => currentQuestion < totalQuestions && goToQuestion(currentQuestion + 1);
+        window.previousQuestion = () => currentQuestion > 1 && goToQuestion(currentQuestion - 1);
+
+        function updateAllIndicators() { partRanges.forEach(range => updateAttemptedCount(range.part, range.start, range.end)); updateAnsweredNav(); }
+        
+        function updateAnsweredNav() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                if (!isNaN(qNum) && isQuestionAnswered(qNum)) { btn.classList.add('answered'); } 
+                else { btn.classList.remove('answered'); }
+            });
+        }
+        
+        function isQuestionAnswered(qNum) {
+            const textInput = document.getElementById(`q${qNum}`);
+            if (textInput && typeof textInput.value === 'string' && textInput.value.trim() !== '') return true;
+            const radio = document.querySelector(`input[name="q${qNum}"]:checked`);
+            if (radio) return true;
+            const select = document.getElementById(`q${qNum}`);
+            if (select && select.tagName === 'SELECT' && select.value !== '') return true;
+            return false;
+        }
+
+        function scrollIntoViewIfNeeded(element) {
+            const panel = element.closest('.questions-panel, .passage-panel');
+            const panelRect = panel.getBoundingClientRect();
+            const elementRect = element.getBoundingClientRect();
+            if (elementRect.top < panelRect.top || elementRect.bottom > panelRect.bottom) { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        }
+        
+        function updateTimerDisplay() {
+            const displaySeconds = Math.max(timeInSeconds, 0);
+            if (displaySeconds > COUNTDOWN_THRESHOLD) {
+                const minutesRemaining = Math.ceil(displaySeconds / 60);
+                timerDisplay.textContent = `${minutesRemaining} minutes remaining`;
+            } else {
+                const minutes = Math.floor(displaySeconds / 60);
+                const seconds = displaySeconds % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+
+        function handleTimeExpired() {
+            timeInSeconds = 0; updateTimerDisplay(); clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; checkAnswers();
+        }
+
+        function startTimer() {
+            if (hasSubmitted) return;
+            if (timerInterval) clearInterval(timerInterval);
+            updateTimerDisplay();
+            timerInterval = setInterval(() => { timeInSeconds = Math.max(timeInSeconds - 1, 0); updateTimerDisplay(); if (timeInSeconds <= 0) { handleTimeExpired(); } }, 1000);
+            timerToggleButton.innerHTML = pauseIcon;
+        }
+
+        function pauseTimer() { clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; }
+        function toggleTimer() { if (timerInterval) { pauseTimer(); } else { startTimer(); } }
+        function resetTimer() { timeInSeconds = 3600; updateTimerDisplay(); startTimer(); }
+        
+        function initResize(e) {
+            e.preventDefault(); const startX = e.clientX; const startWidth = passagePanel.offsetWidth;
+            const doDrag = (e) => { const newWidth = startWidth + e.clientX - startX; if (newWidth > 200 && (document.body.clientWidth - newWidth - resizer.offsetWidth) > 200) { passagePanel.style.flex = `0 0 ${newWidth}px`; } };
+            const stopDrag = () => { window.removeEventListener('mousemove', doDrag, false); window.removeEventListener('mouseup', stopDrag, false); };
+            window.addEventListener('mousemove', doDrag, false); window.addEventListener('mouseup', stopDrag, false);
+        }
+        
+        const ANNOTATION_CLASSES = { highlight: 'annotation-highlight', note: 'annotation-note' };
+
+        function unwrapElement(element) {
+            const parent = element?.parentNode; if (!parent) return;
+            while (element.firstChild) { parent.insertBefore(element.firstChild, element); }
+            parent.removeChild(element);
+        }
+
+        function selectionWithinPanels(selection) {
+            const anchor = selection.anchorNode; const focus = selection.focusNode;
+            const inPanels = node => node && (passagePanel.contains(node) || questionsPanel.contains(node));
+            return inPanels(anchor) && inPanels(focus);
+        }
+
+        function isRangeInsidePanels(range) {
+            const root = range.commonAncestorContainer;
+            return passagePanel.contains(root) || questionsPanel.contains(root);
+        }
+
+        function getCurrentSelectionRange() {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
+            return selection.getRangeAt(0).cloneRange();
+        }
+
+        function positionContextMenu(x, y) {
+            contextMenu.style.display = 'block'; const menuHeight = contextMenu.offsetHeight; const menuWidth = contextMenu.offsetWidth;
+            let left = x; let top = y - menuHeight - 8;
+            if (left + menuWidth > window.innerWidth) left = window.innerWidth - menuWidth - 8;
+            if (left < 8) left = 8; if (top < 8) top = y + 8;
+            contextMenu.style.left = `${left}px`; contextMenu.style.top = `${top}px`;
+        }
+
+        function resetSelectionState() { pendingSelectionRange = null; activeAnnotationTarget = null; }
+
+        function showMenuForSelection(event) {
+            menuHighlightColors.style.display = 'flex'; menuNote.style.display = 'flex'; menuClear.style.display = 'none'; menuClearAll.style.display = 'none';
+            contextMenu.dataset.mode = 'create'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function showMenuForAnnotation(event, target) {
+            activeAnnotationTarget = target; pendingSelectionRange = null; window.getSelection().removeAllRanges();
+            menuHighlightColors.style.display = 'none'; menuNote.style.display = 'none'; menuClear.style.display = 'flex'; menuClearAll.style.display = 'flex';
+            contextMenu.dataset.mode = 'manage'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function closeContextMenu(resetSelection = false) {
+            contextMenu.style.display = 'none'; contextMenu.dataset.mode = '';
+            if (resetSelection) { window.getSelection().removeAllRanges(); }
+            resetSelectionState();
+        }
+
+        function expandRangeToAnnotations(range, selector) {
+            const spans = Array.from(document.querySelectorAll(selector));
+            spans.forEach(span => {
+                if (!range.intersectsNode(span)) return;
+                const spanRange = document.createRange(); spanRange.selectNode(span);
+                if (range.compareBoundaryPoints(Range.START_TO_START, spanRange) > 0) { range.setStartBefore(span); }
+                if (range.compareBoundaryPoints(Range.END_TO_END, spanRange) < 0) { range.setEndAfter(span); }
+            });
+        }
+
+        function unwrapAnnotationsInRange(range, type) {
+            const selector = type === 'highlight' ? `.${ANNOTATION_CLASSES.highlight}` : `.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`;
+            document.querySelectorAll(selector).forEach(span => { if (range.intersectsNode(span)) { unwrapElement(span); } });
+        }
+
+        function getTextNodesInRange(range, type) {
+            const nodes = [];
+            const shouldInclude = (node) => {
+                if (!node || !node.nodeValue || !node.nodeValue.trim()) return false;
+                if (!range.intersectsNode(node)) return false;
+                if (type === 'highlight' && node.parentElement?.closest(`.${ANNOTATION_CLASSES.note}`)) { return false; }
+                return true;
+            };
+            if (range.commonAncestorContainer.nodeType === Node.TEXT_NODE) {
+                if (shouldInclude(range.commonAncestorContainer)) { nodes.push(range.commonAncestorContainer); } return nodes;
+            }
+            const walker = document.createTreeWalker(range.commonAncestorContainer, NodeFilter.SHOW_TEXT, { acceptNode: (node) => shouldInclude(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+            while (walker.nextNode()) { nodes.push(walker.currentNode); }
+            return nodes;
+        }
+
+        function wrapTextPortion(node, range, type, noteText = '', highlightColor = 'yellow') {
+            let startOffset = 0; let endOffset = node.nodeValue.length;
+            if (node === range.startContainer && range.startOffset > startOffset) { startOffset = range.startOffset; }
+            if (node === range.endContainer && range.endOffset < endOffset) { endOffset = range.endOffset; }
+            if (startOffset >= endOffset) return;
+            const selectedText = node.splitText(startOffset); selectedText.splitText(endOffset - startOffset);
+            const span = document.createElement('span');
+            span.classList.add('annotation', type === 'highlight' ? ANNOTATION_CLASSES.highlight : ANNOTATION_CLASSES.note);
+            span.dataset.type = type;
+            if (type === 'highlight') {
+                const allowedColors = ['yellow', 'green', 'pink']; const safeColor = allowedColors.includes(highlightColor) ? highlightColor : 'yellow';
+                span.dataset.color = safeColor; span.classList.add(`highlight-${safeColor}`);
+            }
+            if (type === 'note') {
+                const content = noteText || ''; span.dataset.note = content;
+                if (content) { span.setAttribute('data-note', content); span.title = content; } 
+                else { span.removeAttribute('data-note'); span.title = 'Note'; }
+            }
+            selectedText.parentNode.insertBefore(span, selectedText);
+            span.appendChild(selectedText);
+        }
+
+        function mergeAdjacentAnnotations() {
+            const annotations = document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+            annotations.forEach(span => {
+                if (!span.parentNode) return;
+                let cursor = span.nextSibling;
+                while (true) {
+                    const whitespaceBetween = [];
+                    while (cursor && cursor.nodeType === Node.TEXT_NODE && !cursor.textContent.trim()) { whitespaceBetween.push(cursor); cursor = cursor.nextSibling; }
+                    if (cursor && cursor.nodeType === Node.ELEMENT_NODE && cursor.classList.contains('annotation') && cursor.dataset.type === span.dataset.type && (span.dataset.type !== 'note' || (span.dataset.note || '') === (cursor.dataset.note || ''))) {
+                        whitespaceBetween.forEach(node => span.appendChild(node));
+                        while (cursor.firstChild) { span.appendChild(cursor.firstChild); }
+                        const after = cursor.nextSibling; cursor.remove(); cursor = after;
+                    } else { break; }
+                }
+                if (!span.textContent.trim()) { unwrapElement(span); }
+            });
+        }
+
+        function handleTextSelection(event) {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed || !selection.toString().trim()) { return; }
+            if (!selectionWithinPanels(selection)) { return; }
+            const range = selection.getRangeAt(0).cloneRange();
+            pendingSelectionRange = range; activeAnnotationTarget = null;
+            showMenuForSelection(event);
+        }
+
+        function initializeContextMenu() {
+            const panels = [passagePanel, questionsPanel];
+            panels.forEach(panel => { panel.addEventListener('mouseup', (e) => { setTimeout(() => handleTextSelection(e), 0); }); });
+            document.addEventListener('click', (e) => {
+                if (contextMenu.contains(e.target)) return;
+                const annotation = e.target.closest(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+                if (annotation) { showMenuForAnnotation(e, annotation); return; }
+                closeContextMenu();
+            });
+        }
+
+        function applyAnnotation(type, noteText = '', highlightColor = 'yellow') {
+            const baseRange = pendingSelectionRange ? pendingSelectionRange.cloneRange() : getCurrentSelectionRange();
+            if (!baseRange || baseRange.collapsed || !isRangeInsidePanels(baseRange)) { closeContextMenu(true); return; }
+            if (type === 'highlight') { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.highlight}`); } 
+            else { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.note}`); }
+            unwrapAnnotationsInRange(baseRange, type);
+            const targets = getTextNodesInRange(baseRange, type);
+            targets.forEach(node => wrapTextPortion(node, baseRange, type, noteText, highlightColor));
+            mergeAdjacentAnnotations(); closeContextMenu(true);
+        }
+
+        function highlightText(color = 'yellow') { applyAnnotation('highlight', '', color); }
+        function addNote() { const note = prompt('Nhập nội dung ghi chú (Take note):'); if (note === null) { closeContextMenu(); return; } applyAnnotation('note', note.trim()); }
+        function clearHighlight() { if (activeAnnotationTarget) { unwrapElement(activeAnnotationTarget); mergeAdjacentAnnotations(); } closeContextMenu(true); }
+        function clearAllHighlights() { document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`).forEach(unwrapElement); mergeAdjacentAnnotations(); closeContextMenu(true); }
+
+        function findQuestionAnchor(qNum) {
+            const mcqNumber = document.querySelector(`.mcq-question-number[data-q-number="${qNum}"]`); if (mcqNumber) return mcqNumber;
+            const tfNumber = Array.from(document.querySelectorAll('.tf-question-number')).find(el => parseInt(el.textContent, 10) === qNum); if (tfNumber) return tfNumber;
+            const strongLabel = Array.from(document.querySelectorAll(`label[for="q${qNum}"] strong`)).find(el => /^\d+$/.test(el.textContent.trim())); if (strongLabel) return strongLabel;
+            const genericLabel = document.querySelector(`label[for="q${qNum}"]`); if (genericLabel) return genericLabel;
+            const textInput = document.getElementById(`q${qNum}`); if (textInput) return textInput; return null;
+        }
+
+        function createMarkerButton(anchor, qNum) {
+            if (!anchor || anchor.closest('.question-number-with-mark') || anchor.closest('.markable-blank-wrapper')) return null;
+            const isInput = anchor.tagName === 'INPUT' || anchor.tagName === 'SELECT';
+            const isInlineBlank = isInput;
+            const wrapper = document.createElement('span'); wrapper.dataset.questionNumber = qNum;
+            const parent = anchor.parentNode; if (!parent) return null;
+            if (isInlineBlank) { wrapper.className = 'markable-blank-wrapper'; parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor); } 
+            else {
+                wrapper.className = 'question-number-with-mark';
+                const displayMode = window.getComputedStyle(anchor).display;
+                if (displayMode === 'block' || displayMode === 'flex') { wrapper.style.display = 'flex'; wrapper.style.alignItems = 'center'; }
+                parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor);
+            }
+            const button = document.createElement('button'); button.type = 'button';
+            button.className = isInlineBlank ? 'mark-toggle-btn inside-blank' : 'mark-toggle-btn';
+            button.dataset.questionNumber = qNum; button.setAttribute('aria-label', `Đánh dấu câu ${qNum}`); button.innerHTML = bookmarkIcon;
+            button.addEventListener('click', (e) => { e.stopPropagation(); toggleMark(qNum); });
+            wrapper.appendChild(button);
+            const markHost = wrapper.closest('.tf-question, .matching-form-row, .matching-question-item, .question, .drag-drop-question, .summary-question, .paragraph-matching-question') || wrapper;
+            if(markHost) markHost.classList.add('markable-question');
+            markButtons.set(qNum, button); return button;
+        }
+
+        function initializeQuestionMarkers() { for (let i = 1; i <= totalQuestions; i++) { const anchor = findQuestionAnchor(i); createMarkerButton(anchor, i); } }
+
+        function toggleMark(qNum) {
+            const isMarked = markedQuestions.has(qNum);
+            if (isMarked) { markedQuestions.delete(qNum); } else { markedQuestions.add(qNum); }
+            updateMarkState(qNum, !isMarked);
+        }
+
+        function updateMarkState(qNum, marked) {
+            const btn = markButtons.get(qNum); if (btn) { btn.classList.toggle('marked', marked); btn.setAttribute('aria-pressed', marked ? 'true' : 'false'); }
+            const navButton = Array.from(document.querySelectorAll('.subQuestion')).find(b => { const hiddenSpan = b.querySelector('[aria-hidden="true"]'); const num = parseInt(hiddenSpan ? hiddenSpan.textContent : b.textContent.replace(/\D/g, ''), 10); return num === qNum; });
+            if (navButton) { navButton.classList.toggle('marked', marked); }
+        }
+
+        function updateAttemptedCount(part, startQ, endQ) {
+            let answeredCount = 0; for (let i = startQ; i <= endQ; i++) { if (isQuestionAnswered(i)) { answeredCount++; } }
+            const partHeader = document.querySelector(`.footer__questionNo___3WNct[onclick="switchToPart(${part})"]`);
+            if (partHeader) { const countSpan = partHeader.querySelector('.attemptedCount'); if (countSpan) { countSpan.textContent = `${answeredCount} of ${endQ - startQ + 1}`; } }
+        }
+
+        window.nextQuestion = nextQuestion; window.previousQuestion = previousQuestion; window.goToQuestion = goToQuestion; window.switchToPart = switchToPart; window.closeResultsModal = closeResultsModal; window.highlightText = highlightText; window.addNote = addNote; window.clearHighlight = clearHighlight; window.clearAllHighlights = clearAllHighlights;
+    });
+    </script>
+</body>
+</html>

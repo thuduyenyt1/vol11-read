@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap" rel="stylesheet">
+    <title>IELTS Full Reading Practice - V11 Test 3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; background-color: #ffffff; line-height: 1.4; font-size: 16px; }
+        .header { background: linear-gradient(120deg, #e9eefb, #dfe7ff, #e9eefb); background-size: 200% 200%; animation: bannerFlow 8s ease-in-out infinite; padding: 10px 20px; border-bottom: 1px solid #d7def5; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: nowrap; position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 60px; }
+        .header-right { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 auto; justify-content: flex-start; }
+        .header-ad { display: inline-flex; align-items: center; gap: 0; padding: 4px 10px; border-radius: 14px; border: 1px solid rgba(215, 222, 245, 0.9); background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(4px); text-decoration: none; color: inherit; box-shadow: 0 10px 24px rgba(33, 58, 128, 0.12); min-width: 180px; max-width: calc(100% - 70px); width: auto; flex: 1 1 auto; height: 48px; overflow: hidden; }
+        .ad-copy { display: flex; flex-direction: column; gap: 0; width: 100%; overflow: hidden; position: relative; }
+        .ad-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #6b7ac7; margin: 0; font-weight: 700; }
+        .ad-marquee { display: flex; gap: 24px; width: 100%; align-items: center; padding-left: 4px; }
+        .ad-headline { margin: 0; font-size: 16px; font-weight: 800; color: #1c2566; white-space: nowrap; }
+        .ad-loop { display: flex; gap: 40px; }
+        .ad-close { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #cdd6f5; background: rgba(255, 255, 255, 0.7); color: #46507a; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease; text-decoration: none; font-weight: 800; flex: 0 0 auto; margin-left: 6px; font-size: 16px; }
+        .ad-close:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(70, 80, 122, 0.25); background: #f6f8ff; }
+        @keyframes bannerFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .main-container { margin-top: 90px; display: flex; flex-direction: column; background: #ffffff; height: calc(100vh - 90px); }
+        .panels-container { display: flex; flex: 1; overflow: hidden; }
+        .passage-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; }
+        .text-center { text-align: center; }
+        .reading-passage h4 { font-family: 'Merriweather', 'Times New Roman', serif; font-size: 22px; font-weight: 600; color: #2c3e50; line-height: 1.4; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #4a90e2; padding-bottom: 5px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+        .reading-passage p { margin-bottom: 1.2em; }
+        .questions-panel { flex: 1; padding: 20px 20px 100px; overflow-y: auto; min-width: 200px; border-left: 1px solid #e0e0e0; }
+        .resizer { width: 10px; cursor: col-resize; background-color: #f0f0f0; background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 10 30"><path d="M4 11h2v2H4zM4 15h2v2H4zM4 19h2v2H4z" fill="%23888"/></svg>'); background-repeat: no-repeat; background-position: center; flex-shrink: 0; flex-grow: 0; }
+        .nav-arrows { position: fixed; bottom: 100px; right: 20px; display: flex; gap: 5px; z-index: 101; }
+        .nav-arrow { width: 50px; height: 50px; background: #333; color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; }
+        .nav-arrow:hover { background: #555; }
+        .nav-row { position: fixed; bottom: 0; left: 0; right: 0; background: #ffffff; padding: 0; display: flex; align-items: center; height: 80px; z-index: 100; }
+        .footer__questionWrapper___1tZ46 { display: flex; align-items: center; margin-right: 20px; }
+        .footer__questionNo___3WNct { background: none; border: none; padding: 10px 15px; font-size: 16px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background-color 0.2s; }
+        .footer__questionNo___3WNct:hover { background-color: #f8f9fa; }
+        .section-prefix { font-size: 16px; }
+        .sectionNr { font-size: 16px; font-weight: bold; }
+        .attemptedCount { font-size: 14px; color: #666; margin-left: 5px; font-weight: 400; }
+        @media (max-width: 768px) { .attemptedCount { display: none; } }
+        .footer__questionWrapper___1tZ46.selected .attemptedCount { display: none; }
+        .footer__subquestionWrapper___9GgoP { display: none; gap: 2px; margin-left: 10px; }
+        .footer__questionWrapper___1tZ46.selected .footer__subquestionWrapper___9GgoP { display: flex; }
+        .subQuestion { width: 32px; height: 32px; border: 1px solid #ccc; background: white; color: #333; font-size: 14px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; border-radius: 2px; }
+        .subQuestion.answered { background-color: #6b7ac7; color: #ffffff; border-color: #46507a; font-weight: bold; }
+        .subQuestion.correct { background-color: #28a745; color: white; border-color: #28a745; }
+        .subQuestion.incorrect { background-color: #dc3545; color: white; border-color: #dc3545; }
+        .subQuestion.marked { position: relative; color: #333; }
+        .subQuestion:hover { background-color: #f0f0f0; border-color: #999; }
+        .subQuestion.active { background-color: #4a90e2; color: white; border-color: #4a90e2; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+        .footer__deliverButton___3FM07 { margin-left: auto; margin-right: 20px; background-color: #f0f0f0; color: #333; border: 1px solid #ccc; padding: 12px 20px; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s, border-color 0.2s; min-width: 170px; justify-content: center; }
+        .footer__deliverButton___3FM07:hover { background-color: #e0e0e0; border-color: #bbb; }
+        .footer__deliverButton___3FM07:disabled { background: #e9ecef; color: #6c757d; cursor: not-allowed; border-color: #ddd; }
+        .fa-check::before { content: "✓"; }
+        .hidden { display: none !important; }
+        .context-menu { position: absolute; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: none; min-width: 140px; overflow: hidden; }
+        .context-menu-item { padding: 12px 16px; cursor: pointer; font-size: 16px; border-bottom: 1px solid #f0f0f0; transition: background-color 0.2s; display: flex; align-items: center; gap: 8px; }
+        .context-menu-item:hover { background-color: #f8f9fa; }
+        .context-menu-item:last-child { border-bottom: none; }
+        .color-btn { width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; padding: 0; background-color: transparent; }
+        .color-btn:hover { transform: scale(1.15); box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
+        .color-btn.yellow { background-color: #fff3a3; }
+        .color-btn.green { background-color: #b4f0c1; }
+        .color-btn.pink { background-color: #ffc7df; }
+        .annotation-highlight { background-color: var(--highlight-color, #fff3a3); border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); cursor: pointer; }
+        .annotation-highlight.highlight-yellow { --highlight-color: #fff3a3; }
+        .annotation-highlight.highlight-green { --highlight-color: #b4f0c1; }
+        .annotation-highlight.highlight-pink { --highlight-color: #ffc7df; }
+        .annotation-highlight.highlight-blue { --highlight-color: #d0ebff; border: 1px dashed #339af0; }
+        .annotation-note { background-color: #b4f0c1; border-radius: 4px; padding: 0 2px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); position: relative; cursor: pointer; }
+        .annotation-note[data-note]:hover::after { content: attr(data-note); position: absolute; left: 50%; bottom: 100%; transform: translate(-50%, -6px); background: #1f2937; color: #fff; padding: 6px 10px; border-radius: 4px; white-space: nowrap; font-size: 13px; z-index: 2000; }
+        .question { margin-bottom: 40px; }
+        .question p { margin-bottom: 10px; }
+        .question-prompt { margin-bottom: 20px; }
+        .question-title { font-size: 18px; font-weight: 700; text-align: center; margin: 6px 0 10px; color: #000; }
+        .answer-input { border: 1px solid #888; border-radius: 4px; background-color: #fff; padding: 2px 5px; font-size: 16px; text-align: center; margin-right: 4px; margin-left: 4px; transition: border-color 0.3s, box-shadow 0.3s; height: 28px; width: 150px; z-index: 10; position: relative; pointer-events: auto; }
+        .answer-input.active-input { border-color: #4a90e2; box-shadow: 0 0 3px 1px rgba(74, 144, 226, 0.5); }
+        .answer-input::placeholder { color: #999; font-weight: bold; text-align: center; }
+        .answer-input.correct { border-color: #28a745; background-color: #e9f7ef; }
+        .answer-input.incorrect { border-color: #dc3545; background-color: #f8d7da; color: #721c24; }
+        .part-header { background-color: #f1f2ec; padding: 10px 16px; border: 1px solid #e0e0e0; text-align: left; margin: 8px 20px; border-radius: 5px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .timer-container { display: flex; position: relative; cursor: default; color: #333; font-size: 16px; font-weight: 500; align-items: center; gap: 12px; flex: 0 0 auto; min-width: 220px; padding: 4px 10px; border-radius: 14px; border: 1px solid #d7def5; background: rgba(255, 255, 255, 0.24); box-shadow: 0 8px 18px rgba(33, 58, 128, 0.08); }
+        .timer-controls { display: flex; align-items: center; gap: 8px; margin-left: 15px; }
+        .timer-controls button { background: #f0f0f0; border: 1px solid #ccc; border-radius: 50%; padding: 0; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .timer-controls button:hover { background: #e0e0e0; }
+        .tf-question { margin-bottom: 25px; padding: 10px 0px; border-radius: 4px; transition: border-color 0.3s, background-color 0.3s; }
+        .tf-question-line { display: flex; align-items: flex-start; margin-bottom: 15px; padding: 5px 0px; border-radius: 4px; }
+        .tf-question-number, .question-number-box { border: 2px solid #ccc; padding: 2px 8px; margin-right: 10px; border-radius: 3px; font-weight: bold; transition: border-color 0.3s; display: inline-block; }
+        .tf-question-text { padding-top: 3px; }
+        .tf-options { padding-left: 5px; }
+        .tf-option { display: block; margin-bottom: 12px; cursor: pointer; display: flex; align-items: center; }
+        .tf-option input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .tf-question.correct .tf-question-line { background-color: #e9f7ef; }
+        .tf-question.incorrect .tf-question-line { background-color: #f8d7da; }
+        .multi-choice-question { margin-bottom: 20px; padding: 10px; border-radius: 4px; border: 3px solid transparent; transition: border-color 0.3s, background-color 0.3s; }
+        .multi-choice-option { margin-bottom: 10px; padding: 8px; border-radius: 4px; transition: background-color 0.3s; }
+        .multi-choice-option label { display: flex; align-items: center; cursor: pointer; font-size: 16px; }
+        .multi-choice-option input[type="checkbox"], .multi-choice-option input[type="radio"] { margin-right: 12px; transform: scale(1.3); accent-color: #4a90e2; }
+        .multi-choice-option.correct { background-color: #e9f7ef; }
+        .multi-choice-option.incorrect { background-color: #f8d7da; }
+        .matching-form-container { margin-top: 20px; }
+        .matching-form-row { display: flex; align-items: center; margin-bottom: 12px; gap: 12px; flex-wrap: wrap; }
+        .matching-form-label { width: auto; flex: 1 1 320px; margin-right: 8px; }
+        .matching-form-row select.answer-input { width: 220px; flex-shrink: 0; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; display: flex; justify-content: center; align-items: center; }
+        .modal-overlay.hidden { display: none; }
+        .modal-content { background: white; padding: 25px; border-radius: 8px; width: 90%; max-width: 600px; max-height: 80vh; display: flex; flex-direction: column; position: relative; }
+        .modal-close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 28px; cursor: pointer; color: #888; }
+        .modal-content h2 { text-align: center; margin-bottom: 15px; color: #333; }
+        .results-summary { display: flex; justify-content: space-around; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-align: center; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .results-details-container { overflow-y: auto; padding-right: 10px; }
+        .result-row { display: grid; grid-template-columns: 40px 1fr 1fr; gap: 15px; padding: 8px 5px; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+        .result-row.incorrect { background-color: #f8d7da; }
+        .result-row .q-num { font-weight: bold; }
+        .result-row .user-ans { color: #555; }
+        .result-row .correct-ans { color: #155724; font-weight: 500; }
+        .correct-answer-display { font-weight: bold; color: #28a745; margin-left: 10px; font-size: 14px; }
+        .correct-answer-highlight { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; padding: 4px; }
+        html, body { width: 100%; height: 100%; overflow: hidden; }
+        #launchScreen, #app { width: 100vw; height: 100vh; }
+        #app { display: none; }
+        #launchScreen { display: flex; align-items: center; justify-content: center; padding: 24px; background: radial-gradient(circle at 0% 0%, rgba(206, 219, 255, 0.48), transparent 34%), radial-gradient(circle at 100% 100%, rgba(221, 229, 255, 0.44), transparent 38%), #f4f6fc; color: #1f2b59; }
+        .launch-card { width: min(980px, 100%); border: 1px solid #d7def5; border-radius: 18px; background: linear-gradient(180deg, #ffffff, #f7f9ff); box-shadow: 0 16px 38px rgba(33, 58, 128, 0.14); padding: 28px 30px 22px; display: grid; gap: 12px; }
+        .launch-eyebrow { margin: 0; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #6f7cb2; font-weight: 700; }
+        .launch-title { margin: 4px 0 0; font-size: clamp(26px, 3.5vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: #1c2566; }
+        .launch-meta { margin: 8px 0 0; color: #3c4a81; font-size: 15px; font-weight: 600; }
+        .launch-guide { border: 1px solid #d7def5; border-radius: 12px; background: #f2f5ff; padding: 14px; display: grid; gap: 6px; }
+        .launch-main { margin: 0; font-size: clamp(18px, 2.2vw, 23px); line-height: 1.32; font-weight: 700; color: #1d2a60; }
+        .launch-sub { margin: 0; color: #4c598f; font-size: 14px; line-height: 1.45; }
+        .student-info-form { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .student-info-form input { width: 100%; padding: 12px 15px; border: 1px solid #c5d0f2; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.2s; }
+        .student-info-form input:focus { border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); }
+        .launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+        .launch-btn { border: 1px solid #c5d0f2; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 700; padding: 11px 16px; color: #24336e; background: #ffffff; transition: transform 0.12s ease; box-shadow: 0 8px 20px rgba(35, 54, 110, 0.14); width: 100%; text-align: center; font-size: 16px; }
+        .launch-btn:hover { transform: translateY(-1px); background: #f6f8ff; }
+        .explanation-box { display: none; margin-top: 10px; margin-bottom: 15px; padding: 12px 15px; background-color: #f0f7ff; border-left: 4px solid #4a90e2; border-radius: 4px; font-size: 15px; color: #2c3e50; line-height: 1.5; width: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: background-color 0.2s ease; }
+        .explanation-box:hover { background-color: #e2efff; }
+        .explanation-box.show { display: block; animation: fadeIn 0.4s ease-in-out; }
+        .explanation-title { font-weight: 700; margin-bottom: 6px; color: #1c2566; display: flex; align-items: center; gap: 6px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        .options-list { list-style-type: none; padding-left: 0; margin-bottom: 15px; }
+        .options-list li { margin-bottom: 5px; }
+        .options-list-label { font-weight: bold; margin-right: 8px; }
+        .example-box { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <section id="launchScreen" aria-label="Launch screen">
+        <div class="launch-card">
+            <div>
+                <p class="launch-eyebrow">IELTS Test Launcher</p>
+                <h1 class="launch-title" id="launchTestTitle">V11 Test 3 - Reading</h1>
+                <p class="launch-meta">Dạng bài: Reading</p>
+            </div>
+            <div class="launch-guide">
+                <p class="launch-main">Nhấn F11 để bắt đầu làm bài ở chế độ toàn màn hình.</p>
+                <p class="launch-sub">Nhấn F11 lần nữa để thoát toàn màn hình nếu cần.</p>
+                <div class="student-info-form">
+                    <input type="text" id="studentName" placeholder="Nhập Họ và tên của bạn..." required>
+                    <input type="text" id="studentClass" placeholder="Nhập Lớp của bạn..." required>
+                    <p id="launchError" style="color: #dc3545; font-size: 14px; display: none; margin: 0; font-weight: 600;">⚠️ Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+                </div>
+            </div>
+            <div class="launch-row">
+                <button id="startNormalBtn" class="launch-btn" type="button">Bắt đầu làm bài</button>
+            </div>
+        </div>
+    </section>
+    <div id="app">
+    <div class="header">
+        <div class="timer-container">
+            <span class="timer-display">60 minutes remaining</span>
+            <div class="timer-controls">
+                <button id="timer-toggle-btn" title="Pause/Resume Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>
+                </button>
+                <button id="timer-reset-btn" title="Reset Timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" target="_blank" rel="noopener" class="header-ad">
+                <div class="ad-copy">
+                    <p class="ad-eyebrow">Study boost</p>
+                    <div class="ad-marquee">
+                        <div class="ad-loop">
+                            <span class="ad-headline">Chinh phục IELTS dễ dàng - Tài liệu đầy đủ, chiến lược rõ ràng!</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="ad-close" type="button" aria-label="Close ad" title="Close">×</button>
+        </div>
+    </div>
+
+        <div class="main-container" id="main-container">
+            <div id="passage-header-container">
+                <div id="part-header-1" class="part-header">
+                    <p><strong>Part 1</strong></p>
+                    <p>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</p>
+                </div>
+                <div id="part-header-2" class="part-header hidden">
+                    <p><strong>Part 2</strong></p>
+                    <p>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</p>
+                </div>
+                <div id="part-header-3" class="part-header hidden">
+                    <p><strong>Part 3</strong></p>
+                    <p>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</p>
+                </div>
+            </div>
+            <div class="panels-container">
+            <div class="passage-panel" id="passage-panel">
+                <div id="passage-text-1" class="reading-passage">
+                    <h4 class="text-center">THE FORMATION OF CONTINENTS AND THE EVOLUTION OF SPECIES</h4>
+                    <p><strong>A.</strong> The fact that there was once a Pangean supercontinent, a Panthalassa Ocean, and a Tethys Ocean, has profound implications for the evolution of multicellular life on Earth These considerations were unknown to the scientists of the 19th century — making their scientific deductions even more remarkable. Quite independently of each other, Charles Darwin and his young contemporary Alfred Russel Wallace reached the conclusion that life had evolved by natural selection. Wallace later wrote in My Life of his own inspiration.</p>
+                    <p><strong>B.</strong> Why do some species die and some live? The answer was clearly that on the whole the best fit lived. From the effects of disease, the most-healthy escaped; from enemies the strongest, the swiftest or the most cunning; from famine the best hunters. Then, it suddenly flashed on me that this self-acting process would improve the race, because in every generation the inferior would inevitably be killed off and the superior would remain, that is, the fittest would survive.</p>
+                    <p><strong>C.</strong> Both Darwin's and Wallace's ideas about natural selection had been influenced by the essays of Thomas Malthus in his Principles of Population. Their conclusions, however, had been the direct result of their personal observation of animals and plants in widely separated geographic locations: Darwin from his experiences during the voyage of the Beagle, and particularly during the ship's visit to the Galapagos Islands in the East Pacific in 1835; Wallace during his years of travel in the Amazon Basin and in the Indonesia-Australian Archipelago in the 1850s.</p>
+                    <p><strong>D.</strong> Darwin had been documenting his ideas on natural selection for many years when he received a paper on this same subject from Wallace, who asked for Darwin's opinion and help in getting it published. In July 1858, Charles Lyell and J. D Hooker, close friends of Darwin, pressed Darwin to present his conclusions so that he would not lose priority to an unknown naturalist. Presiding over the hastily called but now historic meeting of the Linnean Society in London, Lyell and Hooker explained to the distinguished members how "these two gentlemen" (who were absent: Wallace was abroad, and Darwin chose not to attend), had "independently and unknown to one another, conceived the same very ingenious theory"</p>
+                    <p><strong>E.</strong> Both Darwin and Wallace had realized that the anomalous distribution of species in particular regions had profound evolutionary significance. Subsequently, Darwin spent the rest of his days in almost total seclusion thinking and writing mainly about the origin of species. In contrast, Wallace applied himself to the science of biogeography, the study of the pattern and distribution of species, and its significance, resulting in the publication of a massive two volume work the Geographical Distribution of Animals in 1876.</p>
+                    <p><strong>F.</strong> Wallace was a gentle and modest man, but also persistent and quietly courageous. He spent years working in the most arduous possible climates and terrains, particularly in the Malay Archipelago, he made patient and detailed zoological observations and collected huge numbers of specimens for museums and collectors - which is how he made a living. One result of his work was the conclusion that there is a distinct faunal boundary, called "Wallace's line, " between an Asian realm of animals in Java, Borneo and the Philippines and an Australian realm in New Guinea and Australia. In essence this boundary posed a difficult question: How on Earth did plants and animals with a clear affinity to the Northern Hemisphere meet with their Southern Hemispheric counterparts along such a distinct Malaysian demarcation zone? Wallace was uncertain about demarcation on one particular island - Celebes, a curiously shaped place that is midway between the two groups. Initially he assigned its flora-fauna to the Australian side of the line, but later he transferred it to the Asian side. Today we know the reason for his dilemma. 200 MYA East and West Celebes were islands with their own natural history lying on opposite sides of the Tethys Ocean. They did not collide until about 15 MYA. The answer to the main question is that Wallace's Line categorizes Laurasia-derived flora-fauna (the Asian) and Gondwana-derived flora-fauna (the Australian), fauna that had evolved on opposing shares of the Tethys. The closure of the Tethys Ocean today is manifested by the ongoing collision of Australia/New Guinea with Indochina/Indonesia and the continuing closure of the Mediterranean Sea—a remnant of the Western Tethys Ocean.</p>
+                    <p><strong>G.</strong> In his ORIGIN OF CONTINENTS AND OCEANS, Wegener quoted at length from Wallace's Geographical Distribution of Animals. According to Wegener's reading, Wallace had identified three clear divisions of Australian animals, which supported his own theory of continental displacement. Wallace had shown that animals long established in southwestern Australia had an affinity with animals in South Africa, Madagascar, India, and Ceylon, but did not have an affinity with those in Asia. Wallace also showed that Australian marsupials and monotremes are clearly related to those In South America, the Moluccas, and various Pacific islands, and that none are found in neighboring Indonesia. From this and related data, Wegener concluded that the then broadly accepted "landbridge" theory could not account for this distribution of animals and that only his theory of continental drift could explain it.</p>
+                    <p><strong>H.</strong> The theory that Wegener dismissed in preference to his own proposed that plants and animals had once migrated across now-submerged intercontinental landbridges. In 1885, one of Europe's leading geologists, Eduard Suess, theorized that as the rigid Earth cools, its upper crust shrinks and wrinkles like the withering skin of an aging apple. He suggested that the planet's seas and oceans now fill the wrinkles between once-contiguous plateaus.</p>
+                    <p><strong>I.</strong> Today, we know that we live on a dynamic Earth with shifting, colliding and separating tectonic plates, not a "withering skin", and the main debate in the field of biogeography has shifted. The discussion now concerns "dispersalism" versus "vicarianism" unrestricted radiation of species on the one hand and the development of barriers to migration on the other. Dispersion is a short-term phenomenon—the daily or seasonal migration of species and their radiation to the limits of their natural environment on an extensive and continuous landmass. Vicarian evolution, however, depends upon the separation and isolation of a variety of species within the confines of natural barriers in the form of islands, lakes, or shallow seas—topographical features that take a long time to develop.</p>
+                </div>
+                <div id="passage-text-2" class="reading-passage hidden">
+                    <h4 class="text-center">DEMYSTIFYING YAWN</h4>
+                    <p><strong>A.</strong> When a scientist began to study yawning in the 1980s, it was difficult to convince some of his research students of the merits of "yawning science." Although it may appear quirky, his decision to study yawning was a logical extension to human beings of his research in developmental neuroscience, reported in such papers as "Wing-flapping during Development and Evolution." As a neurobehavioral problem, there is not much difference between the wing-flapping of birds and the face and body flapping of human yawners.</p>
+                    <p><strong>B.</strong> Yawning is an ancient, primitive act. Humans do it even before they are born, opening wide in the womb. Some snakes unhinge their jaws to do it. One species of penguins yawns as part of mating. Only now are researchers beginning to understand why we yawn, when we yawn and why we yawn back. A professor of cognitive neuroscience at Drexel University in Philadelphia, Steven Platek, studies the act of contagious yawning, something done only by people and other primates.</p>
+                    <p><strong>C.</strong> In his first experiment, he used a psychological test to rank people on their empathic feelings. He found that participants who did not score high on compassion did not yawn back. "We literally had people saying, 'Why am I looking at people yawning?— Professor Platek said. "It just had no effect."</p>
+                    <p><strong>D.</strong> For his second experiment, he put 10 students in a magnetic resonance imaging machine as they watched video tapes of people yawning. When the students watched the videos, the part of the brain which reacted was the part scientists believe controls empathy — the posterior cingulate, in the brain's middle rear." I don't know if it's necessarily that nice people yawn more, but I think it's a good indicator of a state of mind," said Professor Platek. "It's also a good indicator if you're empathizing with me and paying attention."</p>
+                    <p><strong>E.</strong> His third experiment is studying yawning in those with brain disorders, such as autism and schizophrenia, in which victims have difficulty connecting emotionally with others. A psychology professor at the University of Maryland, Robert Provine, is one of the few other researchers into yawning. He found the basic yawn lasts about six seconds and they come in bouts with an interval of about 68 seconds. Men and women yawn or half-yawn equally often, but men are significantly less likely to cover their mouths which may indicate complex distinction in genders." A watched yawner never yawns," Professor Provine said. However, the physical root of yawning remains a mystery. Some researchers say it's coordinated within the hypothalamus of the brain, the area that also controls breathing.</p>
+                    <p><strong>F.</strong> Yawning and stretching also share properties and may be performed together as parts of a global motor complex. But they do not always co-occur, people usually yawn when we stretch, but we don't always stretch when we yawn, especially before bedtime. Studies by G.H.A. Visser and H.F. Prechtl in the early 1980s, charting movement In the developing fetus using ultrasound, observed not just yawning but a link between yawning and stretching as early as the end of the first prenatal trimester.</p>
+                    <p><strong>G.</strong> The most extraordinary demonstration of the yawn-stretch linkage occurs in many people paralyzed on one side of their body because of brain damage caused by a stroke. The prominent British neurologist Sir Francis Walshe noted in 1923 that when these hemiplegics yawn, they are startled and mystified to observe that their otherwise paralyzed arm rises and flexes automatically in what neurologists term an "associated response." Yawning apparently activates undamaged, unconsciously controlled connections between the brain and the cord motor system innervating the paralyzed limb. It is not known whether the associated response is a positive prognosis for recovery, nor whether yawning is therapeutic for reinnervation or prevention of muscular atrophy.</p>
+                    <p><strong>H.</strong> Clinical neurology offers other surprises. Some patients with "locked-in" syndrome, who are almost totally deprived of the ability to move voluntarily, can yawn normally. The neural circuits for spontaneous yawning must exist in the brain stem near other respiratory and vasomotor centers, because yawning is performed by anencephalic individuals who possess only the medulla oblongata. The multiplicity of stimuli of contagious yawning, by contrast, implicates many higher brain regions.</p>
+                </div>
+                <div id="passage-text-3" class="reading-passage hidden">
+                    <h4 class="text-center">INCORRECT TERMINOLOGY IN SCIENCE</h4>
+                    <p><strong>A.</strong> Science plays an increasingly significant role in people's lives, making the faithful communication of scientific developments more important than ever. Yet such communication is fraught with challenges that can easily distort discussions, leading to unnecessary confusion and misunderstandings.</p>
+                    <p><strong>B.</strong> Some problems stem from the esoteric nature of current research and the associated difficulty of finding sufficiently faithful terminology. Abstraction and complexity are not signs that a given scientific direction is wrong, as some commentators have suggested, but are instead a tribute to the success of human ingenuity in meeting the increasingly complex challenges that nature presents. They can, however, make communication more difficult. But many of the biggest challenges for science reporting arise because in areas of evolving research, scientists themselves often only partly understand the full implications of any particular advance or development. Since that dynamic applies to most of the scientific developments that directly affect people's lives: global warming, cancer research, diet studies — learning how to overcome it is critical to spurring a more informed scientific debate among the broader public.</p>
+                    <p><strong>C.</strong> Ambiguous word choices are the source of some misunderstandings. Scientists often employ colloquial terminology, which they then assign a specific meaning that is impossible to fathom without proper training. The term "relativity," for example, is intrinsically misleading. Many interpret the theory to mean that everything is relative and there are no absolutes. Yet although the measurements any observer makes depend on his coordinates and reference frame, the physical phenomena he measures have an invariant description that transcends that observer's particular coordinates. Einstein's theory of relativity is really about finding an Invariant description of physical phenomena. True, Einstein agreed with the idea that his theory would have been better named "Invarianten theory." But the term - "relativity" was already entrenched at the time for him to change.</p>
+                    <p><strong>D.</strong> "The uncertainty principle" is another frequently abused term. It is sometimes interpreted as a limitation on observers and their ability to make measurements. But it is not about intrinsic limitations on any one particular measurement; it is about the inability to precisely measure particular pairs of quantities simultaneously. The first Interpretation is perhaps more engaging from a philosophical or political perspective. It's just not what science is about.</p>
+                    <p><strong>E.</strong> Even the word "theory" can be a problem. Unlike most people, who use the word to describe a passing conjecture that they often regard as suspect, physicists have very specific ideas in mind when they talk about theories. For physicists, theories entail a definite physical framework embodied in a set of fundamental assumptions about the world that lead to a specific set of equations and predictions — ones that are borne out by successful predictions. Theories aren't necessarily shown to be correct or complete immediately. Even Einstein took the better part of a decade to develop the correct version of his theory of general relativity. But eventually both the ideas and the measurements settle down and theories are either proven correct, abandoned or absorbed into other, more encompassing theories.</p>
+                    <p><strong>F.</strong> "Global warming" is another example of problematic terminology. Climatologists predict more drastic fluctuations in temperature and rainfall — not necessarily that every place will be warmer. The name sometimes subverts the debate, since it lets people argue that their winter was worse, so how could there be global warming? Clearly "global climate change" would have been a better name. But not all problems stem solely from poor word choices. Some stem from the intrinsically complex nature of much of modern science. Science sometimes transcends this limitation: remarkably, chemists were able to detail the precise chemical processes involved in the destruction of the ozone layer, making the evidence that chlorofluorocarbon gases (Freon, for example) were destroying the ozone layer indisputably.</p>
+                    <p><strong>G.</strong> A better understanding of the mathematical significance of results and less insistence on a simple story would help to clarify many scientific discussions. For several months, Harvard was tortured by empty debates over the relative intrinsic scientific abilities of men and women. One of the more amusing aspects of the discussion was that those who believed in the differences and those who didn't used the same evidence about gender-specific special ability. How could that be? The answer is that the data shows no substantial effects. Social factors might account for these tiny differences, which in any case have an unclear connection to scientific ability. Not much of a headline when phrased that way, is it? Each type of science has its own source of complexity and potential for miscommunication. Yet there are steps we can take to improve public understanding in all cases. The first would be to inculcate greater understanding and acceptance of indirect scientific evidence. The information from an unmanned space mission is no less legitimate than the information from one In which people are on board.</p>
+                    <p><strong>H.</strong> This doesn't mean never questioning an Interpretation, but it also doesn't mean equating indirect evidence with blind belief, as people sometimes suggest. Second, we might need different standards for evaluating science with urgent policy implications than research with purely theoretical value. When scientists say they are not certain about their predictions, it doesn't necessarily mean they've found nothing substantial. It would be better if scientists were more open about the mathematical significance of their results and if the public didn't treat math as quite so scary. Statistics and errors, which tell us the uncertainty in a measurement, give us the tools to evaluate new developments fairly.</p>
+                    <p><strong>I.</strong> But most importantly, people have to recognize that science can be complex. If we accept only simple stories, the description will necessarily be distorted. When advances are subtle or complicated, scientists should be willing to go the extra distance to give proper explanations and be patient about the truth. Even so, some difficulties are unavoidable. Most developments reflect work in progress, so the story is complex because no one yet knows the big picture.</p>
+                </div>
+            </div>
+            <div class="resizer" id="resizer"></div>
+            <div class="questions-panel" id="questions-panel">
+                <div id="questions-1" class="question-set">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="1" data-q-end="5">
+                            <div class="question-prompt">
+                                <p><strong>Questions 1-5</strong></p>
+                                <p>Use the information in the passage to match the people (listed A-E) with opinions or deeds below.</p>
+                                <p>Choose the appropriate letters <strong>A-E</strong>.</p>
+                            </div>
+                            <div class="example-box" style="font-size: 15px; margin-bottom: 15px;">
+                                <p><strong>List of people</strong></p>
+                                <ul class="options-list" style="display: flex; flex-wrap: wrap; gap: 15px;">
+                                    <li><span class="options-list-label">A</span> Suess</li>
+                                    <li><span class="options-list-label">B</span> Wallace</li>
+                                    <li><span class="options-list-label">C</span> Darwin and Wallace</li>
+                                    <li><span class="options-list-label">D</span> Wegener</li>
+                                    <li><span class="options-list-label">E</span> Lyell and Hooker</li>
+                                </ul>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q1" class="matching-form-label"><strong>1</strong> Urged Darwin to publish his scientific findings</label>
+                                    <select class="answer-input" id="q1"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q2" class="matching-form-label"><strong>2</strong> Depicted physical features of earth's crust</label>
+                                    <select class="answer-input" id="q2"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q3" class="matching-form-label"><strong>3</strong> Believed in continental drift theory while rejecting another one</label>
+                                    <select class="answer-input" id="q3"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q4" class="matching-form-label"><strong>4</strong> Published works about wildlife distribution in different regions</label>
+                                    <select class="answer-input" id="q4"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q5" class="matching-form-label"><strong>5</strong> Evolution of species is based on selection by nature</label>
+                                    <select class="answer-input" id="q5"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="6" data-q-end="8">
+                            <div class="question-prompt">
+                                <p><strong>Questions 6-8</strong></p>
+                                <p>Reading Passage 1 has nine paragraphs, A - I.</p>
+                                <p>Which paragraph contains the following information?</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q6" class="matching-form-label"><strong>6</strong> The most adaptable would survive</label>
+                                    <select class="answer-input" id="q6"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q7" class="matching-form-label"><strong>7</strong> The boundary called Wallace's line is found between Asia and Australia</label>
+                                    <select class="answer-input" id="q7"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q8" class="matching-form-label"><strong>8</strong> Animal affinity exists between Australia and Africa</label>
+                                    <select class="answer-input" id="q8"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="9" data-q-end="13">
+                            <div class="question-prompt">
+                                <p><strong>Questions 9-13</strong></p>
+                                <p>Complete the following summary of the paragraphs of Reading Passage.</p>
+                                <p>Write <strong>NO MORE THAN TWO WORDS</strong> from the Reading Passage for each answer.</p>
+                            </div>
+                            <p>Wegener found that continental drift instead of "land bridge" theory in which vegetation and wildlife 9 <input type="text" class="answer-input" id="q9" placeholder="9"> intercontinentally. could explain strange species' distribution phenomenon. However, Eduard Suess compared the wrinkle of the crust to the 10 <input type="text" class="answer-input" id="q10" placeholder="10"> of an old apple. Now it is well known that we are living on the planet where there are 11 <input type="text" class="answer-input" id="q11" placeholder="11"> in constant mobile states instead of what Suess described. The debate in biogeography has switched to concerns between two terms: " 12 <input type="text" class="answer-input" id="q12" placeholder="12"> " and " 13 <input type="text" class="answer-input" id="q13" placeholder="13"> ".</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="questions-2" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="14" data-q-end="18">
+                            <div class="question-prompt">
+                                <p><strong>Questions 14-18</strong></p>
+                                <p>Complete the Summary paragraph described below.</p>
+                                <p>Write <strong>NO MORE THAN THREE WORDS</strong> from the Reading Passage for each answer.</p>
+                            </div>
+                            <p>A psychology professor drew a conclusion that an average yawn lasts about 6 seconds followed by an 14 <input type="text" class="answer-input" id="q14" placeholder="14"> before another yawn. It is almost at the same frequency that males and females yawn or half yawn, but behavior accompanied with yawning shows a 15 <input type="text" class="answer-input" id="q15" placeholder="15"> in genders. Besides, a part of the brain involved in yawning may also be responsible for 16 <input type="text" class="answer-input" id="q16" placeholder="16"> . Another study found that there is a link between a yawn and 17 <input type="text" class="answer-input" id="q17" placeholder="17"> during the first three months of pregnancy, and yawning was also shown to set off an involuntary movement in people with 18 <input type="text" class="answer-input" id="q18" placeholder="18"></p>
+                        </div>
+                        
+                        <div class="question" data-q-start="19" data-q-end="23">
+                            <div class="question-prompt">
+                                <p><strong>Questions 19-23</strong></p>
+                                <p>Reading Passage 2 has eight paragraphs, A-E. Which paragraph contains the following information?</p>
+                                <p>NB You may use any letter more than once.</p>
+                            </div>
+                            <div class="matching-form-container">
+                                <div class="matching-form-row">
+                                    <label for="q19" class="matching-form-label"><strong>19</strong> The rate for yawning shows some regular pattern.</label>
+                                    <select class="answer-input" id="q19"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q20" class="matching-form-label"><strong>20</strong> Yawning is an inherent ability that appears in both animals and humans.</label>
+                                    <select class="answer-input" id="q20"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q21" class="matching-form-label"><strong>21</strong> Stretching and yawning doesn't always occur together.</label>
+                                    <select class="answer-input" id="q21"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q22" class="matching-form-label"><strong>22</strong> Yawning may suggest people are empathetic and attentive.</label>
+                                    <select class="answer-input" id="q22"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                                <div class="matching-form-row">
+                                    <label for="q23" class="matching-form-label"><strong>23</strong> Some superior areas in the brain may underline the infectious feature of yawning.</label>
+                                    <select class="answer-input" id="q23"><option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="24" data-q-end="26">
+                            <div class="question-prompt">
+                                <p><strong>Questions 24-26</strong></p>
+                                <p>Choose <strong>TRUE</strong> if the statement agrees with the information given in the text, choose <strong>FALSE</strong> if the statement contradicts the information, or choose <strong>NOT GIVEN</strong> if there is no information on this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="24" data-q-end="24"><div class="tf-question-line"><span class="tf-question-number">24</span><span class="tf-question-text">Some participants in Platek's first experiment did not understand why they were asked to look at people yawning.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q24" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q24" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q24" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="25" data-q-end="25"><div class="tf-question-line"><span class="tf-question-number">25</span><span class="tf-question-text">The results from the second experiment indicate the link between yawning and empathy.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q25" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q25" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q25" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="26" data-q-end="26"><div class="tf-question-line"><span class="tf-question-number">26</span><span class="tf-question-text">Yawning shows a positive impact on the recovery from brain damage brought by a stroke.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q26" value="TRUE"> TRUE</label><label class="tf-option"><input type="radio" name="q26" value="FALSE"> FALSE</label><label class="tf-option"><input type="radio" name="q26" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questions-3" class="question-set hidden">
+                    <div class="questions-container">
+                        <div class="question" data-q-start="27" data-q-end="31">
+                            <div class="question-prompt">
+                                <p><strong>Questions 27-31</strong></p>
+                                <p>Choose the correct answer, <strong>A, B, C or D</strong>.</p>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="27" data-q-end="27">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="27">27</span><span class="mcq-question-title">Why is the faithful communication of science important?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="A"> A. Science plays an increasingly significant role in people's lives.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="B"> B. Science is fraught with challenges the public are interested in.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="C"> C. The nature of complexity in science communication leads to confusion.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q27" value="D"> D. Scientific inventions are more important than ever before.</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="28" data-q-end="28">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="28">28</span><span class="mcq-question-title">What is the reason for many of the biggest challenges in science reporting?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="A"> A. Phenomenon such as global warming, cancer research, diet studies are too complex</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="B"> B. Scientists themselves often only partly understand the Theory of Evolution</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="C"> C. Scientists do not totally comprehend the impact of certain scientific advancements</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q28" value="D"> D. Scientists themselves often partly understand the esoteric communication nature</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="29" data-q-end="29">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="29">29</span><span class="mcq-question-title">According to the 3rd paragraph, the reference to the term and example of "theory of relativity" is to demonstrate</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="A"> A. Theory of relativity is about an invariant physical phenomenon</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="B"> B. Scientific terms can sometimes cause misunderstandings</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="C"> C. The term "relativity," is designed to be misleading public</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q29" value="D"> D. Everything is relative and there is no absolute existence</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="30" data-q-end="30">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="30">30</span><span class="mcq-question-title">Which one is a good example of an area where scientists used appropriate terminology</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="A"> A. The uncertainty principle</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="B"> B. Global warming</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="C"> C. The theory of relativity</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q30" value="D"> D. Freon's destructive process on Ozone</label></div>
+                                </div>
+                            </div>
+                            <div class="multi-choice-question" data-q-start="31" data-q-end="31">
+                                <div class="multi-choice-options">
+                                    <p class="mcq-question-text"><span class="mcq-question-number question-number-box" data-q-number="31">31</span><span class="mcq-question-title">What is a surprising finding of the Harvard debates in the passage?</span></p>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="A"> A. There are equal intrinsic scientific abilities of men and women.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="B"> B. Both sides used the same data in support of their argument.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="C"> C. The scientific data usually shows no substantial figures to support a debated idea.</label></div>
+                                    <div class="multi-choice-option"><label><input type="radio" name="q31" value="D"> D. Social factors might have a clear connection to scientific ability.</label></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question" data-q-start="32" data-q-end="35">
+                            <div class="question-prompt">
+                                <p><strong>Questions 32-35</strong></p>
+                                <p>Choose <strong>YES</strong> if the statement agrees with the claims of the writer, choose <strong>NO</strong> if the statement contradicts the claims of the writer, or <strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this.</p>
+                            </div>
+                            <div class="tf-question" data-q-start="32" data-q-end="32"><div class="tf-question-line"><span class="tf-question-number">32</span><span class="tf-question-text">"Global warming" scientifically refers to greater fluctuations in temperature and rainfall rather than a universal temperature rise.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q32" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q32" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q32" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="33" data-q-end="33"><div class="tf-question-line"><span class="tf-question-number">33</span><span class="tf-question-text">More media coverage of "global warming" would help the public to recognize the phenomenon.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q33" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q33" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q33" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="34" data-q-end="34"><div class="tf-question-line"><span class="tf-question-number">34</span><span class="tf-question-text">Harvard debates should focus more on female scientists than male scientists.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q34" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q34" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q34" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                            <div class="tf-question" data-q-start="35" data-q-end="35"><div class="tf-question-line"><span class="tf-question-number">35</span><span class="tf-question-text">Indirect scientific evidence is always less reliable than direct scientific evidence.</span></div><div class="tf-options"><label class="tf-option"><input type="radio" name="q35" value="YES"> YES</label><label class="tf-option"><input type="radio" name="q35" value="NO"> NO</label><label class="tf-option"><input type="radio" name="q35" value="NOT GIVEN"> NOT GIVEN</label></div></div>
+                        </div>
+
+                        <div class="question" data-q-start="36" data-q-end="40">
+                            <div class="question-prompt">
+                                <p><strong>Questions 36-40</strong></p>
+                                <p>Complete the following summary of the paragraphs of Reading Passage.</p>
+                                <p>Write <strong>NO MORE THAN TWO WORDS</strong> from the Reading Passage for each answer.</p>
+                            </div>
+                            <p>Science Communication is fraught with challenges that can easily distort discussions, leading to unnecessary confusion and misunderstandings. Firstly, ambiguous 36 <input type="text" class="answer-input" id="q36" placeholder="36"> are the source of some misunderstandings. Common people without proper training do not understand clearly or deeply a specific scientific meaning via the 37 <input type="text" class="answer-input" id="q37" placeholder="37"> that scientists often employ. For example, uncertainty is not about 38 <input type="text" class="answer-input" id="q38" placeholder="38"> limitations on any particular 39 <input type="text" class="answer-input" id="q39" placeholder="39"> . What's more, even the word "theory" can be a problem. Theories aren't necessarily shown to be correct or complete immediately since scientists often evolved better versions of specific theories, a good example can be the theory of 40 <input type="text" class="answer-input" id="q40" placeholder="40"> . Thus, most importantly people have to recognize that science can be complex.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-arrows">
+        <button class="nav-arrow" onclick="previousQuestion()" id="prevBtn">‹</button>
+        <button class="nav-arrow" onclick="nextQuestion()" id="nextBtn">›</button>
+    </div>
+
+    <nav class="nav-row perScorableItem" aria-label="Questions">
+        <div class="footer__questionWrapper___1tZ46 multiple selected" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(1)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">1</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(1)"><span class="sr-only">Question 1</span><span aria-hidden="true">1</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(2)"><span class="sr-only">Question 2</span><span aria-hidden="true">2</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(3)"><span class="sr-only">Question 3</span><span aria-hidden="true">3</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(4)"><span class="sr-only">Question 4</span><span aria-hidden="true">4</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(5)"><span class="sr-only">Question 5</span><span aria-hidden="true">5</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(6)"><span class="sr-only">Question 6</span><span aria-hidden="true">6</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(7)"><span class="sr-only">Question 7</span><span aria-hidden="true">7</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(8)"><span class="sr-only">Question 8</span><span aria-hidden="true">8</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(9)"><span class="sr-only">Question 9</span><span aria-hidden="true">9</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(10)"><span class="sr-only">Question 10</span><span aria-hidden="true">10</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(11)"><span class="sr-only">Question 11</span><span aria-hidden="true">11</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(12)"><span class="sr-only">Question 12</span><span aria-hidden="true">12</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(13)"><span class="sr-only">Question 13</span><span aria-hidden="true">13</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(2)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">2</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 13</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(14)"><span class="sr-only">Question 14</span><span aria-hidden="true">14</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(15)"><span class="sr-only">Question 15</span><span aria-hidden="true">15</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(16)"><span class="sr-only">Question 16</span><span aria-hidden="true">16</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(17)"><span class="sr-only">Question 17</span><span aria-hidden="true">17</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(18)"><span class="sr-only">Question 18</span><span aria-hidden="true">18</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(19)"><span class="sr-only">Question 19</span><span aria-hidden="true">19</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(20)"><span class="sr-only">Question 20</span><span aria-hidden="true">20</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(21)"><span class="sr-only">Question 21</span><span aria-hidden="true">21</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(22)"><span class="sr-only">Question 22</span><span aria-hidden="true">22</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(23)"><span class="sr-only">Question 23</span><span aria-hidden="true">23</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(24)"><span class="sr-only">Question 24</span><span aria-hidden="true">24</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(25)"><span class="sr-only">Question 25</span><span aria-hidden="true">25</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(26)"><span class="sr-only">Question 26</span><span aria-hidden="true">26</span></button>
+            </div>
+        </div>
+        <div class="footer__questionWrapper___1tZ46 multiple" role="tablist">
+            <button role="tab" class="footer__questionNo___3WNct" onclick="switchToPart(3)">
+                <span>
+                    <span aria-hidden="true" class="section-prefix">Part </span>
+                    <span class="sectionNr" aria-hidden="true">3</span>
+                    <span class="attemptedCount" aria-hidden="true">0 of 14</span>
+                </span>
+            </button>
+            <div class="footer__subquestionWrapper___9GgoP">
+                <button class="subQuestion scorable-item" onclick="goToQuestion(27)"><span class="sr-only">Question 27</span><span aria-hidden="true">27</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(28)"><span class="sr-only">Question 28</span><span aria-hidden="true">28</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(29)"><span class="sr-only">Question 29</span><span aria-hidden="true">29</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(30)"><span class="sr-only">Question 30</span><span aria-hidden="true">30</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(31)"><span class="sr-only">Question 31</span><span aria-hidden="true">31</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(32)"><span class="sr-only">Question 32</span><span aria-hidden="true">32</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(33)"><span class="sr-only">Question 33</span><span aria-hidden="true">33</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(34)"><span class="sr-only">Question 34</span><span aria-hidden="true">34</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(35)"><span class="sr-only">Question 35</span><span aria-hidden="true">35</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(36)"><span class="sr-only">Question 36</span><span aria-hidden="true">36</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(37)"><span class="sr-only">Question 37</span><span aria-hidden="true">37</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(38)"><span class="sr-only">Question 38</span><span aria-hidden="true">38</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(39)"><span class="sr-only">Question 39</span><span aria-hidden="true">39</span></button>
+                <button class="subQuestion scorable-item" onclick="goToQuestion(40)"><span class="sr-only">Question 40</span><span aria-hidden="true">40</span></button>
+            </div>
+        </div>
+        <button id="deliver-button" aria-label="Review your answers" class="footer__deliverButton___3FM07">
+            <i class="fa fa fa-check" aria-hidden="true"></i>
+            <span>Check Answers</span>
+        </button>
+    </nav>
+
+    <div id="contextMenu" class="context-menu">
+        <div id="menu-note" class="context-menu-item" onclick="addNote()">📝 Take note</div>
+        <div id="menu-highlight-colors" class="context-menu-item" style="display: flex; gap: 15px; justify-content: center; padding: 12px 16px;">
+            <button type="button" class="color-btn yellow" onclick="highlightText('yellow')" title="Highlight Yellow"></button>
+            <button type="button" class="color-btn green" onclick="highlightText('green')" title="Highlight Green"></button>
+            <button type="button" class="color-btn pink" onclick="highlightText('pink')" title="Highlight Pink"></button>
+        </div>
+        <div id="menu-clear" class="context-menu-item" onclick="clearHighlight()">🗑️ Delete</div>
+        <div id="menu-clear-all" class="context-menu-item" onclick="clearAllHighlights()">🗑️ Delete all</div>
+    </div>
+
+    <div id="results-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeResultsModal()">&times;</button>
+            <h2>Results</h2>
+            <div id="submit-status" style="display: none; text-align: center; margin-bottom: 15px; padding: 10px; border-radius: 4px; font-weight: bold;"></div>
+            <div class="results-summary">
+                <p>Score: <span id="results-score"></span> / 40</p>
+                <p>IELTS Band: <span id="results-band"></span></p>
+            </div>
+            <div id="results-details" class="results-details-container"></div>
+        </div>
+    </div>
+
+    <script>
+    window.testMeta = {
+        "totalQuestions": 40,
+        "parts": [
+            {"part": 1, "start": 1, "end": 13},
+            {"part": 2, "start": 14, "end": 26},
+            {"part": 3, "start": 27, "end": 40}
+        ],
+        "correctAnswers": {
+            "1": "E", "2": "A", "3": "D", "4": "B", "5": "C", 
+            "6": "B", "7": "F", "8": "G", 
+            "9": ["migrated", "Migrated"], "10": ["withering skin", "Withering skin"], "11": ["tectonic plates", "Tectonic plates"], "12": ["dispersalism", "Dispersalism"], "13": ["vicarianism", "Vicarianism"], 
+            "14": ["interval", "Interval", "an interval"], "15": ["complex distinction", "Complex distinction"], "16": ["breathing", "Breathing"], "17": ["stretching", "Stretching"], "18": ["brain damage", "Brain damage"], 
+            "19": "E", "20": "B", "21": "F", "22": "D", "23": "H", 
+            "24": "TRUE", "25": "TRUE", "26": "NOT GIVEN", 
+            "27": "A", "28": "C", "29": "B", "30": "D", "31": "B", 
+            "32": "YES", "33": "NOT GIVEN", "34": "NOT GIVEN", "35": "NO", 
+            "36": ["word choices", "Word choices"], "37": ["colloquial terminology", "Colloquial terminology"], "38": ["intrinsic", "Intrinsic"], "39": ["measurement", "Measurement"], "40": ["Freon", "freon", "general relativity", "relativity", "General relativity", "Relativity"]
+        }
+    };
+    </script>
+    
+    <script>
+    window.testExplanations = {
+        "1": 'Trích dẫn: Đoạn D: "In July 1858, Charles Lyell and J. D Hooker, close friends of Darwin, pressed Darwin to present his conclusions so that he would not lose priority to an unknown naturalist." (Khớp E)',
+        "2": 'Trích dẫn: Đoạn H: "In 1885, one of Europe\'s leading geologists, Eduard Suess, theorized that as the rigid Earth cools, its upper crust shrinks and wrinkles like the withering skin of an aging apple." (Khớp A)',
+        "3": 'Trích dẫn: Đoạn G: "From this and related data, Wegener concluded that the then broadly accepted \'landbridge\' theory could not account for this distribution of animals and that only his theory of continental drift could explain it." (Khớp D)',
+        "4": 'Trích dẫn: Đoạn E: "In contrast, Wallace applied himself to the science of biogeography... resulting in the publication of a massive two volume work the Geographical Distribution of Animals in 1876." (Khớp B)',
+        "5": 'Trích dẫn: Đoạn A: "Quite independently of each other, Charles Darwin and his young contemporary Alfred Russel Wallace reached the conclusion that life had evolved by natural selection." (Khớp C)',
+        "6": 'Trích dẫn: Đoạn B: "The answer was clearly that on the whole the best fit lived... that is, the fittest would survive." (Khớp B)',
+        "7": 'Trích dẫn: Đoạn F: "One result of his work was the conclusion that there is a distinct faunal boundary, called \'Wallace\'s line,\' between an Asian realm of animals in Java, Borneo and the Philippines and an Australian realm in New Guinea and Australia." (Khớp F)',
+        "8": 'Trích dẫn: Đoạn G: "Wallace had shown that animals long established in southwestern Australia had an affinity with animals in South Africa, Madagascar, India, and Ceylon..." (Khớp G)',
+        "9": 'Trích dẫn: Đoạn H: "The theory that Wegener dismissed in preference to his own proposed that plants and animals had once migrated across now-submerged intercontinental landbridges." (Từ điền: migrated)',
+        "10": 'Trích dẫn: Đoạn H: "He suggested that the planet\'s seas and oceans now fill the wrinkles between once-contiguous plateaus... like the withering skin of an aging apple." (Từ điền: withering skin)',
+        "11": 'Trích dẫn: Đoạn I: "Today, we know that we live on a dynamic Earth with shifting, colliding and separating tectonic plates, not a \'withering skin\'..." (Từ điền: tectonic plates)',
+        "12": 'Trích dẫn: Đoạn I: "The discussion now concerns \'dispersalism\' versus \'vicarianism\' unrestricted radiation of species..." (Từ điền: dispersalism)',
+        "13": 'Trích dẫn: Đoạn I: "The discussion now concerns \'dispersalism\' versus \'vicarianism\' unrestricted radiation of species..." (Từ điền: vicarianism)',
+        "14": 'Trích dẫn: Đoạn E: "He found the basic yawn lasts about six seconds and they come in bouts with an interval of about 68 seconds." (Từ điền: interval)',
+        "15": 'Trích dẫn: Đoạn E: "Men and women yawn or half-yawn equally often, but men are significantly less likely to cover their mouths which may indicate complex distinction in genders." (Từ điền: complex distinction)',
+        "16": 'Trích dẫn: Đoạn E: "Some researchers say it\'s coordinated within the hypothalamus of the brain, the area that also controls breathing." (Từ điền: breathing)',
+        "17": 'Trích dẫn: Đoạn F: "...observed not just yawning but a link between yawning and stretching as early as the end of the first prenatal trimester." (Từ điền: stretching)',
+        "18": 'Trích dẫn: Đoạn G: "The most extraordinary demonstration of the yawn-stretch linkage occurs in many people paralyzed on one side of their body because of brain damage caused by a stroke." (Từ điền: brain damage)',
+        "19": 'Trích dẫn: Đoạn E: "He found the basic yawn lasts about six seconds and they come in bouts with an interval of about 68 seconds." (Khớp E)',
+        "20": 'Trích dẫn: Đoạn B: "Yawning is an ancient, primitive act. Humans do it even before they are born... Some snakes unhinge their jaws... One species of penguins yawns..." (Khớp B)',
+        "21": 'Trích dẫn: Đoạn F: "But they do not always co-occur, people usually yawn when we stretch, but we don\'t always stretch when we yawn, especially before bedtime." (Khớp F)',
+        "22": 'Trích dẫn: Đoạn D: "It\'s also a good indicator if you\'re empathizing with me and paying attention." (Khớp D)',
+        "23": 'Trích dẫn: Đoạn H: "The multiplicity of stimuli of contagious yawning, by contrast, implicates many higher brain regions." (Khớp H)',
+        "24": 'Trích dẫn: Đoạn C: "We literally had people saying, \'Why am I looking at people yawning?\'" (Họ thực sự không hiểu tại sao - TRUE)',
+        "25": 'Trích dẫn: Đoạn D: "When the students watched the videos, the part of the brain which reacted was the part scientists believe controls empathy..." (Thí nghiệm 2 chỉ ra mối liên hệ - TRUE)',
+        "26": 'Trích dẫn: Đoạn G: "It is not known whether the associated response is a positive prognosis for recovery, nor whether yawning is therapeutic for reinnervation..." (Chưa rõ có tác dụng phục hồi hay không - NOT GIVEN)',
+        "27": 'Trích dẫn: Đoạn A: "Science plays an increasingly significant role in people\'s lives, making the faithful communication of scientific developments more important than ever." (Khớp A)',
+        "28": 'Trích dẫn: Đoạn B: "...many of the biggest challenges for science reporting arise because in areas of evolving research, scientists themselves often only partly understand the full implications of any particular advance or development." (Khớp C)',
+        "29": 'Trích dẫn: Đoạn C: "Ambiguous word choices are the source of some misunderstandings... The term \'relativity,\' for example, is intrinsically misleading." (Khớp B)',
+        "30": 'Trích dẫn: Đoạn F: "Science sometimes transcends this limitation: remarkably, chemists were able to detail the precise chemical processes involved in the destruction of the ozone layer... chlorofluorocarbon gases (Freon, for example)..." (Khớp D)',
+        "31": 'Trích dẫn: Đoạn G: "One of the more amusing aspects of the discussion was that those who believed in the differences and those who didn\'t used the same evidence about gender-specific special ability." (Khớp B)',
+        "32": 'Trích dẫn: Đoạn F: "\'Global warming\' is another example of problematic terminology. Climatologists predict more drastic fluctuations in temperature and rainfall — not necessarily that every place will be warmer." (Khớp YES)',
+        "33": 'Trích dẫn: Không có thông tin đề cập việc mức độ phủ sóng của truyền thông (media coverage) sẽ giúp công chúng nhận ra hiện tượng này. (Khớp NOT GIVEN)',
+        "34": 'Trích dẫn: Bài viết không hề đưa ra lời khuyên rằng trường Harvard nên tập trung vào nhà khoa học nữ hơn nhà khoa học nam. (Khớp NOT GIVEN)',
+        "35": 'Trích dẫn: Đoạn G: "The information from an unmanned space mission is no less legitimate than the information from one In which people are on board." (Bằng chứng gián tiếp không kém phần hợp pháp so với bằng chứng trực tiếp - Khớp NO)',
+        "36": 'Trích dẫn: Đoạn C: "Ambiguous word choices are the source of some misunderstandings." (Từ điền: word choices)',
+        "37": 'Trích dẫn: Đoạn C: "Scientists often employ colloquial terminology, which they then assign a specific meaning that is impossible to fathom without proper training." (Từ điền: colloquial terminology)',
+        "38": 'Trích dẫn: Đoạn D: "But it is not about intrinsic limitations on any one particular measurement..." (Từ điền: intrinsic)',
+        "39": 'Trích dẫn: Đoạn D: "But it is not about intrinsic limitations on any one particular measurement..." (Từ điền: measurement)',
+        "40": 'Trích dẫn: Theo Key Đáp án, đáp án được cung cấp cho câu 40 là "Freon" (nằm ở Đoạn F), tuy nhiên ví dụ về thuyết được cải thiện nhiều lần ở đoạn E là "theory of general relativity". Hệ thống được thiết lập chấm đúng cho cả 2 để đảm bảo độ chính xác theo Key và ngữ nghĩa.'
+    };
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const launchScreen = document.getElementById('launchScreen');
+        const app = document.getElementById('app');
+        const startNormalBtn = document.getElementById('startNormalBtn');
+        const launchTitle = document.getElementById('launchTestTitle');
+        if (launchTitle && document.title) { launchTitle.textContent = document.title; }
+        let examStarted = false;
+        let currentStudentName = "";
+        let currentStudentClass = "";
+
+        const beginExam = () => {
+            if (examStarted) return;
+            const nameInput = document.getElementById('studentName');
+            const classInput = document.getElementById('studentClass');
+            const errorMsg = document.getElementById('launchError');
+            if (!nameInput.value.trim() || !classInput.value.trim()) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            errorMsg.style.display = 'none';
+            currentStudentName = nameInput.value.trim();
+            currentStudentClass = classInput.value.trim();
+            examStarted = true;
+            if (launchScreen) launchScreen.style.display = 'none';
+            if (app) app.style.display = 'block';
+            initialize();
+        };
+
+        if (startNormalBtn) { startNormalBtn.addEventListener('click', beginExam); }
+        
+        const testMeta = window.testMeta || { totalQuestions: 40, parts: [], correctAnswers: {} };
+        const partRanges = testMeta.parts || [];
+        const correctAnswers = testMeta.correctAnswers || {};
+        const totalQuestions = testMeta.totalQuestions || Object.keys(correctAnswers).length;
+
+        let currentPassage = partRanges[0]?.part || 1;
+        let currentQuestion = partRanges[0]?.start || 1;
+        let pendingSelectionRange = null;
+        let activeAnnotationTarget = null;
+        let timeInSeconds = 3600;
+        let timerInterval;
+        let hasSubmitted = false;
+        let activeQuestionElement = null;
+        const markedQuestions = new Set();
+        const markButtons = new Map();
+        const COUNTDOWN_THRESHOLD = 300;
+
+        const timerDisplay = document.querySelector('.timer-display');
+        const timerToggleButton = document.getElementById('timer-toggle-btn');
+        const timerResetButton = document.getElementById('timer-reset-btn');
+        const deliverButton = document.getElementById('deliver-button');
+        const resizer = document.getElementById('resizer');
+        const passagePanel = document.getElementById('passage-panel');
+        const questionsPanel = document.getElementById('questions-panel');
+        const contextMenu = document.getElementById('contextMenu');
+        const menuHighlightColors = document.getElementById('menu-highlight-colors');
+        const menuNote = document.getElementById('menu-note');
+        const menuClear = document.getElementById('menu-clear');
+        const menuClearAll = document.getElementById('menu-clear-all');
+
+        const playIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7L8 5z"/></svg>';
+        const pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+        const bookmarkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>';
+
+        function initialize() {
+            startTimer();
+            const firstPart = partRanges[0]?.part || 1;
+            switchToPart(firstPart);
+            document.body.addEventListener('input', updateAllIndicators);
+            document.body.addEventListener('change', updateAllIndicators);
+            deliverButton.addEventListener('click', checkAnswers);
+            timerToggleButton.addEventListener('click', toggleTimer);
+            timerResetButton.addEventListener('click', resetTimer);
+            document.querySelectorAll('[data-q-start]').forEach(el => {
+                el.addEventListener('click', (ev) => {
+                    if (ev.target.closest('input, select, label, .tf-options, .multi-choice-option, .matching-form-row')) { return; }
+                    const qNum = parseInt(el.dataset.qStart, 10);
+                    if (currentQuestion !== qNum) { goToQuestion(qNum); }
+                });
+            });
+            resizer.addEventListener('mousedown', initResize, false);
+            initializeContextMenu();
+            initializeQuestionMarkers();
+        }
+
+        function highlightEvidenceInPassage(explanationText) {
+            let targetPhrase = "";
+            const match = explanationText.match(/"([^"]+)"/);
+            if (match) { targetPhrase = match[1].trim(); } 
+            else { targetPhrase = explanationText.replace(/^.*?Trích dẫn:\s*/i, "").trim(); }
+            if (!targetPhrase) return;
+            let cleanQuery = targetPhrase.replace(/^\.\.\./, "").replace(/\.\.\.$/, "").trim();
+            if (!cleanQuery) return;
+            const currentPassageEl = passagePanel.querySelector('.reading-passage:not(.hidden)');
+            if (!currentPassageEl) return;
+            const walker = document.createTreeWalker(currentPassageEl, NodeFilter.SHOW_TEXT, null, false);
+            let node;
+            let found = false;
+            while (node = walker.nextNode()) {
+                const text = node.nodeValue;
+                const index = text.indexOf(cleanQuery);
+                if (index !== -1) {
+                    const range = document.createRange();
+                    range.setStart(node, index);
+                    range.setEnd(node, index + cleanQuery.length);
+                    const span = document.createElement('span');
+                    span.className = 'annotation annotation-highlight highlight-blue';
+                    span.dataset.type = 'highlight';
+                    span.dataset.color = 'blue';
+                    try {
+                        range.surroundContents(span);
+                        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    } catch (e) {}
+                    break;
+                }
+            }
+            if (!found) {
+                const words = cleanQuery.split(/\s+/).filter(w => w.length > 4);
+                if (words.length > 0) {
+                    const keyword = words[0];
+                    walker.currentNode = currentPassageEl;
+                    while (node = walker.nextNode()) {
+                        const text = node.nodeValue;
+                        const index = text.indexOf(keyword);
+                        if (index !== -1) {
+                            const range = document.createRange();
+                            range.setStart(node, index);
+                            range.setEnd(node, Math.min(index + cleanQuery.length, text.length));
+                            const span = document.createElement('span');
+                            span.className = 'annotation annotation-highlight highlight-blue';
+                            span.dataset.type = 'highlight';
+                            span.dataset.color = 'blue';
+                            try {
+                                range.surroundContents(span);
+                                span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            } catch (e) {}
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        function checkAnswers() {
+            if (hasSubmitted) return;
+            hasSubmitted = true;
+            const allInputs = document.querySelectorAll('input, select, textarea');
+            allInputs.forEach(input => { input.disabled = true; });
+            deliverButton.disabled = true;
+            deliverButton.style.cursor = 'not-allowed';
+            const timeTakenSecs = 3600 - timeInSeconds;
+            clearInterval(timerInterval);
+            timerInterval = null;
+            timerToggleButton.innerHTML = playIcon;
+            let score = 0;
+            const resultsDetailsContainer = document.getElementById('results-details');
+            resultsDetailsContainer.innerHTML = '';
+            document.querySelectorAll('.correct, .incorrect, .correct-answer-highlight').forEach(el => { el.classList.remove('correct', 'incorrect', 'correct-answer-highlight'); });
+            document.querySelectorAll('.correct-answer-display').forEach(el => el.remove());
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionKey = String(i);
+                const correctAnswer = correctAnswers[questionKey];
+                let userAnswer = '';
+                let isCorrect = false;
+                let userAnswerDisplay = 'Not Answered';
+                const correctAnswerText = Array.isArray(correctAnswer) ? correctAnswer.join(' / ') : correctAnswer;
+
+                const textInput = document.getElementById(`q${i}`);
+                const radioGroup = document.querySelectorAll(`input[name="q${i}"][type="radio"]`);
+                const selectInput = document.getElementById(`q${i}`);
+                
+                if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                    const element = textInput.closest('.matching-form-row') || textInput;
+                    userAnswer = textInput.value.trim();
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        textInput.parentNode.insertBefore(correctAnswerSpan, textInput.nextSibling);
+                    }
+                }
+                else if (selectInput && selectInput.tagName === 'SELECT') {
+                    const element = selectInput.closest('.matching-form-row') || selectInput;
+                    userAnswer = selectInput.value;
+                    userAnswerDisplay = userAnswer || 'Not Answered';
+                    isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                    if (isCorrect) { score++; element.classList.add('correct'); }
+                    else {
+                        element.classList.add('incorrect');
+                        const correctAnswerSpan = document.createElement('span');
+                        correctAnswerSpan.className = 'correct-answer-display';
+                        correctAnswerSpan.innerHTML = `&nbsp;➜&nbsp;<span class="correct-answer-highlight">${correctAnswerText}</span>`;
+                        selectInput.parentNode.insertBefore(correctAnswerSpan, selectInput.nextSibling);
+                    }
+                }
+                else if (radioGroup.length > 0) {
+                    const questionContainer = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    const checkedRadio = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (checkedRadio) {
+                        userAnswer = checkedRadio.value;
+                        userAnswerDisplay = userAnswer;
+                        isCorrect = Array.isArray(correctAnswer) ? correctAnswer.some(ans => userAnswer.toLowerCase() === ans.toLowerCase()) : userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+                        const userLabel = checkedRadio.closest('.tf-option, .multi-choice-option');
+                        if (userLabel) { userLabel.classList.add(isCorrect ? 'correct' : 'incorrect'); }
+                    }
+                    if (isCorrect) { score++; }
+                    else {
+                        if (questionContainer){
+                            const firstCorrect = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswerText;
+                            const correctOptionEl = questionContainer.querySelector(`input[value="${firstCorrect}"]`);
+                            if (correctOptionEl) {
+                                const correctLabel = correctOptionEl.closest('.tf-option, .multi-choice-option');
+                                if (correctLabel) { correctLabel.classList.add('correct-answer-highlight'); }
+                            }
+                        }
+                    }
+                }
+                   
+                const resultRow = `
+                    <div class="result-row ${isCorrect ? '' : 'incorrect'}">
+                        <span class="q-num">${i}</span>
+                        <span class="user-ans">${userAnswerDisplay}</span>
+                        <span class="correct-ans">${correctAnswerText}</span>
+                    </div>`;
+                resultsDetailsContainer.innerHTML += resultRow;
+                
+                const navButton = document.querySelector(`.subQuestion[onclick="goToQuestion(${i})"]`);
+                if (navButton) {
+                    navButton.classList.remove('answered', 'active');
+                    navButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+
+                if (window.testExplanations && window.testExplanations[i]) {
+                    let container = null;
+                    if (textInput && textInput.tagName === 'INPUT' && textInput.type === 'text') {
+                        container = textInput.closest('li') || textInput.closest('p');
+                    } else if (selectInput && selectInput.tagName === 'SELECT') {
+                        container = selectInput.closest('.matching-form-row');
+                    } else if (radioGroup.length > 0) {
+                        container = radioGroup[0].closest('.tf-question') || radioGroup[0].closest('.multi-choice-question');
+                    }
+                    if (container) {
+                        let expElement = document.createElement('div');
+                        expElement.className = 'explanation-box show';
+                        expElement.dataset.forQ = i;
+                        expElement.innerHTML = `<div class="explanation-title">💡 Giải thích câu ${i} (Bấm vào đây để xem evidence):</div><div>${window.testExplanations[i]}</div>`;
+                        expElement.addEventListener('click', () => { highlightEvidenceInPassage(window.testExplanations[i]); });
+                        const checkContainer = container.classList.contains('matching-form-row') || container.tagName === 'P' ? container.parentNode : container;
+                        if (!checkContainer.querySelector(`.explanation-box[data-for-q="${i}"]`)) { checkContainer.appendChild(expElement); }
+                    }
+                }
+            }
+            
+            const bandScore = calculateBandScore(score);
+            
+            document.getElementById('results-score').textContent = score;
+            document.getElementById('results-band').textContent = bandScore;
+            document.getElementById('results-modal').classList.remove('hidden');
+            
+            sendResultsToGoogle(score, bandScore, timeTakenSecs);
+        }
+        
+        function sendResultsToGoogle(score, bandScore, timeTakenSecs) {
+            const statusDiv = document.getElementById('submit-status');
+            statusDiv.style.display = 'block';
+            statusDiv.style.backgroundColor = '#fff3cd';
+            statusDiv.style.color = '#856404';
+            statusDiv.textContent = '⏳ Đang gửi kết quả về hệ thống...';
+
+            const minutes = Math.floor(timeTakenSecs / 60);
+            const seconds = timeTakenSecs % 60;
+            const timeStr = `${minutes} phút ${seconds} giây`;
+            const dateStr = new Date().toLocaleString('vi-VN');
+            const examTitle = document.getElementById('launchTestTitle').textContent || document.title;
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby7tYg_WIbxhkhK8NpoHs7s5GW3svAD56ZswWfimJgR-NMnzbbmTCBXwchyqhCI69pa/exec';
+            
+            const params = new URLSearchParams();
+            params.append('studentName', currentStudentName);
+            params.append('studentClass', currentStudentClass);
+            params.append('score', `${score}/${totalQuestions}`);
+            params.append('bandScore', bandScore); 
+            params.append('timeTaken', timeStr);
+            params.append('submitDate', dateStr);
+            params.append('examTitle', examTitle);
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: params.toString() 
+            })
+            .then(() => {
+                statusDiv.style.backgroundColor = '#d4edda';
+                statusDiv.style.color = '#155724';
+                statusDiv.textContent = '✅ Kết quả đã được ghi nhận và gửi thành công!';
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                statusDiv.style.backgroundColor = '#f8d7da';
+                statusDiv.style.color = '#721c24';
+                statusDiv.textContent = '⚠️ Có lỗi xảy ra khi gửi. Vui lòng chụp màn hình gửi giáo viên.';
+            });
+        }
+
+        function calculateBandScore(score) {
+            if (score >= 39) return '9.0';
+            const mapping = { 40: 9.0, 39: 9.0, 38: 8.5, 37: 8.5, 36: 8.0, 35: 8.0, 34: 7.5, 33: 7.5, 32: 7.0, 31: 7.0, 30: 7.0, 29: 6.5, 28: 6.5, 27: 6.5, 26: 6.0, 25: 6.0, 24: 6.0, 23: 5.5, 22: 5.5, 21: 5.5, 20: 5.5, 19: 5.0, 18: 5.0, 17: 5.0, 16: 5.0, 15: 5.0, 14: 4.5, 13: 4.5, 12: 4.0, 11: 4.0, 10: 4.0, 9: 3.5, 8: 3.5, 7: 3.0, 6: 3.0, 5: 2.5, 4: 2.5 };
+            if (score <= 0) return 0.0; if (score === 1) return 1.0; if (score <= 3) return 2.0; if (score <= 5) return 2.5; return mapping[score] || 0.0;
+        }
+
+        window.closeResultsModal = function() { document.getElementById('results-modal').classList.add('hidden'); }
+
+        const getFirstQuestionOfPart = (partNumber) => { const match = partRanges.find(p => p.part === partNumber); return match ? match.start : 1; };
+        const getPartForQuestion = (questionNumber) => { const match = partRanges.find(p => questionNumber >= p.start && questionNumber <= p.end); return match ? match.part : partRanges[0]?.part || 1; };
+
+        function switchToPart(partNumber) {
+            currentPassage = partNumber;
+            document.querySelectorAll('.reading-passage, .question-set, .part-header').forEach(el => { el.classList.add('hidden'); });
+            document.getElementById(`passage-text-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`questions-${partNumber}`).classList.remove('hidden');
+            document.getElementById(`part-header-${partNumber}`).classList.remove('hidden');
+            document.querySelectorAll('.footer__questionWrapper___1tZ46').forEach((wrapper, index) => { wrapper.classList.toggle('selected', (index + 1) === partNumber); });
+            goToQuestion(getFirstQuestionOfPart(partNumber));
+        }
+        
+        function goToQuestion(questionNumber) {
+            currentQuestion = questionNumber;
+            const passageNumber = getPartForQuestion(questionNumber);
+            if (currentPassage !== passageNumber) { switchToPart(passageNumber); return; }
+            if (activeQuestionElement) { activeQuestionElement.classList.remove('active-question', 'active-input'); }
+            let targetEl = document.querySelector(`[data-q-start="${questionNumber}"]`);
+            if (targetEl) {
+                activeQuestionElement = targetEl;
+                if (targetEl.matches('input[type="text"]') || targetEl.matches('select')) { targetEl.classList.add('active-input'); } 
+                else { targetEl.classList.add('active-question'); }
+                scrollIntoViewIfNeeded(targetEl);
+            } else {
+                 const pMatch = document.querySelector(`.matching-form-row select[id="q${questionNumber}"]`);
+                 if(pMatch) {
+                    activeQuestionElement = pMatch; pMatch.classList.add('active-input'); scrollIntoViewIfNeeded(pMatch);
+                 }
+            }
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            const activeNav = Array.from(navButtons).find(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                return qNum === currentQuestion;
+            });
+            if (activeNav) { activeNav.classList.add('active'); }
+            const inputs = document.querySelectorAll('.answer-input');
+            inputs.forEach(input => input.classList.remove('active-input'));
+            const activeInput = document.getElementById(`q${currentQuestion}`);
+            if (activeInput) { activeInput.classList.add('active-input'); if (typeof activeInput.focus === 'function') { activeInput.focus(); } }
+        }
+        
+        window.nextQuestion = () => currentQuestion < totalQuestions && goToQuestion(currentQuestion + 1);
+        window.previousQuestion = () => currentQuestion > 1 && goToQuestion(currentQuestion - 1);
+
+        function updateAllIndicators() { partRanges.forEach(range => updateAttemptedCount(range.part, range.start, range.end)); updateAnsweredNav(); }
+        
+        function updateAnsweredNav() {
+            const navButtons = document.querySelectorAll('.subQuestion');
+            navButtons.forEach(btn => {
+                const hiddenSpan = btn.querySelector('[aria-hidden="true"]');
+                const qNum = parseInt(hiddenSpan ? hiddenSpan.textContent : btn.textContent.replace(/\D/g, ''), 10);
+                if (!isNaN(qNum) && isQuestionAnswered(qNum)) { btn.classList.add('answered'); } 
+                else { btn.classList.remove('answered'); }
+            });
+        }
+        
+        function isQuestionAnswered(qNum) {
+            const textInput = document.getElementById(`q${qNum}`);
+            if (textInput && typeof textInput.value === 'string' && textInput.value.trim() !== '') return true;
+            const radio = document.querySelector(`input[name="q${qNum}"]:checked`);
+            if (radio) return true;
+            const select = document.getElementById(`q${qNum}`);
+            if (select && select.tagName === 'SELECT' && select.value !== '') return true;
+            return false;
+        }
+
+        function scrollIntoViewIfNeeded(element) {
+            const panel = element.closest('.questions-panel, .passage-panel');
+            const panelRect = panel.getBoundingClientRect();
+            const elementRect = element.getBoundingClientRect();
+            if (elementRect.top < panelRect.top || elementRect.bottom > panelRect.bottom) { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        }
+        
+        function updateTimerDisplay() {
+            const displaySeconds = Math.max(timeInSeconds, 0);
+            if (displaySeconds > COUNTDOWN_THRESHOLD) {
+                const minutesRemaining = Math.ceil(displaySeconds / 60);
+                timerDisplay.textContent = `${minutesRemaining} minutes remaining`;
+            } else {
+                const minutes = Math.floor(displaySeconds / 60);
+                const seconds = displaySeconds % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+
+        function handleTimeExpired() {
+            timeInSeconds = 0; updateTimerDisplay(); clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; checkAnswers();
+        }
+
+        function startTimer() {
+            if (hasSubmitted) return;
+            if (timerInterval) clearInterval(timerInterval);
+            updateTimerDisplay();
+            timerInterval = setInterval(() => { timeInSeconds = Math.max(timeInSeconds - 1, 0); updateTimerDisplay(); if (timeInSeconds <= 0) { handleTimeExpired(); } }, 1000);
+            timerToggleButton.innerHTML = pauseIcon;
+        }
+
+        function pauseTimer() { clearInterval(timerInterval); timerInterval = null; timerToggleButton.innerHTML = playIcon; }
+        function toggleTimer() { if (timerInterval) { pauseTimer(); } else { startTimer(); } }
+        function resetTimer() { timeInSeconds = 3600; updateTimerDisplay(); startTimer(); }
+        
+        function initResize(e) {
+            e.preventDefault(); const startX = e.clientX; const startWidth = passagePanel.offsetWidth;
+            const doDrag = (e) => { const newWidth = startWidth + e.clientX - startX; if (newWidth > 200 && (document.body.clientWidth - newWidth - resizer.offsetWidth) > 200) { passagePanel.style.flex = `0 0 ${newWidth}px`; } };
+            const stopDrag = () => { window.removeEventListener('mousemove', doDrag, false); window.removeEventListener('mouseup', stopDrag, false); };
+            window.addEventListener('mousemove', doDrag, false); window.addEventListener('mouseup', stopDrag, false);
+        }
+        
+        const ANNOTATION_CLASSES = { highlight: 'annotation-highlight', note: 'annotation-note' };
+
+        function unwrapElement(element) {
+            const parent = element?.parentNode; if (!parent) return;
+            while (element.firstChild) { parent.insertBefore(element.firstChild, element); }
+            parent.removeChild(element);
+        }
+
+        function selectionWithinPanels(selection) {
+            const anchor = selection.anchorNode; const focus = selection.focusNode;
+            const inPanels = node => node && (passagePanel.contains(node) || questionsPanel.contains(node));
+            return inPanels(anchor) && inPanels(focus);
+        }
+
+        function isRangeInsidePanels(range) {
+            const root = range.commonAncestorContainer;
+            return passagePanel.contains(root) || questionsPanel.contains(root);
+        }
+
+        function getCurrentSelectionRange() {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
+            return selection.getRangeAt(0).cloneRange();
+        }
+
+        function positionContextMenu(x, y) {
+            contextMenu.style.display = 'block'; const menuHeight = contextMenu.offsetHeight; const menuWidth = contextMenu.offsetWidth;
+            let left = x; let top = y - menuHeight - 8;
+            if (left + menuWidth > window.innerWidth) left = window.innerWidth - menuWidth - 8;
+            if (left < 8) left = 8; if (top < 8) top = y + 8;
+            contextMenu.style.left = `${left}px`; contextMenu.style.top = `${top}px`;
+        }
+
+        function resetSelectionState() { pendingSelectionRange = null; activeAnnotationTarget = null; }
+
+        function showMenuForSelection(event) {
+            menuHighlightColors.style.display = 'flex'; menuNote.style.display = 'flex'; menuClear.style.display = 'none'; menuClearAll.style.display = 'none';
+            contextMenu.dataset.mode = 'create'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function showMenuForAnnotation(event, target) {
+            activeAnnotationTarget = target; pendingSelectionRange = null; window.getSelection().removeAllRanges();
+            menuHighlightColors.style.display = 'none'; menuNote.style.display = 'none'; menuClear.style.display = 'flex'; menuClearAll.style.display = 'flex';
+            contextMenu.dataset.mode = 'manage'; positionContextMenu(event.pageX, event.pageY);
+        }
+
+        function closeContextMenu(resetSelection = false) {
+            contextMenu.style.display = 'none'; contextMenu.dataset.mode = '';
+            if (resetSelection) { window.getSelection().removeAllRanges(); }
+            resetSelectionState();
+        }
+
+        function expandRangeToAnnotations(range, selector) {
+            const spans = Array.from(document.querySelectorAll(selector));
+            spans.forEach(span => {
+                if (!range.intersectsNode(span)) return;
+                const spanRange = document.createRange(); spanRange.selectNode(span);
+                if (range.compareBoundaryPoints(Range.START_TO_START, spanRange) > 0) { range.setStartBefore(span); }
+                if (range.compareBoundaryPoints(Range.END_TO_END, spanRange) < 0) { range.setEndAfter(span); }
+            });
+        }
+
+        function unwrapAnnotationsInRange(range, type) {
+            const selector = type === 'highlight' ? `.${ANNOTATION_CLASSES.highlight}` : `.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`;
+            document.querySelectorAll(selector).forEach(span => { if (range.intersectsNode(span)) { unwrapElement(span); } });
+        }
+
+        function getTextNodesInRange(range, type) {
+            const nodes = [];
+            const shouldInclude = (node) => {
+                if (!node || !node.nodeValue || !node.nodeValue.trim()) return false;
+                if (!range.intersectsNode(node)) return false;
+                if (type === 'highlight' && node.parentElement?.closest(`.${ANNOTATION_CLASSES.note}`)) { return false; }
+                return true;
+            };
+            if (range.commonAncestorContainer.nodeType === Node.TEXT_NODE) {
+                if (shouldInclude(range.commonAncestorContainer)) { nodes.push(range.commonAncestorContainer); } return nodes;
+            }
+            const walker = document.createTreeWalker(range.commonAncestorContainer, NodeFilter.SHOW_TEXT, { acceptNode: (node) => shouldInclude(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+            while (walker.nextNode()) { nodes.push(walker.currentNode); }
+            return nodes;
+        }
+
+        function wrapTextPortion(node, range, type, noteText = '', highlightColor = 'yellow') {
+            let startOffset = 0; let endOffset = node.nodeValue.length;
+            if (node === range.startContainer && range.startOffset > startOffset) { startOffset = range.startOffset; }
+            if (node === range.endContainer && range.endOffset < endOffset) { endOffset = range.endOffset; }
+            if (startOffset >= endOffset) return;
+            const selectedText = node.splitText(startOffset); selectedText.splitText(endOffset - startOffset);
+            const span = document.createElement('span');
+            span.classList.add('annotation', type === 'highlight' ? ANNOTATION_CLASSES.highlight : ANNOTATION_CLASSES.note);
+            span.dataset.type = type;
+            if (type === 'highlight') {
+                const allowedColors = ['yellow', 'green', 'pink']; const safeColor = allowedColors.includes(highlightColor) ? highlightColor : 'yellow';
+                span.dataset.color = safeColor; span.classList.add(`highlight-${safeColor}`);
+            }
+            if (type === 'note') {
+                const content = noteText || ''; span.dataset.note = content;
+                if (content) { span.setAttribute('data-note', content); span.title = content; } 
+                else { span.removeAttribute('data-note'); span.title = 'Note'; }
+            }
+            selectedText.parentNode.insertBefore(span, selectedText);
+            span.appendChild(selectedText);
+        }
+
+        function mergeAdjacentAnnotations() {
+            const annotations = document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+            annotations.forEach(span => {
+                if (!span.parentNode) return;
+                let cursor = span.nextSibling;
+                while (true) {
+                    const whitespaceBetween = [];
+                    while (cursor && cursor.nodeType === Node.TEXT_NODE && !cursor.textContent.trim()) { whitespaceBetween.push(cursor); cursor = cursor.nextSibling; }
+                    if (cursor && cursor.nodeType === Node.ELEMENT_NODE && cursor.classList.contains('annotation') && cursor.dataset.type === span.dataset.type && (span.dataset.type !== 'note' || (span.dataset.note || '') === (cursor.dataset.note || ''))) {
+                        whitespaceBetween.forEach(node => span.appendChild(node));
+                        while (cursor.firstChild) { span.appendChild(cursor.firstChild); }
+                        const after = cursor.nextSibling; cursor.remove(); cursor = after;
+                    } else { break; }
+                }
+                if (!span.textContent.trim()) { unwrapElement(span); }
+            });
+        }
+
+        function handleTextSelection(event) {
+            const selection = window.getSelection();
+            if (!selection || selection.rangeCount === 0 || selection.isCollapsed || !selection.toString().trim()) { return; }
+            if (!selectionWithinPanels(selection)) { return; }
+            const range = selection.getRangeAt(0).cloneRange();
+            pendingSelectionRange = range; activeAnnotationTarget = null;
+            showMenuForSelection(event);
+        }
+
+        function initializeContextMenu() {
+            const panels = [passagePanel, questionsPanel];
+            panels.forEach(panel => { panel.addEventListener('mouseup', (e) => { setTimeout(() => handleTextSelection(e), 0); }); });
+            document.addEventListener('click', (e) => {
+                if (contextMenu.contains(e.target)) return;
+                const annotation = e.target.closest(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`);
+                if (annotation) { showMenuForAnnotation(e, annotation); return; }
+                closeContextMenu();
+            });
+        }
+
+        function applyAnnotation(type, noteText = '', highlightColor = 'yellow') {
+            const baseRange = pendingSelectionRange ? pendingSelectionRange.cloneRange() : getCurrentSelectionRange();
+            if (!baseRange || baseRange.collapsed || !isRangeInsidePanels(baseRange)) { closeContextMenu(true); return; }
+            if (type === 'highlight') { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.highlight}`); } 
+            else { expandRangeToAnnotations(baseRange, `.${ANNOTATION_CLASSES.note}`); }
+            unwrapAnnotationsInRange(baseRange, type);
+            const targets = getTextNodesInRange(baseRange, type);
+            targets.forEach(node => wrapTextPortion(node, baseRange, type, noteText, highlightColor));
+            mergeAdjacentAnnotations(); closeContextMenu(true);
+        }
+
+        function highlightText(color = 'yellow') { applyAnnotation('highlight', '', color); }
+        function addNote() { const note = prompt('Nhập nội dung ghi chú (Take note):'); if (note === null) { closeContextMenu(); return; } applyAnnotation('note', note.trim()); }
+        function clearHighlight() { if (activeAnnotationTarget) { unwrapElement(activeAnnotationTarget); mergeAdjacentAnnotations(); } closeContextMenu(true); }
+        function clearAllHighlights() { document.querySelectorAll(`.${ANNOTATION_CLASSES.highlight}, .${ANNOTATION_CLASSES.note}`).forEach(unwrapElement); mergeAdjacentAnnotations(); closeContextMenu(true); }
+
+        function findQuestionAnchor(qNum) {
+            const mcqNumber = document.querySelector(`.mcq-question-number[data-q-number="${qNum}"]`); if (mcqNumber) return mcqNumber;
+            const tfNumber = Array.from(document.querySelectorAll('.tf-question-number')).find(el => parseInt(el.textContent, 10) === qNum); if (tfNumber) return tfNumber;
+            const strongLabel = Array.from(document.querySelectorAll(`label[for="q${qNum}"] strong`)).find(el => /^\d+$/.test(el.textContent.trim())); if (strongLabel) return strongLabel;
+            const genericLabel = document.querySelector(`label[for="q${qNum}"]`); if (genericLabel) return genericLabel;
+            const textInput = document.getElementById(`q${qNum}`); if (textInput) return textInput; return null;
+        }
+
+        function createMarkerButton(anchor, qNum) {
+            if (!anchor || anchor.closest('.question-number-with-mark') || anchor.closest('.markable-blank-wrapper')) return null;
+            const isInput = anchor.tagName === 'INPUT' || anchor.tagName === 'SELECT';
+            const isInlineBlank = isInput;
+            const wrapper = document.createElement('span'); wrapper.dataset.questionNumber = qNum;
+            const parent = anchor.parentNode; if (!parent) return null;
+            if (isInlineBlank) { wrapper.className = 'markable-blank-wrapper'; parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor); } 
+            else {
+                wrapper.className = 'question-number-with-mark';
+                const displayMode = window.getComputedStyle(anchor).display;
+                if (displayMode === 'block' || displayMode === 'flex') { wrapper.style.display = 'flex'; wrapper.style.alignItems = 'center'; }
+                parent.insertBefore(wrapper, anchor); wrapper.appendChild(anchor);
+            }
+            const button = document.createElement('button'); button.type = 'button';
+            button.className = isInlineBlank ? 'mark-toggle-btn inside-blank' : 'mark-toggle-btn';
+            button.dataset.questionNumber = qNum; button.setAttribute('aria-label', `Đánh dấu câu ${qNum}`); button.innerHTML = bookmarkIcon;
+            button.addEventListener('click', (e) => { e.stopPropagation(); toggleMark(qNum); });
+            wrapper.appendChild(button);
+            const markHost = wrapper.closest('.tf-question, .matching-form-row, .matching-question-item, .question, .drag-drop-question, .summary-question, .paragraph-matching-question') || wrapper;
+            if(markHost) markHost.classList.add('markable-question');
+            markButtons.set(qNum, button); return button;
+        }
+
+        function initializeQuestionMarkers() { for (let i = 1; i <= totalQuestions; i++) { const anchor = findQuestionAnchor(i); createMarkerButton(anchor, i); } }
+
+        function toggleMark(qNum) {
+            const isMarked = markedQuestions.has(qNum);
+            if (isMarked) { markedQuestions.delete(qNum); } else { markedQuestions.add(qNum); }
+            updateMarkState(qNum, !isMarked);
+        }
+
+        function updateMarkState(qNum, marked) {
+            const btn = markButtons.get(qNum); if (btn) { btn.classList.toggle('marked', marked); btn.setAttribute('aria-pressed', marked ? 'true' : 'false'); }
+            const navButton = Array.from(document.querySelectorAll('.subQuestion')).find(b => { const hiddenSpan = b.querySelector('[aria-hidden="true"]'); const num = parseInt(hiddenSpan ? hiddenSpan.textContent : b.textContent.replace(/\D/g, ''), 10); return num === qNum; });
+            if (navButton) { navButton.classList.toggle('marked', marked); }
+        }
+
+        function updateAttemptedCount(part, startQ, endQ) {
+            let answeredCount = 0; for (let i = startQ; i <= endQ; i++) { if (isQuestionAnswered(i)) { answeredCount++; } }
+            const partHeader = document.querySelector(`.footer__questionNo___3WNct[onclick="switchToPart(${part})"]`);
+            if (partHeader) { const countSpan = partHeader.querySelector('.attemptedCount'); if (countSpan) { countSpan.textContent = `${answeredCount} of ${endQ - startQ + 1}`; } }
+        }
+
+        window.nextQuestion = nextQuestion; window.previousQuestion = previousQuestion; window.goToQuestion = goToQuestion; window.switchToPart = switchToPart; window.closeResultsModal = closeResultsModal; window.highlightText = highlightText; window.addNote = addNote; window.clearHighlight = clearHighlight; window.clearAllHighlights = clearAllHighlights;
+    });
+    </script>
+</body>
+</html>
